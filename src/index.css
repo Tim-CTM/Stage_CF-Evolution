@@ -1,0 +1,519 @@
+body {
+  margin: 0 auto ;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* .App{
+
+} */
+
+/*Header*/ 
+
+.container-h {
+  width: 100%;
+  background-color: #042440; /*change ici le */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/*tu peux modifier le justify-content et le align-items pour ajuster suivant ton rendu figma*/
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+.hc2{
+  display: flex;
+  align-items: center;
+}
+.hc2 a {
+  text-decoration: none;
+}
+
+ /* Images header */
+.imglogo, .imgpanier {
+
+  object-fit: cover;
+}
+
+.imgpanier{
+  max-height: 45px;
+  margin-left: 40px;
+}
+
+.imglogo {
+  max-width: 100px;
+  height: auto;
+}
+
+
+.hc2 {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.hc2 li {
+  list-style: none;
+  display: inline;
+  margin: 0 15px;
+}
+
+.hc2 a {
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.hc2 a:hover {
+  color: #007BFF;
+}
+
+.hc2 {
+  flex-grow: 0;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hc2 li {
+  margin: 0 10px;
+}
+
+.hc2 li {
+  margin: 0 5px;
+}
+
+
+
+@media (max-width: 768px) {
+  header{
+    flex-direction: column;
+    padding: 10px 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .hc2 a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:768){
+.section1 {
+    padding: 15px;
+  }
+}
+
+
+@media (max-width:480) {
+.section {
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+  /* Footer */
+.footer{
+  background-color: black;
+  padding: 30px 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+  /* Premier container */
+.container-f{
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+
+/* Colone 1 footer */
+.fc1{
+  color: #ffffff;
+  width: 25%;
+  padding: 0 15px;
+
+}
+.fc1, .fc2, .fc3 {
+  color: #ffffff;
+  width: 30%;
+  padding: 0 15px;
+}
+
+/* Taille écriture */
+.fc1, .fc2, .fc3 h4{
+  font-size: 18px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.fc1, .fc2 li {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Colone 2 footer */
+.fc2 li a{ 
+  color: #ffffff;
+}
+
+.fc2 ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.fc2 li {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Colone 3 footer */
+.fc3 {
+  align-items: center;
+}
+
+  /* Copyright */
+.footer-copy {
+  color: #AAAAAA;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* Div img footer */
+.imgfooter{
+  justify-content: center;
+}
+
+.insta{
+  width: 50px;
+  height: auto;
+  position: relative;
+  left: 50px;
+}
+
+.x{
+  width: 50px;
+  height: auto;
+  position: relative;
+  left: 50px;
+  bottom: 18px;
+}
+
+.facebook{
+  width: 35px;
+  height: auto;
+  position: relative;
+  left: 57px;
+  bottom: 30px;
+}
+
+/* Footer résolution téléphone */
+@media (max-width: 768px) {
+  .container-f {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fc1, .fc2, .fc3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+/* Page accueil */
+
+
+
+
+
+
+/* Img accueil */
+
+
+
+.gameboydmg{
+  width: 130px;
+  height: auto;
+  position: relative;
+}
+
+.gameboyadvence{
+  width: 300px;  
+  height: auto; 
+  position: relative;
+}
+
+.gameboyadvencesp{
+  width: 300px;  
+  height: auto; 
+  position: relative;
+}
+
+.gameboycolor{
+  width: 400px;  
+  height: auto;  
+  position: relative;
+}
+
+
+
+/* Page panier */
+
+.entete{
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.cadre {
+  border: 2px solid black;
+  padding: 50px;
+  width: 300px;
+  height: 130px;
+  border-radius: 35px;
+}
+
+
+/* Espace a modifier */
+.section1 .espace{
+  border: 3px #ffffff;
+  padding: 10px;
+}
+
+.section1{
+  border: 2px solid ;
+  height: 100;
+  padding-left: 40px;
+
+
+}
+
+
+.cadre1{
+  border: 2px solid black;
+  padding-left: 30px;
+  border-radius: 35px;
+  width: 100px;
+  height: 50px;
+}
+
+.separation {
+  width: 2px;
+  background-color: black;
+}
+
+.bar-noir {
+  background-color: black;
+  height: 2px;  
+  width: 83%;
+  position: absolute;
+  top: 20%;
+  left: 9%;
+}
+
+/* Bouton commande */
+
+.boutoncom link{
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center; 
+  text-decoration: none;
+}
+
+
+/* Page commande */
+
+.container-xl{
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+/* Page Personnalisation */
+
+.section-bleu{
+  padding: 10px;
+  background-color: #02A6A9;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Typographies : */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+/* Section */
+.section-bleu h1{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+.container-perso {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.pc1, .pc2 {
+  box-sizing: border-box;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.pc1 p {
+  text-align: left;
+}
+
+.image-container {
+  position: absolute;
+  width: 650px;
+  height: auto;
+}
+
+.superpose {
+  position: absolute;
+  width: 600px; 
+  height: auto;
+}
+
+
+.img1 {
+  z-index: 0;
+}
+
+.img2 {
+  z-index: 1;
+}
+
+.img3 {
+  z-index: 2;
+}
+
+.img4 {
+  z-index: 3;
+}
+
+.img5 {
+  z-index: 4;
+}
+
+/* Bouton couleur */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.button#button1 {
+  background-color: #fdfdfd;
+}
+
+.button#button2 {
+  background-color: #f0ff24;
+}
+
+.button#button3 {
+  background-color: #2d2dcc;
+}
+
+.button#button4 {
+  background-color: rgb(255, 44, 44);
+}
+
+.button#button5 {
+  background-color: #7e3e92;
+}
+
+.button#button10 {
+  background-color: #ffffff;
+}
+.button#button11 {
+  background-color: #fd8739;
+}
+/* Largeur de la page */
+
+.containerbase {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ .test{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+
+
+/* Text pas coller aux side */
+.container-sidespace{
+  padding: 50px;
+}
+
+
+
+
+

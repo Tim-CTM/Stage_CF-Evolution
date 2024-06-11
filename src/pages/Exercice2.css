@@ -1,0 +1,41 @@
+.Container-1{
+    display: flex;
+    flex-wrap: wrap ;
+    padding: 30px;
+    gap: 16px;
+}
+
+
+.tweet{
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 8px;
+    width: fit-content;
+    min-width: 320px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.tweet h3 p{
+    margin: 0;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.tweet .delete{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tweet-form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width:  fit-content;
+    gap: 8px;
+    margin-bottom: 32px;
+}
