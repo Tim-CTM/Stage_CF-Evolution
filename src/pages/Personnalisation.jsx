@@ -107,7 +107,7 @@ const Perso = () => {
           <img id="img1" className="superpose" src={mainImage} />
           <img id="img2" className="superpose" src={Screen} />
           <img id="img3" className="superpose" src={Shadow} />
-          <img id="img4" className="superpose" src={BP1} />
+          <img id="img4" className="superpose" src={selectImage} />
           <img id="img5" className="superpose" src={Start} />
         </div>
       </div>
