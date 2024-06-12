@@ -402,21 +402,17 @@ header {
   align-items: flex-start;
 }
 
+/* Page perso */
+
 .pc1, .pc2 {
   box-sizing: border-box;
   padding: 20px;
-  justify-content: space-around;
 }
 
 .pc1 p {
   text-align: left;
 }
 
-.image-container {
-  position: absolute;
-  width: 650px;
-  height: auto;
-}
 
 .superpose {
   position: absolute;
@@ -425,6 +421,7 @@ header {
 }
 
 
+/* Position */
 .img1 {
   z-index: 0;
 }
@@ -457,40 +454,44 @@ li {
   margin: 5px;
 }
 
-.button {
+.bp-base {
   width: 25px;
   height: 25px;
+  margin: 2px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 1px solid black;
   cursor: pointer;
 }
 
-.button#button1 {
+.coque-0 {
   background-color: #fdfdfd;
 }
 
-.button#button2 {
-  background-color: #f0ff24;
+.coque-bleu {
+  background-color: #1d11c4;
 }
 
-.button#button3 {
-  background-color: #2d2dcc;
+.coque-violet {
+  background-color: #611c81;
 }
 
-.button#button4 {
-  background-color: rgb(255, 44, 44);
+.coque-jaune {
+  background-color: rgb(253, 236, 2);
 }
 
-.button#button5 {
-  background-color: #7e3e92;
-}
 
-.button#button10 {
+.BP0 {
   background-color: #ffffff;
 }
-.button#button11 {
+.BP-orange {
   background-color: #fd8739;
 }
+.BP-red {
+  background-color: #ff0404;
+}
+
+
+
 /* Largeur de la page */
 
 .containerbase {
@@ -503,7 +504,6 @@ li {
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 
 

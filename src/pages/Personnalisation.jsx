@@ -1,43 +1,41 @@
 import React, { useState } from 'react';
-import Gameboydmg from '../image/gameboydmg.png';
+
+// import coque
 import Game1 from '../image/Gameboy_DMG/DMG_0.png';
 import Game2 from '../image/Gameboy_DMG/DMG_1.png';
 import Game3 from '../image/Gameboy_DMG/DMG_2.png';
 import Game4 from '../image/Gameboy_DMG/DMG_3.png';
-import Shadow from '../image/Gameboy_DMG/SHADOW.png';
-import Start from '../image/Gameboy_DMG/Start.png';
+
+// Import bouton
 import BP1 from '../image/Gameboy_DMG/BP_1.png';
 import BP2 from '../image/Gameboy_DMG/BP_2.png';
 import BP3 from '../image/Gameboy_DMG/BP_3.png';
+
+// Le reste
+import Shadow from '../image/Gameboy_DMG/SHADOW.png';
+import Start from '../image/Gameboy_DMG/Start.png';
 import Screen from '../image/Gameboy_DMG/Screen.png'
 
 
-//   function buttonAB ( ) {
-//   const [ABImage, setABImage] = useState(BP1);
-
-//   setMainImage(BP2);
-//  };
-
 
 const Perso = () => {
-  const [mainImage, setMainImage] = useState(Game1);
-  const [selectImage, setSelectImage] = useState(BP1);
+  const [mainImages, setMainImages] = useState(Game1);
+  const [bpImages, setBpImages] = useState(BP1);
 
-  const Gamebleu = () => {
-    setMainImage(Game2);
-  };
-  const Gameviolet = () => {
-    setMainImage(Game3);
-  };
-  const Gamejaune = () => {
-    setMainImage(Game4);
-  };
+  // list coque
+  const coqueimg = [
+    { src: Game1, className: "bp-base coque-0" },
+    { src: Game2, className: "bp-base coque-bleu" },
+    { src: Game3, className: "bp-base coque-violet" },
+    { src: Game4, className: "bp-base coque-jaune" },
+  ];
 
-  const Sbp2 = () => {
-    setSelectImage(BP2);
-  };
-
-  
+  // list bp
+  const bpimages = [
+    { src: BP1, className: "bp-base BP0" },
+    { src: BP2, className: "bp-base BP-orange" },
+    { src: BP3, className: "bp-base BP-red" },
+  ];
 
   return (
     <body>
@@ -49,45 +47,43 @@ const Perso = () => {
         <div className="pc1">
           <h1>Personnalisation Gameboy DMG</h1>
           <p>BASE CONSOLE</p>
-          <hr width="250px" align="left"></hr>
+          <hr width="250px" align="left" />
           <ul>
-            <li> </li>
-            <li> </li>
+            <li></li>
           </ul>
           <p>Coque</p>
-          <hr width="250px" align="left"></hr>
+          <hr width="250px" align="left" />
           <ul>
             <li>
-              <button className="button" id="button1" onClick={() => setMainImage(Game1)}></button>
-            </li>
-            <li>
-              <button className="button" id="button3" onClick={Gamebleu}></button>
-            </li>
-            <li>
-              <button className="button" id="button5" onClick={Gameviolet}></button>
-            </li>
-            <li>
-              <button className="button" id="button2" onClick={Gamejaune}></button>
+              {coqueimg.map((image, index) => (
+                <button
+                  key={index}
+                  className={image.className}
+                  onClick={() => setMainImages(image.src)}
+                ></button>
+              ))}
             </li>
           </ul>
           <p>Coque arrière</p>
-          <hr width="250px" align="left"></hr>
+          <hr width="250px" align="left" />
           <ul>
             <li></li>
             <li></li>
             <li></li>
           </ul>
           <p>BOUTONS</p>
-          <hr width="250px" align="left"></hr>
+          <hr width="250px" align="left" />
           <ul>
             <li>
-              <button className="button" id="button10" onClick={() => setSelectImage(BP1)}></button>
-            </li>
-            <li>
-              <button className="button" id="button11" onClick={Sbp2}></button>
-            </li>
-            <li></li>
-          </ul>
+              {bpimages.map((image, index) => (
+                <button
+                  key={index}
+                  className={image.className}
+                  onClick={() => setBpImages(image.src)}
+                ></button>  
+              ))}
+            </li>        
+          </ul>      
           <p>Pads</p>
           <hr width="250px" align="left"></hr>
           <p>ECRAN IPS RÉTROÉCLAIRÉ </p>
@@ -104,10 +100,10 @@ const Perso = () => {
           <hr width="250px" align="left"></hr>
         </div>
         <div className="pc2">
-          <img id="img1" className="superpose" src={mainImage} />
+          <img id="img1" className="superpose" src={mainImages} />
           <img id="img2" className="superpose" src={Screen} />
           <img id="img3" className="superpose" src={Shadow} />
-          <img id="img4" className="superpose" src={selectImage} />
+          <img id="img4" className="superpose" src={bpImages} />
           <img id="img5" className="superpose" src={Start} />
         </div>
       </div>

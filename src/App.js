@@ -34,7 +34,7 @@ const App = () => {
         </div>
     </Router>
     <script src="./componants/Slider.js"></script>
-    <Exercice2/>
+    {/* <Exercice2/> */}
     </body>
     // <script src=""./coponants/Slider"></script>
   );
