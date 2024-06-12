@@ -21,7 +21,7 @@ const Cookies = () => {
             <li>Cookies de préférences : Ces cookies nous aident à stocker vos paramètres et vos préférences de navigation comme les préférences de langue pour que vous ayez une meilleure et plus efficace expérience lors de vos futures visites sur le site.</li>
             <h2>5. Comment puis-je contrôler les préférences des cookies ?</h2>
             <p>Si vous décidez de changer vos préférences plus tard au cours de votre session de navigation, vous pouvez cliquer sur l’onglet « Politique de Cookies » sur votre écran. Cela affichera à nouveau l’avis de consentement vous permettant de changer vos préférences ou de retirer complètement votre consentement.
-              De plus, différents navigateurs fournissent différentes méthodes pour bloquer et supprimer les cookies utilisés par les sites web. Vous pouvez changer les paramètres de votre navigateur pour bloquer/supprimer les cookies. Pour en savoir plus sur comment gérer et supprimer les cookies, visitez wikipedia.org,<Link to="https://allaboutcookies.org/">www.allaboutcookies.org</Link></p>
+              De plus, différents navigateurs fournissent différentes méthodes pour bloquer et supprimer les cookies utilisés par les sites web. Vous pouvez changer les paramètres de votre navigateur pour bloquer/supprimer les cookies. Pour en savoir plus sur comment gérer et supprimer les cookies, visitez <Link to="https://allaboutcookies.org/">www.allaboutcookies.org</Link></p>
         </div>
       </div>
     </body>

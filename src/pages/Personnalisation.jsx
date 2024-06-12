@@ -39,11 +39,11 @@ const Perso = () => {
 
   return (
     <body>
-      {/* 1er Section */}
       <section className="section-bleu">
         <h1>GameBoy DMG</h1>
       </section>
-      <div className="container-perso">
+      
+      <section className="container-perso">
         <div className="pc1">
           <h1>Personnalisation Gameboy DMG</h1>
           <p>BASE CONSOLE</p>
@@ -106,14 +106,13 @@ const Perso = () => {
           <img id="img4" className="superpose" src={bpImages} />
           <img id="img5" className="superpose" src={Start} />
         </div>
-      </div>
+      </section>
 
-
-      {/* 2nd Section */}
       <section class="section-bleu">
       <h1>Utilisation</h1>
       </section>
-        <div class="container-sidespace">
+
+        <section class="container-sidespace">
           <div>
             <h2> Régler la luminosité de l’écran</h2>
             <li>Pour régler la luminosité, il faudra appuyer sur le bouton lumière, comme sur une Gameboy Advance SP original.</li>
@@ -147,7 +146,7 @@ const Perso = () => {
             <p>OFF : Les LED sont éteintes.</p>
             <li>Maintenir START + A ou B pour valider les couleurs</li>
           </div>  
-        </div>
+        </section>
   </body>
   );
 };

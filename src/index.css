@@ -94,36 +94,12 @@ header {
   margin: 0 5px;
 }
 
-
-
-@media (max-width: 768px) {
-  header{
-    flex-direction: column;
-    padding: 10px 0;
-  }
-}
-
-
 @media (max-width: 480px) {
-  .hc2 a {
-    font-size: 16px;
+  .hc2 {
+    position: relative;
+    display: inline-block;
   }
 }
-
-@media (max-width:768){
-.section1 {
-    padding: 15px;
-  }
-}
-
-
-@media (max-width:480) {
-.section {
-    padding: 10px;
-  }
-}
-
-
 
 
 
@@ -208,32 +184,24 @@ header {
 
 /* Div img footer */
 .imgfooter{
+  display: flex;
   justify-content: center;
 }
 
-.insta{
+.insta {
   width: 50px;
   height: auto;
-  position: relative;
-  left: 50px;
 }
 
-.x{
+.x {
   width: 50px;
-  height: auto;
-  position: relative;
-  left: 50px;
-  bottom: 18px;
+  height: auto; 
 }
 
-.facebook{
-  width: 35px;
+.facebook {
+  width: 36px;
   height: auto;
-  position: relative;
-  left: 57px;
-  bottom: 30px;
 }
-
 /* Footer résolution téléphone */
 @media (max-width: 768px) {
   .container-f {
@@ -246,24 +214,18 @@ header {
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .imgfooter {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .imgfooter img {
+    margin: 0 10px;
+  }
 }
 
-
-
-
-
-
-/* Page accueil */
-
-
-
-
-
-
 /* Img accueil */
-
-
-
 .gameboydmg{
   width: 130px;
   height: auto;
@@ -287,7 +249,6 @@ header {
   height: auto;  
   position: relative;
 }
-
 
 
 /* Page panier */
@@ -325,6 +286,9 @@ header {
 }
 
 
+
+/* Panier */
+
 .cadre1{
   border: 2px solid black;
   padding-left: 30px;
@@ -346,7 +310,6 @@ header {
   top: 20%;
   left: 9%;
 }
-
 /* Bouton commande */
 
 .boutoncom link{
@@ -364,12 +327,6 @@ header {
   max-width: 1200px; 
   margin: 0 auto;
 }
-
-
-
-
-
-
 
 
 
@@ -397,27 +354,39 @@ header {
   
 .container-perso {
   display: flex;
+  flex-wrap: wrap;
   padding: 20px;
   gap: 20px;
-  align-items: flex-start;
+  justify-content: space-around;
 }
 
 /* Page perso */
 
 .pc1, .pc2 {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
+}
+
+.pc1 {
+  padding: 10px;
+  text-align: left;
 }
 
 .pc1 p {
   text-align: left;
 }
 
-
+.pc2 {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  align-self: center;
+}
 .superpose {
   position: absolute;
-  width: 600px; 
-  height: auto;
+  width:  100%; 
+  height: 100%;
 }
 
 
@@ -441,6 +410,32 @@ header {
 .img5 {
   z-index: 4;
 }
+
+
+
+@media (max-width: 768px) {
+  .container-perso {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .pc2 {
+    width: 90vw;
+    height: 90vw;
+    max-width: none;
+  }
+}
+
+@media (max-width: 1060px) {
+  .container-perso {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 
 /* Bouton couleur */
 
