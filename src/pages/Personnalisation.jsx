@@ -1,122 +1,42 @@
 import React, { useState } from 'react';
 import '../index.css';
-
-// import side coque
-import Game1 from '../image/Gameboy_DMG/DMG_0.png';
-import Game2 from '../image/Gameboy_DMG/DMG_1.png';
-import Game3 from '../image/Gameboy_DMG/DMG_2.png';
-import Game4 from '../image/Gameboy_DMG/DMG_3.png';
-import Game5 from '../image/Gameboy_DMG/DMG_4.png';
-import Game6 from '../image/Gameboy_DMG/DMG_5.png';
-import Game7 from '../image/Gameboy_DMG/DMG_6.png';
-import Game8 from '../image/Gameboy_DMG/DMG_7.png';
-import Game9 from '../image/Gameboy_DMG/DMG_8.png';
-import Game10 from '../image/Gameboy_DMG/DMG_9.png';
-import Game11 from '../image/Gameboy_DMG/DMG_10.png';
-import Game12 from '../image/Gameboy_DMG/DMG_12.png';
-
-// Import front coque
-import FC_0 from '../image/Gameboy_DMG/F-0.png';
-import FC_1 from '../image/Gameboy_DMG/F-1.png';
-import FC_2 from '../image/Gameboy_DMG/F-2.png';
-import FC_3 from '../image/Gameboy_DMG/F-3.png';
-import FC_4 from '../image/Gameboy_DMG/F-4.png';
-import FC_5 from '../image/Gameboy_DMG/F-5.png';
-import FC_6 from '../image/Gameboy_DMG/F-6.png';
-import FC_7 from '../image/Gameboy_DMG/F-7.png';
-import FC_8 from '../image/Gameboy_DMG/F-8.png';
-import FC_9 from '../image/Gameboy_DMG/F-9.png';
-import FC_10 from '../image/Gameboy_DMG/F-10.png';
-import FC_11 from '../image/Gameboy_DMG/F-11.png';
-import FC_12 from '../image/Gameboy_DMG/F-12.png';
-
-
-// Import side bouton
-import BP1 from '../image/Gameboy_DMG/BP_0.png';
-import BP2 from '../image/Gameboy_DMG/BP_1.png';
-import BP3 from '../image/Gameboy_DMG/BP_2.png';
-import BP4 from '../image/Gameboy_DMG/BP_3.png';
-import BP5 from '../image/Gameboy_DMG/BP_4.png';
-import BP6 from '../image/Gameboy_DMG/BP_5.png';
-import BP7 from '../image/Gameboy_DMG/BP_6.png';
-import BP8 from '../image/Gameboy_DMG/BP_7.png';
-import BP9 from '../image/Gameboy_DMG/BP_8.png';
-import BP10 from '../image/Gameboy_DMG/BP_9.png';
-import BP11 from '../image/Gameboy_DMG/BP_10.png';
-import BP12 from '../image/Gameboy_DMG/BP_12.png';
-
-// import front bouton
-import FBP1 from '../image/Gameboy_DMG/FBP_0.png';
-import FBP2 from '../image/Gameboy_DMG/FBP_1.png';
-import FBP3 from '../image/Gameboy_DMG/FBP_2.png';
-import FBP4 from '../image/Gameboy_DMG/FBP_3.png';
-import FBP5 from '../image/Gameboy_DMG/FBP_4.png';
-import FBP6 from '../image/Gameboy_DMG/FBP_5.png';
-import FBP7 from '../image/Gameboy_DMG/FBP_6.png';
-import FBP8 from '../image/Gameboy_DMG/FBP_7.png';
-import FBP9 from '../image/Gameboy_DMG/FBP_8.png';
-import FBP10 from '../image/Gameboy_DMG/FBP_9.png';
-import FBP11 from '../image/Gameboy_DMG/FBP_10.png';
-import FBP12 from '../image/Gameboy_DMG/FBP_12.png';
-
-// Import side coque arrière
-import DMG_B0 from '../image/Gameboy_DMG/DMG_B0.png';
-import DMG_B1 from '../image/Gameboy_DMG/DMG_B1.png';
-import DMG_B2 from '../image/Gameboy_DMG/DMG_B2.png';
-import DMG_B3 from '../image/Gameboy_DMG/DMG_B3.png';
-import DMG_B4 from '../image/Gameboy_DMG/DMG_B4.png';
-import DMG_B5 from '../image/Gameboy_DMG/DMG_B5.png';
-import DMG_B6 from '../image/Gameboy_DMG/DMG_B6.png';
-import DMG_B7 from '../image/Gameboy_DMG/DMG_B7.png';
-import DMG_B8 from '../image/Gameboy_DMG/DMG_B8.png';
-import DMG_B10 from '../image/Gameboy_DMG/DMG_B10.png';
-import DMG_B11 from '../image/Gameboy_DMG/DMG_B11.png';
-import DMG_B12 from '../image/Gameboy_DMG/DMG_B12.png';
-
-
-// Le reste
-import Shadow from '../image/Gameboy_DMG/SHADOW.png';
-import F_Shadow from '../image/Gameboy_DMG/F-shadow.png';
-import Start from '../image/Gameboy_DMG/Start.png';
-import F_Start from '../image/Gameboy_DMG/Start.png';
-import Screen from '../image/Gameboy_DMG/Screen.png';
-import F_Screen from '../image/Gameboy_DMG/Screen.png';
-
+import images from '../image/imagedmg.jsx';
 
 const imagesData = {
   bp: [
-    { src: BP1, frontSrc: FBP1, className: "bp-base BP1", price: null, color: "DMG" },
-    { src: BP2, frontSrc: FBP2, className: "bp-base BP2", price: null, color: "Bleu" },
-    { src: BP3, frontSrc: FBP3, className: "bp-base BP3", price: null, color: "Orange" },
-    { src: BP4, frontSrc: FBP4, className: "bp-base BP4", price: null, color: "" },
-    { src: BP5, frontSrc: FBP5, className: "bp-base BP5", price: null, color: "" },
-    { src: BP6, frontSrc: FBP6, className: "bp-base BP6", price: null, color: "" },
-    { src: BP7, frontSrc: FBP7, className: "bp-base BP7", price: null, color: "" },
-    { src: BP8, frontSrc: FBP8, className: "bp-base BP8", price: null, color: "" },
-    { src: BP9, frontSrc: FBP9, className: "bp-base BP9", price: null, color: "" },
-    { src: BP10, frontSrc: FBP10, className: "bp-base BP10", price: null, color: "" },
-    { src: BP11, frontSrc: FBP11, className: "bp-base BP11", price: null, color: "" },
-    { src: BP12, frontSrc: FBP12, className: "bp-base BP12", price: null, color: "" },
+    { src: images.DMG_BP0, frontSrc: images.DMG_FBP0, className: "bp-base", price: null, color: "" },
+    { src: images.DMG_BPBlackG, frontSrc: images.DMG_FBPBlackG , className: "bp-base", price: null, color: "" },
+    { src: images.DMG_BPBlack, frontSrc: images.DMG_FBPBlack, className: "bp-base ", price: null, color: "" },
+    { src: images.DMG_BPBleuG, frontSrc: images.DMG_FBPBleuG, className: "bp-base ", price: null, color: "" },
+    { src: images.DMG_BPBleu, frontSrc: images.DMG_FBPBleu, className: "bp-base ", price: null, color: "" },
+    { src: images.DMG_BPGreenG, frontSrc: images.DMG_FBPGreenG, className: "bp-base ", price: null, color: "" },
+    { src: images.DMG_BPOrangeG, frontSrc: images.DMG_FBPOrangeG, className: "bp-base ", price: null, color: ""},
+    { src: images.DMG_BPOrange, frontSrc: images.DMG_FBPOrange, className: "bp-base ", price: null, color: "" },
+    { src: images.DMG_BPRed, frontSrc: images.DMG_FBPRed, className: "bp-base ", price: null, color: "" },
+    { src: images.DMG_BPRose, frontSrc: images.DMG_FBPRose, className: "bp-base ", price: null, color: "" },
+    { src: images.DMG_BPWhite, frontSrc: images.DMG_FBPWhite, className: "bp-base ", price: null, color: "" },
+    { src: images.DMG_BPG, frontSrc: images.DMG_FBPG, className: "bp-base ", price: null, color: "" },
+
   ],
   coque: [
-    { src: Game1, frontSrc: FC_1, className: "bp-base DMG_B0", price: null, color: "DMG" },
-    { src: Game2, frontSrc: FC_2, className: "bp-base DMG_B1", price: null, color: "" },
-    { src: Game3, frontSrc: FC_3, className: "bp-base DMG_B2", price: null, color: "" },
-    { src: Game4, frontSrc: FC_4, className: "bp-base DMG_B3", price: null, color: "" },
-    { src: Game5, frontSrc: FC_5, className: "bp-base DMG_B4", price: null, color: "" },
-    { src: Game6, frontSrc: FC_6, className: "bp-base DMG_B5", price: null, color: "" },
-    { src: Game7, frontSrc: FC_7, className: "bp-base DMG_B6", price: null, color: "" },
-    { src: Game8, frontSrc: FC_8, className: "bp-base DMG_B7", price: null, color: "" },
-    { src: Game9, frontSrc: FC_9, className: "bp-base DMG_B8", price: null, color: "" },
-    { src: Game10, frontSrc: FC_10, className: "bp-base DMG_B10", price: null, color: "" },
-    { src: Game11, frontSrc: FC_11, className: "bp-base DMG_B11", price: null, color: "" },
-    { src: Game12, frontSrc: FC_12, className: "bp-base DMG_B12", price: null, color: "" },
+    { src: images.DMGcoqueImage0 , frontSrc: images.DMG_FCoque0, className: "bp-base DMG_B0", price: null, color: "" },
+    { src: images.DMGcoqueImageBleu , frontSrc: images.DMG_FCoqueBleu, className: "bp-base", price: null, color: "" },
+    { src: images.DMGcoqueImageYellow , frontSrc: images.DMG_FCoqueYellow, className: "bp-base ", price: null, color: "" },
+    { src: images.DMGcoqueImageWhite , frontSrc: images.DMG_FCoqueWhite, className: "bp-base ", price: null, color: "" },
+    { src: images.DMGcoqueImageRedG , frontSrc: images.DMG_FCoqueRedG, className: "bp-base ", price: null, color: "" },
+    { src: images.DMGcoqueImageG , frontSrc: images.DMG_FCoqueG, className: "bp-base ", price: null, color: "" },
+    { src: images.DMGcoqueImageGreen , frontSrc: images.DMG_FCoqueGreen, className: "bp-base ", price: null, color: "" },
+    { src: images.DMGcoqueImageGreenG , frontSrc: images.DMG_FCoqueGreenG, className: "bp-base ", price: null, color: "" },
+    { src: images.DMGcoqueImagePurpleG , frontSrc: images.DMG_FCoquePurpleG, className: "bp-base ", price: null, color: "" },
+    { src: images.DMGcoqueImageBleuG , frontSrc: images.DMG_FCoqueBleuG, className: "bp-base ", price: null, color: "" },
+    { src: images.DMGcoqueImageBlackG , frontSrc: images.DMG_FCoqueBlackG, className: "bp-base" , price: null, color: "" },
+    { src: images.DMGcoqueImageCyanG , frontSrc: images.DMG_FCoqueCyanG, className: "bp-base ", price: null, color: "" },
   ],
   baseconsole: [
     { src: null, frontSrc: null, className: "bp-base base-console-0", price: null, color: "Oui" },
     { src: null, frontSrc: null, className: "bp-base base-console-1", price: 40, color: "Non" },
   ]
-};
+ };
 
 
 const ImageAll = () => {
@@ -148,6 +68,10 @@ const ImageAll = () => {
     setCart([...cart, newItem]);
   };
 
+  const [cart, setCart] = useState([]);
+  const [POV, setPOV] = useState('SIDE');
+  const basePrice = 129;
+
 
 const Image = ({ type, images, updateImages }) => (
   <div>
@@ -160,7 +84,7 @@ const Image = ({ type, images, updateImages }) => (
         ></button>
         <span className="price-tag">
           <span>{image.color}</span>
-          {image.price !== null && <span> +{formatPrice(image.price)}€</span>}
+          {image.price !== null && <span> +(image.price)€</span>}
         </span>
       </div>
     ))}
@@ -213,10 +137,6 @@ const Image = ({ type, images, updateImages }) => (
             <hr width="250px" align="left" />
             <p>USB-C MOD</p>
             <hr width="250px" align="left" />
-            <p>INSTALLATION AUDIO AMP</p>
-            <hr width="250px" align="left" />
-            <p>INSTALLATION LED RGB</p>
-            <hr width="250px" align="left" />
             <p>ACCESSOIRES</p>
             <hr width="250px" align="left" />
             <button className="panier" onClick={addToPanier}>Ajouter au panier</button>
@@ -243,7 +163,7 @@ const Image = ({ type, images, updateImages }) => (
             }}
             ></img>
             <img
-            src={Shadow}
+            src={images.DMG_Shadow}
             style={{
               position: "absolute",
               top: 0,
@@ -253,7 +173,7 @@ const Image = ({ type, images, updateImages }) => (
             }}
             ></img>
             <img
-            src={Screen}
+            src={images.DMG_SCoqueScreen}
             style={{
               position: "absolute",
               top: 0,
@@ -263,7 +183,7 @@ const Image = ({ type, images, updateImages }) => (
             }}
             ></img>
             <img
-            src={Start}
+            src={images.DMG_SP0}
             style={{
               position: "absolute",
               top: 0,
