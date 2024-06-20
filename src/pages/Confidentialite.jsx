@@ -1,9 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Confidentialite = () => {
   return (
-    <body>
       <div class="container-sidespace">
         <div>
             <h1>Politique de Confidentialité </h1>
@@ -49,7 +48,6 @@ const Confidentialite = () => {
             <p>Si vous avez des questions ou des suggestions concernant notre Politique de Confidentialité, n’hésitez pas à nous contacter à contact@ [URL DU SITE] ou via notre <Link>formulaire de contact</Link> disponible sur notre site web.</p>
         </div>
       </div>
-    </body>
   );
 };
 

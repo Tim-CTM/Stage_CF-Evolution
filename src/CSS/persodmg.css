@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+  .bp-container{
+    position: relative;
+    display: inline-block;
+  }
+  .price-tag {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .bp-container:hover .price-tag{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .views-container{
+    display: flex;
+    justify-content: center;
+  }
+  .views-container button {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+.section-bleu {
+  padding: 10px;
+  background-color: #02A6A9;
+  text-align: center;
+  font-size: 15px;
+}
+
+.section-bleu h1 {
+  font-family: 'Press Start 2P', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+.section-bleu h2 {
+  font-family: 'Press Start 2P', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+
+.container-perso {
+  display: inherit;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.bp-base {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Couleur */
+.bp-OrangeGlass {
+  background-color: rgba(255, 167, 3, 0.836);
+}
+.bp-BleuG {
+  background-color: rgba(3, 0, 177, 0.521);
+}
+.bp-Bleu {
+  background-color: rgba(0, 4, 255);
+}
+.bp-Glass {
+  background-color: rgba(122, 121, 121, 0.26);
+}
+.bp-Black {
+  background-color:
+}
+.bp-BlackGlass {
+  background-color:
+}
+.bp-Cyan {
+  background-color:
+}
+.bp-GrisGlass {
+  background-color:
+}
+.bp-VerreGlass {
+  background-color:
+} 
+.bp-JauneGlass {
+  background-color:
+}
+.bp-RougeGlass {
+  background-color:
+}
+.bp-GrisViolet {
+  background-color:
+}
+.bp-Rose {
+  background-color: #f8b5c9;
+}
+.bp-Turquoise {
+  background-color:
+}
+.bp-Violet {
+  background-color:
+}
+.bp-Blanc {
+  background-color:
+}
+.bp-Jaune {
+  background-color:
+}
+.bp-GrisTendo {
+  background-color:
+}
+.bp-Verre {
+  background-color:
+}
+.bp-Orange {
+  background-color:
+}
+.bp-Rouge {
+  background-color:
+}
+.bp-Lemon {
+  background-color:
+}
+.bp-BleuS {
+  background-color:
+}
+.bp-RoseTendo {
+  background-color:
+}
+
+.bp-VioletGlass {
+  background-color:
+}
+.bp-VertG {
+  background-color:
+}
+.bp-LemonGlass {
+  background-color:
+}
+.bp-RoseGlass {
+  background-color:
+}
+.bp-BleuEclair {
+  background-color:
+}
+.bp-VertEclairGlass {
+  background-color:
+}
+.bp-RoseClair {
+  background-color:
+}
+.bp-BleuOceanGlass {
+  background-color:
+}
+.bp-Superfamicom {
+  background-color:
+}
+.bp-SnesBlack {
+  background-color:
+}
+.bp-SnesGris {
+  background-color:
+}
+.bp-Snes {
+  background-color: 
+}

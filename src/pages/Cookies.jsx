@@ -1,9 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Cookies = () => {
   return (
-    <body>
       <div class="container-sidespace">
         <div>
             <h1>Politique des Cookies </h1>
@@ -24,7 +23,6 @@ const Cookies = () => {
               De plus, différents navigateurs fournissent différentes méthodes pour bloquer et supprimer les cookies utilisés par les sites web. Vous pouvez changer les paramètres de votre navigateur pour bloquer/supprimer les cookies. Pour en savoir plus sur comment gérer et supprimer les cookies, visitez <Link to="https://allaboutcookies.org/">www.allaboutcookies.org</Link></p>
         </div>
       </div>
-    </body>
   );
 };
 

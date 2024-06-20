@@ -3,7 +3,6 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <body>
         <div class="container-xl">
           <form>
             <div><h2>Contact</h2></div>
@@ -30,7 +29,6 @@ const Contact = () => {
             </div>
           </form>
       </div>
-  </body>
   );
 };
 

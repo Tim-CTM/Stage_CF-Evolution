@@ -5,6 +5,7 @@ import Gameboyadvence from '../image/gameboyadvence.png';
 import Gameboyadvencesp from '../image/gameboyadvencesp.webp';
 import Gameboycolor from '../image/gameboycolor.png';
 import Slider from './Slider.jsx';
+import Header from './Header.jsx';
 
 const Accueil = () => {
   return (

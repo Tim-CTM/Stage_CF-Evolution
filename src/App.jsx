@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './pages/Header';
 import Footer from './pages/Footer';
 import Accueil from './pages/Accueil';
@@ -11,14 +11,14 @@ import Mentions from './pages/Mentions';
 import Cookies from './pages/Cookies';
 import Confidentialite from './pages/Confidentialite';
 import CGV from './pages/CGV';
-import Exercice2 from './pages/Exercice2';
+import './App.css';
 
 const App = () => {
   return (
-    <body>
+    <div>
     <Router>
-      <div class="App">
-          <Header />
+      <div className="App">
+          {/* <Header /> */}
             <Routes>
               <Route path="/" element={<Accueil />} />
               <Route path="/contact" element={<Contact />} />
@@ -30,13 +30,10 @@ const App = () => {
               <Route path="/confidentialite" element={<Confidentialite />} />
               <Route path="/cgv" element={<CGV />} />
             </Routes>
-          <Footer />
+          {/* <Footer />  */}
         </div>
     </Router>
-    <script src="./componants/Slider.js"></script>
-    {/* <Exercice2/> */}
-    </body>
-    // <script src=""./coponants/Slider"></script>
+    </div>
   );
 };
 

@@ -7,31 +7,10 @@ import images from '../image/imagedmg.jsx';
 const imagesData = {
   bp: [
     { src: images.DMG_BP0, frontSrc: images.DMG_FBP0, className: "bp-base", price: null, color: "DMG" },
-    { src: images.DMG_BPBlackG, frontSrc: images.DMG_FBPBlackG , className: "bp-base DMG_BPBlackG", price: 40, color: "Noir transparent" },
-    { src: images.DMG_BPBlack, frontSrc: images.DMG_FBPBlack, className: "bp-base DMG_BPBlack", price: null, color: "Noir" },
-    { src: images.DMG_BPBleuG, frontSrc: images.DMG_FBPBleuG, className: "bp-base DMG_BPBleuG", price: null, color: "Bleu transparent" },
-    { src: images.DMG_BPBleu, frontSrc: images.DMG_FBPBleu, className: "bp-base DMG_BPBleu", price: null, color: "Bleu" },
-    { src: images.DMG_BPGreenG, frontSrc: images.DMG_FBPGreenG, className: "bp-base DMG_BPGreenG", price: null, color: "Vert transparent" },
-    { src: images.DMG_BPOrangeG, frontSrc: images.DMG_FBPOrangeG, className: "bp-base bp-OrangeGlass", price: null, color: "Orange transparent"},
-    { src: images.DMG_BPOrange, frontSrc: images.DMG_FBPOrange, className: "bp-base DMG_BPOrange", price: null, color: "Orange" },
-    { src: images.DMG_BPRed, frontSrc: images.DMG_FBPRed, className: "bp-base DMG_BPRed", price: null, color: "Rouge" },
-    { src: images.DMG_BPRose, frontSrc: images.DMG_FBPRose, className: "bp-base DMG_BPRose ", price: null, color: "Rose" },
-    { src: images.DMG_BPWhite, frontSrc: images.DMG_FBPWhite, className: "bp-base DMG_BPWhite", price: null, color: "Blanc" },
-    { src: images.DMG_BPG, frontSrc: images.DMG_FBPG, className: "bp-base DMG_BPGlass", price: null, color: "Transparent" },
   ],
   coque: [
     { src: images.DMGcoqueImage0 , frontSrc: images.DMG_FCoque0, className: "bp-base DMG_B0", price: null, color: "f" },
-    { src: images.DMGcoqueImageBleu , frontSrc: images.DMG_FCoqueBleu, className: "bp-base", price: null, color: "f" },
-    { src: images.DMGcoqueImageYellow , frontSrc: images.DMG_FCoqueYellow, className: "bp-base ", price: null, color: "d" },
-    { src: images.DMGcoqueImageWhite , frontSrc: images.DMG_FCoqueWhite, className: "bp-base ", price: null, color: "s" },
-    { src: images.DMGcoqueImageRedG , frontSrc: images.DMG_FCoqueRedG, className: "bp-base ", price: null, color: "q" },
-    { src: images.DMGcoqueImageG , frontSrc: images.DMG_FCoqueG, className: "bp-base ", price: null, color: "q" },
-    { src: images.DMGcoqueImageGreen , frontSrc: images.DMG_FCoqueGreen, className: "bp-base ", price: null, color: "z" },
-    { src: images.DMGcoqueImageGreenG , frontSrc: images.DMG_FCoqueGreenG, className: "bp-base ", price: null, color: "z" },
-    { src: images.DMGcoqueImagePurpleG , frontSrc: images.DMG_FCoquePurpleG, className: "bp-base ", price: null, color: "s" },
-    { src: images.DMGcoqueImageBleuG , frontSrc: images.DMG_FCoqueBleuG, className: "bp-base ", price: null, color: "s" },
-    { src: images.DMGcoqueImageBlackG , frontSrc: images.DMG_FCoqueBlackG, className: "bp-base" , price: null, color: "d" },
-    { src: images.DMGcoqueImageCyanG , frontSrc: images.DMG_FCoqueCyanG, className: "bp-base ", price: null, color: "d" },
+
   ],
   baseconsole: [
     { src: null, frontSrc: null, className: "bp-base base-console-0", price: null, color: "Oui" },
@@ -39,32 +18,13 @@ const imagesData = {
   ],
   coquearriere: [
     { src: images.DMG_BCoque0 , frontSrc: null, className: "bp-base DMG_B0", price: null, color: "d" },
-    { src: images.DMG_BCoqueBleu , frontSrc:null,  className: "bp-base DMG_B0", price: 4000, color: "d" },
-    { src: images.DMG_BCoqueBleuG , frontSrc: null, className: "bp-base DMG_B0", price: null, color: "d" },
-    { src: images.DMG_BCoqueCyanG, frontSrc:null , className: "bp-base DMG_B0", price: null, color: "d" },
-    { src: images.DMG_BCoqueG , frontSrc:null , className: "bp-base DMG_B0", price: null, color: "d" },
-    { src: images.DMG_BCoqueGreen , frontSrc: null, className: "bp-base DMG_B0", price: null, color: "s" },
-    { src: images.DMG_BCoqueGreenG, frontSrc: null, className: "bp-base DMG_B0", price: null, color: "s" },
-    { src: images.DMG_BCoqueOrange, frontSrc:null , className: "bp-base DMG_B0", price: null, color: "s" },
-    { src: images.DMG_BCoquePurpleG , frontSrc: null, className: "bp-base DMG_B0", price: null, color: "s" },
-    { src: images.DMG_BCoqueRed , frontSrc: null, className: "bp-base DMG_B0", price: null, color: "s" },
-    { src: images.DMG_BCoqueWhite, frontSrc: null, className: "bp-base DMG_B0", price: null, color: "g" },
-    { src: images.DMG_BCoqueYellow , frontSrc:null , className: "bp-base DMG_B0", price: null, color: "g" },
+
   ],
   pads: [
     { src: images.DMG_SP0 , frontSrc: images.DMG_FP0, className: "bp-base DMG_B0", price: null, color: "g" },
-    { src: images.DMG_SPBlack , frontSrc:images.DMG_FPBlack,  className: "bp-base DMG_B0", price: 30, color: "Black" },
-    { src: images.DMG_SPBleu  , frontSrc: images.DMG_FPBleu, className: "bp-base DMG_B0", price: null, color: "h" },
-    { src: images.DMG_SPG, frontSrc:images.DMG_FPG , className: "bp-base DMG_B0", price: null, color: "j" },
-    { src: images.DMG_SPGreen , frontSrc:images.DMG_FPLemon, className: "bp-base DMG_B0", price: null, color: "k" },
-    { src: images.DMG_SPPurple , frontSrc: images.DMG_FPPurple, className: "bp-base DMG_B0", price: null, color: "l" },
-    { src: images.DMG_SPRed, frontSrc: images.DMG_FPRed, className: "bp-base DMG_B0", price: null, color: "h" },
-    { src: images.DMG_SPRose, frontSrc: images.DMG_FPRose , className: "bp-base DMG_B0", price: null, color: "d" },
-    { src: images.DMG_SPYellow , frontSrc: images.DMG_FPYellow, className: "bp-base DMG_B0", price: null, color: "s" },
   ]
  };
-
-
+ 
  const ImageAll = () => {
   const [selectImages, setSelectImages] = useState({
     bp: imagesData.bp[0],
@@ -74,6 +34,7 @@ const imagesData = {
     pads: imagesData.pads[0],
   });
 
+  const basePrice = 129;
   const updateImages = (type, selectImage) => {
 
     setSelectImages(prevState => ({
@@ -82,34 +43,12 @@ const imagesData = {
     })); 
   };
 
-  // const [cart, setCart] = useState([]);
-
-  // const addToPanier = () => {
-  //   const { bp, coque, baseconsole, coquearriere, pads } = selectImages;
-  //   const newItem = {
-  //     bp: bp.src,
-  //     coque: coque.src,
-  //     baseconsole: baseconsole.src,
-  //     bpPrice: bp.price ?? 0,
-  //     coquePrice: coque.price ?? 0,
-  //     baseconsolePrice: baseconsole.price ?? 0,
-  //     coquearrierePrice: coquearriere.price ?? 0,
-  //     padsPrice: pads.price ?? 0,
-  //     totalItemPrice: basePrice + (bp.price ?? 0) + (coque.price ?? 0) + (baseconsole.price ?? 0)
-  //   };
-  //   setCart([...cart, newItem]);
-  // };
-
   const [view, setView] = useState('SIDE');
-
 
   const calculateAllPrice = () => {
     const { bp, coque, baseconsole, pads, coquearriere } = selectImages;
     return basePrice + (bp.price ?? 0) + (coque.price ?? 0) + (baseconsole.price ?? 0) + (pads.price ??0) + (coquearriere.price ??0) ;
   };
-
-  const basePrice = 129;
-
 
   const ImageL = ({ type, images }) => (
     <div className="wrap-btn">
@@ -154,14 +93,6 @@ const imagesData = {
             <p>Pads</p>
               <ImageL type="pads" images={imagesData.pads}  updateImages={updateImages} />
             <hr width="250px" align="left" />
-            <p>ECRAN IPS RÉTROÉCLAIRÉ </p>
-            <hr width="250px" align="left" />
-            <p>INSTALLATION BATTERIE</p>
-            <hr width="250px" align="left" />
-            <p>USB-C MOD</p>
-            <hr width="250px" align="left" />
-            <p>ACCESSOIRES</p>
-            <hr width="250px" align="left" />
             <h5>Prix total des articles : {calculateAllPrice()} €</h5>
             <button className="panier">Ajouter au panier</button>
           </div>
@@ -185,18 +116,18 @@ const imagesData = {
         </section>
 
         <section className="section-bleu">
-          <h1>Utilisation</h1>
+          <h2>Utilisation</h2> 
         </section>
         <section className="container-sidespace">
           <div>
-            <h2> Régler la luminosité de l’écran</h2>
+            <h3> Régler la luminosité de l’écran</h3>
             <ul>
               <li>Pour régler la luminosité, il faudra appuyer sur le bouton lumière, comme sur une Gameboy Advance SP original.</li>
               <li>L’écran possède 8 niveaux de luminosité.</li>
             </ul>
           </div>
           <div>
-            <h2> Accéder au menu de l’écran</h2>
+            <h3> Accéder au menu de l’écran</h3>
             <p>Pour accéder au menu de la console, maintenez le bouton lumière pendant 3 s.</p>
             <p>Le menu intègre 4 catégories :</p>
             <ul>
@@ -208,13 +139,13 @@ const imagesData = {
             <p>Pour passer d’une catégorie à une autre, appuyez sur le bouton lumière</p>
           </div>
           <div>
-            <h2> Batterie upgrade + USB-C</h2>
+            <h3> Batterie upgrade + USB-C</h3>
             <p>L’upgrade de la batterie a une capacité de 950mAh. Elle propose une durée de jeu entre 8 h et 10 h. Il est également possible de jouer branché.</p>
             <p>Le changement du port de charge permet d’installer un USB-C qui facilitera la recharge, le câble est fourni avec la console</p>
             <p> Pour le dock de charge, ne pas dépasser 5 W et ne pas utiliser de charge rapide. Cela va bloquer la console et la mettre en sécurité.</p>
           </div>
           <div>
-            <h2> INSTALLATION DE LED RGB</h2>
+            <h3> INSTALLATION DE LED RGB</h3>
             <ul>
               <li>L’allumage des LED se fait en maintenant A+B pendant 2s</li>
               <li>Pour régler la luminosité des LED, maintenir SELECT + A ou B.</li>
