@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.bp-container {
+  position: relative;
+  display: inline-block;
+}
+
+.price-tag {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 3px;
+  font-size: 12px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.bp-container:hover .price-tag {
+  opacity: 1;
+  visibility: visible;
+}
+
+.views-container {
+  display: flex;
+  justify-content: center;
+}
+
+.views-container button {
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.section-bleu {
+  padding: 20px;
+  background-color: #02A6A9;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-bleu h1 {
+  font-family: 'Press Start 2P', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+
+.container-perso {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.option-selection {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.option-selection h2, .option-selection h3, .option-selection h5, .option-selection p {
+  text-align: left;
+}
+
+.affichage-view {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.affichage-view .view {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.affichage-view .view.SIDE {
+  transform: rotateY(0deg);
+}
+
+.affichage-view .view.FRONT {
+  transform: rotateY(180deg);
+}
+
+.affichage-view img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-bleu h2 {
+  font-size: 24px;
+  font-family: 'Press Start 2P', system-ui;
+  margin-bottom: 20px;
+}
+
+.container-sidespace {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.container-sidespace > div {
+  margin-bottom: 20px;
+}
+
+.container-sidespace h3 {
+  font-size: 20px;
+  font-family: 'Press Start 2P', system-ui;
+  margin-bottom: 10px;
+}
+
+.container-sidespace p, .container-sidespace ul, .container-sidespace li {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .container-perso {
+    flex-direction: column;
+  }
+
+  .option-selection, .affichage-view {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-perso {
+    flex-direction: column;
+  }
+
+  .option-selection, .affichage-view {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.bp-base {
+  width: 22px;
+  height: 22px;
+  margin: 2px;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Styles for accordion */
+.accordion-item h3 {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #02A6A9;
+  color: white;
+  margin: 0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-item h3:hover,
+.accordion-item h3.active {
+  background-color: #007BFF;
+}
+
+.accordion-content {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.accordion-item p{
+  font-size: 12px;
+  color: gray;
+  padding: 5px;
+}
+
+/* Couleur */
+.bp-OrangeGlass { 
+  background-color: #dc8317;
+}
+.bp-BleuG {
+  background-color: #3451a6;
+}
+.bp-Bleu {
+  background-color: #3c39c6;
+}
+.bp-Glass {
+  background-color: #bac0b9;
+}
+.bp-Black {
+  background-color:black;
+}
+.bp-BlackGlass {
+  background-color:#706d6f;
+}
+.bp-Cyan {
+  background-color:#8ed1fc;
+}
+.bp-GrisGlass {
+  background-color:#bcc1ba;
+}
+.bp-Vert {
+  background-color:#47ac70;
+} 
+.bp-JauneGlass {
+  background-color:#edb946;
+}
+.bp-RougeGlass {
+  background-color:#a81f22;
+}
+.bp-GrisViolet {
+  background-color:#a4a2ae;
+}
+.bp-Rose {
+  background-color: #f8b5c9;
+}
+.bp-Turquoise {
+  background-color:#7bcbc2;
+}
+.bp-Violet {
+  background-color:#c39bf1;
+}
+.bp-Blanc {
+  background-color:white;
+}
+.bp-Jaune {
+  background-color:#f4ae2d
+}
+.bp-GrisTendo {
+  background-color: #504c4b
+}
+.bp-Orange {
+  background-color:#d57f16;
+}
+.bp-Rouge {
+  background-color:#cf2e2e;
+}
+.bp-RougeGlass {
+  background-color:#c70a1a;
+}
+.bp-Lemon {
+  background-color:#bcde4c;
+}
+.bp-BleuS {
+  background-color:#3c39c8;
+}
+.bp-RoseTendo {
+  background-color:#fe7dbd
+}
+.bp-VioletGlass {
+  background-color:#5e4a7d;
+}
+.bp-VertG {
+  background-color:#48b172;
+}
+.bp-LemonGlass {
+  background-color:#bde14a;
+}
+.bp-RoseGlass {
+  background-color:#dd516d;
+}
+.bp-BleuEclair {
+  background-color:#5a72be;
+}
+.bp-VertEclairGlass {
+  background-color:#499d6d;
+}
+.bp-RoseClair {
+  background-color:#f6b3c7;
+}
+.bp-BleuOceanGlass {
+  background-color:#009ac8;
+}
+.bp-Superfamicom {
+  background-color:#a882d3;
+}
+.bp-SnesBlack {
+  background-color:#1d1235;
+}
+.bp-SnesGris {
+  background-color:#6822ff;
+}
+.bp-Snes {
+  background-color: #a378d4;
+}
+.bp-GrisDMG {
+  background-color: #c2bcba96;
+}

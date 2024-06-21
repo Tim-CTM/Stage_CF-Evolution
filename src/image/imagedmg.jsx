@@ -14,6 +14,7 @@ import DMGcoqueImagePurpleG from "../image/Gameboy_DMG/DMG_Purple-glass.png";
 import DMGcoqueImageBleuG from "../image/Gameboy_DMG/DMG_Bleu-glass.png";
 import DMGcoqueImageBlackG from "../image/Gameboy_DMG/DMG_Black-glass.png";
 import DMGcoqueImageCyanG from "../image/Gameboy_DMG/DMG_Cyan-glass.png";
+import DMGcoqueImageOrange from "../image/Gameboy_DMG/DMG_Orange-glass.png";
 
 // Side Back Coque
 import DMG_BCoque0 from  "../image/Gameboy_DMG/DMG_B0.png";
@@ -28,6 +29,7 @@ import DMG_BCoqueRed from  "../image/Gameboy_DMG/DMG_B-Red.png";
 import DMG_BCoqueWhite from  "../image/Gameboy_DMG/DMG_B-White.png";
 import DMG_BCoqueYellow from  "../image/Gameboy_DMG/DMG_B-Yellow.png";
 import DMG_BCoqueG from  "../image/Gameboy_DMG/DMG_B-glass.png";
+import DMG_BCoqueBlackG from  "../image/Gameboy_DMG/DMG_B-Black-glass.png";
 
 // Front Coque
 import DMG_FCoque0 from  "../image/Gameboy_DMG/DMG_F-0.png";
@@ -42,6 +44,7 @@ import DMG_FCoqueRedG from  "../image/Gameboy_DMG/DMG_F-Red-glass.png";
 import DMG_FCoqueYellow from  "../image/Gameboy_DMG/DMG_F-Yellow.png";
 import DMG_FCoqueWhite from  "../image/Gameboy_DMG/DMG_F-White.png";
 import DMG_FCoqueG from  "../image/Gameboy_DMG/DMG_F-glass.png";
+import DMG_FCoqueCyan from  "../image/Gameboy_DMG/DMG_F-Cyan-glass.png";
 
 // Side Button
 import DMG_BP0 from  "../image/Gameboy_DMG/BP_0.png";
@@ -141,6 +144,7 @@ const images = {
   DMG_FBPRose,
   DMG_FBPWhite,
   DMG_FBPG,
+  DMG_FCoqueCyan,
   // Side BP DMG
   DMG_BP0,
   DMG_BPBlackG,
@@ -167,6 +171,7 @@ const images = {
   DMG_BCoqueWhite,
   DMG_BCoqueYellow,
   DMG_BCoqueG, 
+  DMG_BCoqueBlackG ,
 // Front Coque
   DMG_FCoque0,
   DMG_FCoqueBlackG,
@@ -193,6 +198,7 @@ const images = {
   DMGcoqueImageBleuG,
   DMGcoqueImageBlackG,
   DMGcoqueImageCyanG,
+  DMGcoqueImageOrange,
 };
 
 export default images;

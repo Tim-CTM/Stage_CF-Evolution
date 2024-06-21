@@ -10,7 +10,6 @@ const imagesData = {
   ],
   coque: [
     { src: images.DMGcoqueImage0 , frontSrc: images.DMG_FCoque0, className: "bp-base DMG_B0", price: null, color: "f" },
-
   ],
   baseconsole: [
     { src: null, frontSrc: null, className: "bp-base base-console-0", price: null, color: "Oui" },
@@ -18,7 +17,6 @@ const imagesData = {
   ],
   coquearriere: [
     { src: images.DMG_BCoque0 , frontSrc: null, className: "bp-base DMG_B0", price: null, color: "d" },
-
   ],
   pads: [
     { src: images.DMG_SP0 , frontSrc: images.DMG_FP0, className: "bp-base DMG_B0", price: null, color: "g" },

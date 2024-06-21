@@ -7,6 +7,9 @@ import Contact from './pages/Contact';
 import Commande from './pages/Commande';
 import Panier from './pages/Panier';
 import Personnalisation from './pages/Personnalisation';
+import Gcolor from './pages/Gcolor';
+import AdvenceSP from './pages/Advencesp';
+import Advence from './pages/Advence';
 import Mentions from './pages/Mentions';
 import Cookies from './pages/Cookies';
 import Confidentialite from './pages/Confidentialite';
@@ -25,6 +28,9 @@ const App = () => {
               <Route path="/commande" element={<Commande />} />
               <Route path="/panier" element={<Panier />} />
               <Route path="/personnalisation" element={<Personnalisation />} />
+              <Route path="/gcolor" element={<Gcolor />} />
+              <Route path="/advencesp" element={<AdvenceSP />} />
+              <Route path="/advence" element={<Advence />} />
               <Route path="/mention" element={<Mentions/>} />
               <Route path="/cookies" element={<Cookies />} />
               <Route path="/confidentialite" element={<Confidentialite />} />

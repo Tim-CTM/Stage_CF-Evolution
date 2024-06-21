@@ -24,8 +24,8 @@ import GColor_FCoqueBlack from"../image/Gameboy_Color/GColor_F-Coque-Black.png";
 import GColor_FCoqueBleuG from"../image/Gameboy_Color/GColor_F-Coque-Bleu-glass.png";
 import GColor_FCoqueCyanG from"../image/Gameboy_Color/GColor_F-Coque-Cyan-glass.png";
 import GColor_FCoqueCyan from"../image/Gameboy_Color/GColor_F-Coque-Cyan.png";
-import GColor_FCoqueGreen from"../image/Gameboy_Color/GColor_F-Coque-Green-glass.png";
-import GColor_FCoqueOrange from"../image/Gameboy_Color/GColor_F-Coque-Orange-glass.png";
+import GColor_FCoqueGreenG from"../image/Gameboy_Color/GColor_F-Coque-Green-glass.png";
+import GColor_FCoqueOrangeG from"../image/Gameboy_Color/GColor_F-Coque-Orange-glass.png";
 import GColor_FCoquePurpleG from"../image/Gameboy_Color/GColor_F-Coque-Purple-glass.png";
 import GColor_FCoquePurple from"../image/Gameboy_Color/GColor_F-Coque-Purple.png";
 import GColor_FCoqueRedG from"../image/Gameboy_Color/GColor_F-Coque-Red-glass.png";
@@ -52,6 +52,25 @@ import GColor_BCoqueWhite from"../image/Gameboy_Color/GColor_B-White.png";
 import GColor_BCoqueYellowG from"../image/Gameboy_Color/GColor_B-Yellow-glass.png";
 import GColor_BCoqueYellow from"../image/Gameboy_Color/GColor_B-Yellow.png";
 import GColor_BCoqueG from"../image/Gameboy_Color/GColor_B-glass.png";
+
+
+// Side BACK
+import GColor_SBCoque0 from"../image/Gameboy_Color/GColor_SB-Coque-0.png";
+import GColor_SBCoqueBlackG from"../image/Gameboy_Color/GColor_SB-Coque-Black-glass.png";
+import GColor_SBCoqueBlack from"../image/Gameboy_Color/GColor_SB-Coque-Black.png";
+import GColor_SBCoqueBleuG from"../image/Gameboy_Color/GColor_SB-Coque-Bleu-glass.png";
+import GColor_SBCoqueCyanG from"../image/Gameboy_Color/GColor_SB-Coque-Cyan-glass.png";
+import GColor_SBCoqueCyan from"../image/Gameboy_Color/GColor_SB-Coque-Cyan.png";
+import GColor_SBCoqueGreenG from"../image/Gameboy_Color/GColor_SB-Coque-Green-glass.png";
+import GColor_SBCoqueOrangeG from"../image/Gameboy_Color/GColor_SB-Coque-Orange-glass.png";
+import GColor_SBCoquePurpleG from"../image/Gameboy_Color/GColor_SB-Coque-Purple-glass.png";
+import GColor_SBCoquePurple from"../image/Gameboy_Color/GColor_SB-Coque-Purple.png";
+import GColor_SBCoqueRedG from"../image/Gameboy_Color/GColor_SB-Coque-Red-glass.png";
+import GColor_SBCoqueRose from"../image/Gameboy_Color/GColor_SB-Coque-Rose.png";
+import GColor_SBCoqueWhite from"../image/Gameboy_Color/GColor_SB-Coque-White.png";
+import GColor_SBCoqueYellowG from"../image/Gameboy_Color/GColor_SB-Coque-Yellow-glass.png";
+import GColor_SBCoqueYellow from"../image/Gameboy_Color/GColor_SB-Coque-Yellow.png";
+import GColor_SBCoqueG from"../image/Gameboy_Color/GColor_SB-Coque-glass.png";
 
 // Button Side
 import GColor_BP0 from"../image/Gameboy_Color/GColor_BPS-0.png";
@@ -125,8 +144,8 @@ import GColor_FScreenWhite from"../image/Gameboy_Color/GColor-FScreen-White.png"
 import GColor_FScreenYellow from"../image/Gameboy_Color/GColor-FScreen-Yellow.png";
 
 // Shadow
-import GColor_SShafow from"../image/Gameboy_Color/GColor_S-Shadow.png";
-import GColor_FShafow from"../image/Gameboy_Color/GColor_F-Shadow.png";
+import GColor_SShadow from"../image/Gameboy_Color/GColor_S-Shadow.png";
+import GColor_FShadow from"../image/Gameboy_Color/GColor_F-Shadow.png";
 
 // Strap Side
 import GColor_SStrap0 from"../image/Gameboy_Color/GColor_S-Strap-0.png";
@@ -223,8 +242,8 @@ const images = {
   GColor_StickerB,
   GColor_StickerW,
 // Shadow front et side
-  GColor_SShafow,
-  GColor_FShafow, 
+  GColor_SShadow,
+  GColor_FShadow, 
 // Front lanière
   GColor_FStrap0,
   GColor_FStrapBleuC,
@@ -260,7 +279,6 @@ const images = {
   GColor_SScreenYellow,
 // Front Screen
   GColor_FScreenGreen,
-  GColor_FScreenOrange,
   GColor_FScreenOrange,
   GColor_FScreenRed,
   GColor_FScreenWhite,
@@ -320,7 +338,6 @@ const images = {
   GColor_BCoque0, 
   GColor_BCoqueBlackG,
   GColor_BCoqueBlack,
-  GColor_BCoqueBlack,
   GColor_BCoqueBleuG,
   GColor_BCoqueCyanG ,
   GColor_BCoqueCyan,
@@ -341,16 +358,34 @@ const images = {
   GColor_FCoqueBleuG,
   GColor_FCoqueCyanG,
   GColor_FCoqueCyan,
-  GColor_FCoqueGreen,
-  GColor_FCoqueOrange,
+  GColor_FCoqueGreenG,
+  GColor_FCoqueOrangeG,
   GColor_FCoquePurpleG,
   GColor_FCoquePurple,
   GColor_FCoqueRedG, 
+  GColor_FCoqueRose,
   GColor_FCoqueWhite,
   GColor_FCoqueYellowG,
   GColor_FCoqueYellow,
   GColor_FCoqueG,
-  GColor_FCoqueRose,
+// Side BACK
+  GColor_SBCoque0,
+  GColor_SBCoqueBlackG,
+  GColor_SBCoqueBlack,
+  GColor_SBCoqueBleuG,
+  GColor_SBCoqueBleuG ,
+  GColor_SBCoqueCyanG,
+  GColor_SBCoqueCyan,
+  GColor_SBCoqueGreenG,
+  GColor_SBCoqueOrangeG,
+  GColor_SBCoquePurpleG,
+  GColor_SBCoquePurple,
+  GColor_SBCoqueRedG,
+  GColor_SBCoqueRose,
+  GColor_SBCoqueWhite,
+  GColor_SBCoqueYellowG,
+  GColor_SBCoqueYellow,
+  GColor_SBCoqueG,
   // Side Coque
   GColor_SCoque0,
   GColor_SCoqueBlackG,
