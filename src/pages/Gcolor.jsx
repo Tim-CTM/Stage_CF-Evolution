@@ -84,7 +84,7 @@ const imagesData = {
       { src: images.GColor_SPG, frontSrc:images.GColor_SPG , className: "bp-base bp-Glass", price: null, color: "Transparent" },
       { src: images.GColor_SPGreen , frontSrc:images.GColor_SPLemon, className: "bp-base bp-Vert", price: null, color: "Vert" },
       { src: images.GColor_SPPurple , frontSrc: images.GColor_SPPurple, className: "bp-base bp-Violet", price: null, color: "Violet" },
-      { src: images.GColor_SPRed, frontSrc: images.DGColor_SPRed, className: "bp-base bp-Rouge ", price: null, color: "Rouge" },
+      { src: images.GColor_SPRed, frontSrc: images.GColor_SPRed, className: "bp-base bp-Rouge ", price: null, color: "Rouge" },
       { src: images.GColor_SPRose, frontSrc: images.GColor_SPRose , className: "bp-base bp-Rose", price: null, color: "Rose" },
       { src: images.GColor_SPYellow , frontSrc: images.GColor_SPYellow, className: "bp-base bp-Jaune ", price: null, color: "Jaune" },
     ],
