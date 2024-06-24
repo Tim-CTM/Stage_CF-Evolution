@@ -339,7 +339,7 @@ const images = {
   GColor_BCoqueBlackG,
   GColor_BCoqueBlack,
   GColor_BCoqueBleuG,
-  GColor_BCoqueCyanG ,
+  GColor_BCoqueCyanG,
   GColor_BCoqueCyan,
   GColor_BCoqueGreenG,
   GColor_BCoqueOrangeG,

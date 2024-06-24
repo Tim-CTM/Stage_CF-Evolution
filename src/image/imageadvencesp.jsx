@@ -17,8 +17,9 @@ import GA_SP_SCoqueYellow from"../image/Gameboy_Advence-SP/GA-SP_SCoque-Yellow.p
 // Front coque
 
 import GA_SP_FCoque0 from"../image/Gameboy_Advence-SP/GA-SP_FCoque-0.png";
+import GA_SP_FCoqueBlackG from"../image/Gameboy_Advence-SP/GA-SP_FCoque-Black-glass.png";
 import GA_SP_FCoqueBlack from"../image/Gameboy_Advence-SP/GA-SP_FCoque-Black.png";
-import GA_SP_FCoqueBlackG from"../image/Gameboy_Advence-SP/GA-SP_FCoque-Bleu-glass.png";
+import GA_SP_FCoqueBleuG from"../image/Gameboy_Advence-SP/GA-SP_FCoque-Bleu-glass.png";
 import GA_SP_FCoqueCyan from"../image/Gameboy_Advence-SP/GA-SP_FCoque-Cyan.png";
 import GA_SP_FCoqueGreenG from"../image/Gameboy_Advence-SP/GA-SP_FCoque-Green-glass.png";
 import GA_SP_FCoquePurpleA from"../image/Gameboy_Advence-SP/GA-SP_FCoque-Purple-atomic.png";
@@ -115,6 +116,7 @@ import GA_SP_SBCoqueG from"../image/Gameboy_Advence-SP/GA-SP_SBack-glass.png";
 
 const images = {
   // Gameboy Advence SP
+  // side coque back
   GA_SP_SBCoque0,
   GA_SP_SBCoqueBlackG,
   GA_SP_SBCoqueBleuG,
@@ -127,6 +129,8 @@ const images = {
   GA_SP_SBCoqueRose,
   GA_SP_SBCoqueYellow,
   GA_SP_SBCoqueG,
+
+  // Side boutton
   GA_SP_SBP0 ,
   GA_SP_SBPBleu,
   GA_SP_SBP0Green,
@@ -136,6 +140,8 @@ const images = {
   GA_SP_SBP0Rose,
   GA_SP_SBPWhite,
   GA_SP_SBPYellow,
+
+  // front boutton
   GA_SP_FBP0,
   GA_SP_FBPBlack,
   GA_SP_FBPBleu,
@@ -167,10 +173,14 @@ const images = {
   GA_SP_SPRed,
   GA_SP_SPWhite,
   GA_SP_SPYellow,
+
+  // Screen
   GA_SP_SScreenB,
   GA_SP_SScreenW,
   GA_SP_FScreenB,
   GA_SP_FScreenW,
+
+  // Shadow
   GA_SP_SShadow,
   GA_SP_FShadow,
 // Front Pads
@@ -185,7 +195,8 @@ const images = {
   // Front coque
   GA_SP_FCoque0,
   GA_SP_FCoqueBlack,
-  GA_SP_FCoqueBlackG,
+  GA_SP_FCoqueBlackG, 
+  GA_SP_FCoqueBleuG,
   GA_SP_FCoqueCyan,
   GA_SP_FCoqueGreenG,
   GA_SP_FCoquePurpleA,
@@ -198,6 +209,7 @@ const images = {
   // Side coque
   GA_SP_SCoque0,
   GA_SP_SCoqueBlackG,
+  GA_SP_FCoqueBlackG, 
   GA_SP_SCoqueBleuG,
   GA_SP_SCoqueCyan,
   GA_SP_SCoqueGreenG,
