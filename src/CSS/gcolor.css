@@ -79,44 +79,12 @@
   text-align: left;
 }
 
-.affichage-view {
+
+.SIDE, .FRONT, .BACK {
   flex: 1;
-  min-width: 300px;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  margin: 10px;
 }
 
-.affichage-view .view {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  position: relative;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-
-.affichage-view .view.SIDE {
-  transform: rotateY(0deg);
-}
-
-.affichage-view .view.FRONT {
-  transform: rotateY(180deg);
-}
-
-.affichage-view img {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 .section-bleu h2 {
   font-size: 24px;

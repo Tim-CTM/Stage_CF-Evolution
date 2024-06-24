@@ -1,8 +1,8 @@
 
 // Gameboy Advence
-// Side Coque
-import GA_SCoque0 from"../image/Gameboy_Advence/GAdvence_S-BCoque-0.png";
-import GA_SCoqueBlack from"../image/Gameboy_Advence/GAdvence_S-BCoque-Black-glass.png";
+// Side coque
+import GA_SCoque0 from"../image/Gameboy_Advence/GAdvence_S-Coque-0.png";
+import GA_SCoqueBlackG from"../image/Gameboy_Advence/GAdvence_S-Coque-Black-glass.png";
 import GA_SCoqueBleuG from"../image/Gameboy_Advence/GAdvence_S-Coque-Bleu-glass.png";
 import GA_SCoqueCyanG from"../image/Gameboy_Advence/GAdvence_S-Coque-Cyan-glass.png";
 import GA_SCoqueCyan from"../image/Gameboy_Advence/GAdvence_S-Coque-Cyan.png";
@@ -15,7 +15,7 @@ import GA_SCoqueWhite from"../image/Gameboy_Advence/GAdvence_S-Coque-White.png";
 import GA_SCoqueYellow from"../image/Gameboy_Advence/GAdvence_S-Coque-Yellow.png";
 import GA_SCoqueG from"../image/Gameboy_Advence/GAdvence_S-Coque-glass.png";
 
-// Side Back coque
+// Side back coque
 import GA_SBCoque0 from"../image/Gameboy_Advence/GAdvence_S-BCoque-0.png";
 import GA_SBCoqueBlackG from"../image/Gameboy_Advence/GAdvence_S-BCoque-Black-glass.png";
 import GA_SBCoqueBleuG from"../image/Gameboy_Advence/GAdvence_S-BCoque-Bleu-glass.png";
@@ -28,7 +28,7 @@ import GA_SBCoqueRedG from"../image/Gameboy_Advence/GAdvence_S-BCoque-Red-glass.
 import GA_SBCoqueRose from"../image/Gameboy_Advence/GAdvence_S-BCoque-Rose.png";
 import GA_SBCoqueWhite from"../image/Gameboy_Advence/GAdvence_S-BCoque-White.png"
 import GA_SBCoqueYellow from"../image/Gameboy_Advence/GAdvence_S-BCoque-Yellow.png";
-import GA_SBCoqueGlass from"../image/Gameboy_Advence/GAdvence_S-BCoque-glass.png";
+import GA_SBCoqueG from"../image/Gameboy_Advence/GAdvence_S-BCoque-glass.png";
 
 // Front Coque
 import GA_FCoque0 from"../image/Gameboy_Advence/GAdvence_F-Coque-0.png";
@@ -97,6 +97,7 @@ import GA_FBPG from"../image/Gameboy_Advence/GAdvence_F-BP-glass.png";
 // Back Bouton
 import GA_BBP0 from"../image/Gameboy_Advence/GAdvence_B-BP-0.png";
 import GA_BBPBleuG from"../image/Gameboy_Advence/GAdvence_B-BP-Bleu-glass.png";
+import GA_BBPBlackG from"../image/Gameboy_Advence/GAdvence_B-BP-Black-glass.png";
 import GA_BBPBleu from"../image/Gameboy_Advence/GAdvence_B-BP-Blue.png";
 import GA_BBPGreenG from"../image/Gameboy_Advence/GAdvence_B-BP-Green-glass.png";
 import GA_BBPLemon from"../image/Gameboy_Advence/GAdvence_B-BP-Lemon.png";
@@ -159,6 +160,7 @@ import GA_FStrapRose from"../image/Gameboy_Advence/GAdvence_F-STRAP-Rose.png";
 import GA_FStrapWhite from"../image/Gameboy_Advence/GAdvence_F-STRAP-White.png";
 import GA_FStrapYellow from"../image/Gameboy_Advence/GAdvence_F-STRAP-Yellow.png";
 
+// Shadow Only one for all
 import GA_FStrapShadow from"../image/Gameboy_Advence/GAdvence_F-STRAP-Shadow.png";
 
 // Strap Side
@@ -263,6 +265,7 @@ const images = {
   GA_BStrapYellow ,
   // Back bouton
   GA_BBP0,
+  GA_BBPBlackG,
   GA_BBPBleuG,
   GA_BBPBleu ,
   GA_BBPGreenG,
@@ -329,19 +332,35 @@ const images = {
   GA_SBPYellow ,
   GA_SBPG,
   // Side coque arrière
+  GA_SCoque0,
+  GA_SCoqueBlackG,
+  GA_SCoqueBleuG ,
+  GA_SCoqueCyanG,
+  GA_SCoqueCyan,
+  GA_SCoqueGreenG ,
+  GA_SCoqueOrangeG,
+  GA_SCoquePurpleG,
+  GA_SCoqueRedG,
+  GA_SCoqueRose,
+  GA_SCoqueWhite,
+  GA_SCoqueYellow ,
+  GA_SCoqueG ,
+
+// Side back coque
   GA_SBCoque0,
   GA_SBCoqueBlackG,
-  GA_SBCoqueBleuG ,
+  GA_SBCoqueBleuG,
   GA_SBCoqueCyanG,
   GA_SBCoqueCyan,
-  GA_SBCoqueGreenG ,
+  GA_SBCoqueGreenG,
   GA_SBCoqueOrangeG,
   GA_SBCoquePurpleG,
   GA_SBCoqueRedG,
   GA_SBCoqueRose,
   GA_SBCoqueWhite,
-  GA_SBCoqueYellow ,
-  GA_SBCoqueGlass ,
+  GA_SBCoqueG,
+  GA_SBCoqueYellow,
+
   // Coque Arrière
   GA_BCoque0,
   GA_BCoqueBlackG,
@@ -356,6 +375,7 @@ const images = {
   GA_BCoqueWhite,
   GA_BCoqueG,
   GA_BCoqueYellow ,
+  
   // Front coque
   GA_FCoque0 ,
   GA_FCoqueBlackG,
@@ -370,20 +390,7 @@ const images = {
   GA_FCoqueWhite ,
   GA_FCoqueG,
   GA_FCoqueYellow,
-  // Side coque
-  GA_SCoque0,
-  GA_SCoqueBlack,
-  GA_SCoqueBleuG,
-  GA_SCoqueCyanG,
-  GA_SCoqueCyan,
-  GA_SCoqueGreenG,
-  GA_SCoqueOrangeG,
-  GA_SCoquePurpleG,
-  GA_SCoqueRedG,
-  GA_SCoqueRose,
-  GA_SCoqueWhite,
-  GA_SCoqueYellow,
-  GA_SCoqueG,
+  
 };
 
 export default images;

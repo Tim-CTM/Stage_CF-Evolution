@@ -31,8 +31,8 @@ const imagesData = {
     { src: images.DMGcoqueImagePurpleG , frontSrc: images.DMG_FCoquePurpleG, className: "bp-base bp-Violet  ", price: null, color: "Violet transparent" },
     { src: images.DMGcoqueImageBleuG , frontSrc: images.DMG_FCoqueBleuG, className: "bp-base bp-BleuG ", price: null, color: "Bleu transparent" },
     { src: images.DMGcoqueImageBlackG , frontSrc: images.DMG_FCoqueBlackG, className: "bp-base bp-Black" , price: 15, color: "Noir transparent" },
-    { src: images.DMGcoqueImageOrange, frontSrc: images.DMG_FBPOrange , className: "bp-base bp-Orange", price: null, color: "Orange transparent" },
-    { src: images.DMGcoqueImageCyanG , frontSrc: images.DMG_FCoqueCyanG, className: "bp-base bp-Cyan", price: null, color: "Cyan transparent" },
+    { src: images.DMGcoqueImageOrangeG, frontSrc: images.DMG_FCoqueOrangeG , className: "bp-base bp-Orange", price: null, color: "Orange transparent" },
+    { src: images.DMGcoqueImageCyan , frontSrc: images.DMG_FCoqueCyan, className: "bp-base bp-Cyan", price: null, color: "Cyan transparent" },
   ],
   baseconsole: [
     { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Oui" },
@@ -46,10 +46,10 @@ const imagesData = {
     { src: images.DMG_BCoqueG , frontSrc:null , className: "bp-base bp-Glass", price: null, color: "Transparent" },
     { src: images.DMG_BCoqueGreen , frontSrc: null, className: "bp-base bp-Vert", price: null, color: "Vert" },
     { src: images.DMG_BCoqueGreenG, frontSrc: null, className: "bp-base bp-VertG", price: null, color: "Vert transparent" },
-    { src: images.DMG_BCoqueOrange, frontSrc:null , className: "bp-base bp-Orange", price: null, color: "Orange" },
+    { src: images.DMG_BCoqueOrangeG, frontSrc:null , className: "bp-base bp-Orange", price: null, color: "Orange" },
     { src: images.DMG_BCoqueBlackG, frontSrc:null , className: "bp-base bp-BlackGlass", price: 10, color: "Noir transparent" },
     { src: images.DMG_BCoquePurpleG , frontSrc: null, className: "bp-base bp-VioletGlass ", price: null, color: "Violet transparent" },
-    { src: images.DMG_BCoqueRedG , frontSrc: null, className: "bp-base bp-RougeGlass", price: null, color: "Rouge transparent" },
+    { src: images.DMG_BCoqueRed, frontSrc: null, className: "bp-base bp-Rouge", price: null, color: "Rouge" },
     { src: images.DMG_BCoqueWhite, frontSrc: null, className: "bp-base bp-Blanc", price: null, color: "Blanc" },
     { src: images.DMG_BCoqueYellow , frontSrc:null , className: "bp-base bp-Jaune", price: null, color: "Jaune" },
   ],
@@ -63,7 +63,11 @@ const imagesData = {
     { src: images.DMG_SPRed, frontSrc: images.DMG_FPRed, className: "bp-base bp-Rouge ", price: null, color: "Rouge" },
     { src: images.DMG_SPRose, frontSrc: images.DMG_FPRose , className: "bp-base bp-Rose", price: null, color: "Rose" },
     { src: images.DMG_SPYellow , frontSrc: images.DMG_FPYellow, className: "bp-base bp-Jaune ", price: null, color: "Jaune" },
-  ]
+  ],
+  screen:[
+    { src: images.DMG_SCoqueScreen , frontSrc: images.DMG_FCoqueScreen, className: "bp-base ", price: null, color: "" },
+    { src: images.DMG_SCoqueScreenB , frontSrc: images.DMG_FCoqueScreenB, className: "bp-base ", price: null, color: "" },
+  ],
  };
 
 
@@ -74,6 +78,7 @@ const imagesData = {
     baseconsole: imagesData.baseconsole[0],
     coquearriere: imagesData.coquearriere[0],
     pads: imagesData.pads[0],
+    screen: imagesData.screen[0],
   });
 
   const [openSection, setOpenSection] = useState('baseconsole');
@@ -201,10 +206,21 @@ const imagesData = {
               )}
               <hr width="300px" align="left" />
             </div>
-          </div>
 
 
-            <h3>ECRAN IPS RÉTROÉCLAIRÉ </h3>
+
+          <div className="accordion-item">
+              <h3 onClick={() => toggleSection('screen')} className={openSection === 'screen' ? 'active' : ''}>Ecran IPS</h3>
+              {openSection === 'screen' && (
+                <div className="accordion-content">
+                  <ImageL type="screen" images={imagesData.screen} updateImages={updateImages} />
+                </div>
+              )}
+
+              <hr width="300px" align="left" />
+            </div>
+
+            </div>
             <hr width="250px" align="left" />
             <h3>INSTALLATION BATTERIE</h3>
             <p>Pose d'une batterie rechargeable - 2300 mAh</p>
@@ -223,6 +239,7 @@ const imagesData = {
                 <img src={view === 'SIDE' ? selectImages.coque.src : selectImages.coque.frontSrc} alt="Coque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
                 <img src={view === 'SIDE' ? selectImages.bp.src : selectImages.bp.frontSrc} alt="Button" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
                 <img src={view === 'SIDE' ? selectImages.pads.src : selectImages.pads.frontSrc} alt="pads" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                <img src={view === 'SIDE' ? selectImages.screen.src : selectImages.screen.frontSrc} alt="screen" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
                 <img src={view === 'SIDE' ? images.DMG_Shadow : images.DMG_FShadow} alt="Shadow" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
                 {view === 'SIDE' && (
                   <img src={selectImages.coquearriere.src} alt="coquearriere" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />

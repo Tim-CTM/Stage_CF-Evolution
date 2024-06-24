@@ -65,6 +65,7 @@
   justify-content: center;
 }
 
+
 .option-selection {
   flex: 1;
   min-width: 300px;
@@ -92,6 +93,7 @@
   border-radius: 8px;
 }
 
+
 .affichage-view .view {
   width: 100%;
   display: flex;
@@ -102,21 +104,7 @@
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.affichage-view .view.SIDE {
-  transform: rotateY(0deg);
-}
 
-.affichage-view .view.FRONT {
-  transform: rotateY(180deg);
-}
-
-.affichage-view img {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 .section-bleu h2 {
   font-size: 24px;

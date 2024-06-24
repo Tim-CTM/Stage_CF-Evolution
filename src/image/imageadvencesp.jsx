@@ -2,6 +2,7 @@
 // Side coque 
 import GA_SP_SCoque0 from"../image/Gameboy_Advence-SP/GA-SP_SCoque-0.png";
 import GA_SP_SCoqueBlackG from"../image/Gameboy_Advence-SP/GA-SP_SCoque-Black-glass.png";
+import GA_SP_SCoqueBlack from"../image/Gameboy_Advence-SP/GA-SP_SCoque-Black.png";
 import GA_SP_SCoqueBleuG from"../image/Gameboy_Advence-SP/GA-SP_SCoque-Bleu-glass.png";
 import GA_SP_SCoqueCyan from"../image/Gameboy_Advence-SP/GA-SP_SCoque-Cyan.png";
 import GA_SP_SCoqueGreenG from"../image/Gameboy_Advence-SP/GA-SP_SCoque-Green-glass.png";
@@ -11,7 +12,6 @@ import GA_SP_SCoquePurpleG from"../image/Gameboy_Advence-SP/GA-SP_SCoque-Purple-
 import GA_SP_SCoquePurple from"../image/Gameboy_Advence-SP/GA-SP_SCoque-Purple.png";
 import GA_SP_SCoqueRedG from"../image/Gameboy_Advence-SP/GA-SP_SCoque-Red-glass.png";
 import GA_SP_SCoqueRose from"../image/Gameboy_Advence-SP/GA-SP_SCoque-Rose.png";
-import GA_SP_SCoqueWhite from"../image/Gameboy_Advence-SP/GA-SP_SCoque-White.png";
 import GA_SP_SCoqueYellow from"../image/Gameboy_Advence-SP/GA-SP_SCoque-Yellow.png";
 
 // Front coque
@@ -91,11 +91,11 @@ import GA_SP_FBPYellow from"../image/Gameboy_Advence-SP/GA-SP_FBP-Yellow.png";
 
 import GA_SP_SBP0 from"../image/Gameboy_Advence-SP/GA-SP_SBP-0.png";
 import GA_SP_SBPBleu from"../image/Gameboy_Advence-SP/GA-SP_SBP-Bleu.png";
-import GA_SP_SBP0Green from"../image/Gameboy_Advence-SP/GA-SP_SBP-Green.png";
-import GA_SP_SBP0Lemon from"../image/Gameboy_Advence-SP/GA-SP_SBP-Lemon.png";
-import GA_SP_SBP0Orange from"../image/Gameboy_Advence-SP/GA-SP_SBP-Orange.png";
-import GA_SP_SBP0Red from"../image/Gameboy_Advence-SP/GA-SP_SBP-Red.png";
-import GA_SP_SBP0Rose from"../image/Gameboy_Advence-SP/GA-SP_SBP-Rose.png";
+import GA_SP_SBPGreen from"../image/Gameboy_Advence-SP/GA-SP_SBP-Green.png";
+import GA_SP_SBPLemon from"../image/Gameboy_Advence-SP/GA-SP_SBP-Lemon.png";
+import GA_SP_SBPOrange from"../image/Gameboy_Advence-SP/GA-SP_SBP-Orange.png";
+import GA_SP_SBPRed from"../image/Gameboy_Advence-SP/GA-SP_SBP-Red.png";
+import GA_SP_SBPRose from"../image/Gameboy_Advence-SP/GA-SP_SBP-Rose.png";
 import GA_SP_SBPWhite from"../image/Gameboy_Advence-SP/GA-SP_SBP-White.png";
 import GA_SP_SBPYellow from"../image/Gameboy_Advence-SP/GA-SP_SBP-Yellow.png";
 
@@ -133,11 +133,11 @@ const images = {
   // Side boutton
   GA_SP_SBP0 ,
   GA_SP_SBPBleu,
-  GA_SP_SBP0Green,
-  GA_SP_SBP0Lemon,
-  GA_SP_SBP0Orange,
-  GA_SP_SBP0Red,
-  GA_SP_SBP0Rose,
+  GA_SP_SBPGreen,
+  GA_SP_SBPLemon,
+  GA_SP_SBPOrange,
+  GA_SP_SBPRed,
+  GA_SP_SBPRose,
   GA_SP_SBPWhite,
   GA_SP_SBPYellow,
 
@@ -219,7 +219,7 @@ const images = {
   GA_SP_SCoquePurple ,
   GA_SP_SCoqueRedG,
   GA_SP_SCoqueRose,
-  GA_SP_SCoqueWhite,
+  GA_SP_SCoqueBlack, 
   GA_SP_SCoqueYellow ,
 };
 

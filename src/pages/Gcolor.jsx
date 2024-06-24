@@ -4,21 +4,19 @@ import Header from './Header';
 import Footer from './Footer';
 import images from '../image/imagegcolor.jsx';
 
-
-
 const imagesData = {
     bp: [
       { src: images.GColor_BP0, frontSrc: images.GColor_FBP0, className: "bp-base bp-GrisDMG", price: null, color: "DMG" },
       { src: images.GColor_BPBlackG, frontSrc: images.GColor_FBPBlackG , className: "bp-base bp-BlackGlass", price: 40, color: "Noir transparent" },
       { src: images.GColor_BPBlack, frontSrc: images.GColor_FBPBlack, className: "bp-base bp-Black", price: 10, color: "Noir" },
-      { src: images.GColor_BPBleuG, frontSrc: images.GColor_FBPBleuG, className: "bp-base bp-BleuG", price: null, color: "Bleu transparent" },
+      { src: images.GColor_BPBleu, frontSrc: images.GColor_FBPBleu, className: "bp-base bp-BleuG", price: null, color: "Bleu transparent" },
       { src: images.GColor_BPBleuS, frontSrc: images.GColor_FBPBleuS, className: "bp-base bp-Bleu", price: null, color: "Bleu Sombre" },
       { src: images.GColor_BPGreenG, frontSrc: images.GColor_FBPGreenG, className: "bp-base bp-VertG", price: null, color: "Vert transparent" },
       { src: images.GColor_BPGris, frontSrc: images.GColor_FBPGris, className: "bp-base bp-Gris", price: null, color: "Gris" },
       { src: images.GColor_BPLemonG, frontSrc: images.GColor_FBPLemonG, className: "bp-base ", price: null, color: "Citron tranparent" },
       { src: images.GColor_BPLemon, frontSrc: images.GColor_FBPLemon, className: "bp-base ", price: null, color: "Citron" },
       { src: images.GColor_BPOrangeG, frontSrc: images.GColor_FBPOrangeG, className: "bp-base bp-OrangeGlass", price: null, color: "Orange transparent"},
-      { src: images.GColor_BPPurpleG, frontSrc: images.GColor_FBPPurpleG, className: "bp-base bp-VioletGlass", price: null, color: "Violet transparent" },
+      { src: images.GColor_BPPurpleG, frontSrc: images.GColor_FBPPurple, className: "bp-base bp-VioletGlass", price: null, color: "Violet transparent" },
       { src: images.GColor_BPRed, frontSrc: images.GColor_FBPRed, className: "bp-base bp-Rouge", price: null, color: "Rouge" },
       { src: images.GColor_BPRose, frontSrc: images.GColor_FBPRose, className: "bp-base bp-Rose", price: null, color: "Rose" },
       { src: images.GColor_BPRoseG, frontSrc: images.GColor_FBPRoseG, className: "bp-base bp-RoseGlass", price: null, color: "Rose transparent" },
@@ -27,18 +25,18 @@ const imagesData = {
       { src: images.GColor_BPG, frontSrc: images.GColor_FBPG, className: "bp-base bp-Glass", price: null, color: "Transparent" },
     ],
     coque: [
-      { src: images.GColor_SCoque0 , frontSrc: images.GColor_FCoque0, className: "bp-base bp-GrisDMG", price: null, color: "DMG" },
-      { src: images.GColor_SCoqueBleuG , frontSrc: images.GColor_FCoqueBleu, className: "bp-base bp-Bleu ", price: null, color: "Bleu" },
-      { src: images.GColor_SCoqueYellow , frontSrc: images.GColor_FCoqueYellow, className: "bp-base bp-Jaune  ", price: null, color: "Jaune" },
-      { src: images.GColor_SCoqueYellowG , frontSrc: images.GColor_FCoqueYellowG, className: "bp-base bp-Jaune  ", price: null, color: "Jaune transparent" },
+      { src: images.GColor_SCoque0 , frontSrc: images.GColor_FCoque0,  className: "bp-base bp-GrisDMG", price: null, color: "DMG" },
+      { src: images.GColor_SCoqueBleuG , frontSrc: images.GColor_FCoqueBleuG, className: "bp-base bp-Bleu ", price: null, color: "Bleu" },
+      { src: images.GColor_SCoqueYellow , frontSrc: images.GColor_FCoqueYellow,  className: "bp-base bp-Jaune  ", price: null, color: "Jaune" },
+      { src: images.GColor_SCoqueYellowG , frontSrc: images.GColor_FCoqueYellowG,className: "bp-base bp-Jaune  ", price: null, color: "Jaune transparent" },
       { src: images.GColor_SCoqueWhite , frontSrc: images.GColor_FCoqueWhite, className: "bp-base bp-Blanc ", price: null, color: "Blanc" },
-      { src: images.GColor_SCoqueRed , frontSrc: images.GColor_FCoqueRed, className: "bp-base bp-RougeGlass ", price: null, color: "Rouge transparent" },
+      { src: images.GColor_SCoqueRedG , frontSrc: images.GColor_FCoqueRedG,className: "bp-base bp-RougeGlass ", price: null, color: "Rouge transparent" },
       { src: images.GColor_SCoqueG , frontSrc: images.GColor_FCoqueG, className: "bp-base bp-Verre  ", price: null, color: "Transparent" },
-      { src: images.GColor_SCoqueGreenG , frontSrc: images.GColor_FCoqueGreenG, className: "bp-base bp-VertGlass ", price: null, color: "Vert transparent" },
-      { src: images.GColor_SCoquePurpleG , frontSrc: images.GColor_FCoquePurpleG, className: "bp-base bp-Violet  ", price: null, color: "Violet transparent" },
-      { src: images.GColor_SCoqueBleuG , frontSrc: images.GColor_FCoqueBleuG, className: "bp-base bp-BleuG ", price: null, color: "Bleu transparent" },
+      { src: images.GColor_SCoqueGreenG , frontSrc: images.GColor_FCoqueGreenG,  className: "bp-base bp-VertGlass ", price: null, color: "Vert transparent" },
+      { src: images.GColor_SCoquePurpleG , frontSrc: images.GColor_FCoquePurpleG,  className: "bp-base bp-Violet  ", price: null, color: "Violet transparent" },
+      { src: images.GColor_SCoqueRose , frontSrc: images.GColor_FCoqueRose,  className: "bp-base bp-BleuG ", price: null, color: "Rose" },
       { src: images.GColor_SCoqueBlackG , frontSrc: images.GColor_FCoqueBlackG, className: "bp-base bp-Black" , price: 15, color: "Noir transparent" },
-      { src: images.GColor_SCoqueOrange, frontSrc: images.GColor_FCoqueOrange , className: "bp-base bp-Orange", price: null, color: "Orange transparent" },
+      { src: images.GColor_SCoqueOrangeG, frontSrc: images.GColor_FCoqueOrangeG ,  className: "bp-base bp-Orange-Glass", price: null, color: "Orange transparent" },
       { src: images.GColor_SCoqueCyanG , frontSrc: images.GColor_FCoqueCyanG, className: "bp-base bp-Cyan", price: null, color: "Cyan transparent" },
       { src: images.GColor_SCoqueCyan , frontSrc: images.GColor_FCoqueCyan, className: "bp-base bp-Cyan", price: null, color: "Cyan" },
       { src: images.GColor_SCoquePurple , frontSrc: images.GColor_FCoquePurple, className: "bp-base bp-Citron", price: null, color: "" },
@@ -49,22 +47,22 @@ const imagesData = {
       { src: null, frontSrc: null, className: "bp-base bp-Black ", price: 40, color: "Non" },
     ],
     coquearriere: [
-      { src: images.GColor_SBCoque0 , backSrc: images.GColor_BCoque0, className: "bp-base bp-GrisDMG", price: null, color: "DMG" },
-      { src: images.GColor_SBCoqueBlackG, backSrc:images.GColor_BCoqueBlackG , className: "bp-base bp-BlackGlass", price: 10, color: "Noir transparent" },
-      { src: images.GColor_SBCoqueBlack , backSrc:images.GColor_BCoqueBlack,  className: "bp-base bp-Black", price: null, color: "Bleu" },
-      { src: images.GColor_SBCoqueBleuG , backSrc: images.GColor_BCoqueBleuG, className: "bp-base bp-BleuG ", price: null, color: "Bleu transparent" },
-      { src: images.GColor_SBCoqueCyanG, backSrc:images.GColor_BCoqueCyanG, className: "bp-base bp-Cyan ", price: null, color: "Cyan transparent" },
-      // { src: images.GColor_SBCoqueCyan , backtSrc:images.GColor_BCoqueCyan, className: "bp-base bp-Turquoise", price: null, color: "Turquoise" }, fonctionne pas 
-      // { src: images.GColor_SBCoqueGreenG, backtSrc: images.GColor_BCoqueGreenG, className: "bp-base bp-VertG", price: null, color: "Vert transparent" },fonctionne pas
-      { src: images.GColor_SBCoqueOrangeG, backSrc:images.GColor_BCoqueOrangeG, className: "bp-base bp-Orange", price: null, color: "Orange transparent" },
-      { src: images.GColor_SBCoquePurpleG , backSrc: images.GColor_BCoquePurpleG, className: "bp-base bp-VioletGlass ", price: null, color: "Violet transparent" },
-      { src: images.GColor_SBCoquePurple , backSrc:images.GColor_BCoquePurple , className: "bp-base bp-Violet", price: null, color: "Violet" },
-      { src: images.GColor_SBCoqueRedG , backSrc: images.GColor_BCoqueRedG, className: "bp-base bp-RougeGlass", price: null, color: "Rouge transparent" },
-      { src: images.GColor_SBCoqueRose , backSrc: images.GColor_BCoqueRose, className: "bp-base bp-Rose", price: null, color: "Rose" },
-      { src: images.GColor_SBCoqueWhite, backSrc: images.GColor_BCoqueWhite, className: "bp-base bp-Blanc", price: null, color: "Blanc" },
-      { src: images.GColor_SBCoqueYellowG , backSrc:images.GColor_BCoqueYellowG , className: "bp-base bp-JauneGlass", price: null, color: "Jaune transparent" },
-      { src: images.GColor_SBCoqueYellow , backSrc:images.GColor_BCoqueYellow , className: "bp-base bp-Jaune", price: null, color: "Jaune" },
-      { src: images.GColor_SBCoqueG , backSrc:images.GColor_BCoqueG , className: "bp-base bp-Glass", price: null, color: "Transparent" },
+      { src: images.GColor_BCoque0 , backSrc: images.GColor_SBCoque0, className: "bp-base bp-GrisDMG", price: null, color: "DMG" },
+      { src: images.GColor_BCoqueBlackG, backSrc: images.GColor_SBCoqueBlackG,  className: "bp-base bp-BlackGlass", price: 10, color: "Noir transparent" },
+      { src: images.GColor_BCoqueBlack , backSrc:images.GColor_SBCoqueBlack,  className: "bp-base bp-Black", price: null, color: "Bleu" },
+      { src: images.GColor_BCoqueBleuG , backSrc: images.GColor_SBCoqueBleuG, className: "bp-base bp-BleuG ", price: null, color: "Bleu transparent" },
+      { src: images.GColor_BCoqueCyanG,  backSrc:images.GColor_SBCoqueCyanG,className: "bp-base bp-Cyan ", price: null, color: "Cyan transparent" },
+      { src: images.GColor_BCoqueCyan ,backSrc:images.GColor_SBCoqueCyan,  className: "bp-base bp-Turquoise", price: null, color: "Turquoise" }, 
+      { src: images.GColor_BCoqueGreenG,  backSrc: images.GColor_SBCoqueGreenG , className: "bp-base bp-VertG", price: null, color: "Vert transparent" },
+      { src: images.GColor_BCoqueOrangeG,backSrc:images.GColor_SBCoqueOrangeG , className: "bp-base bp-Orange", price: null, color: "Orange transparent" },
+      { src: images.GColor_BCoquePurpleG , backSrc: images.GColor_SBCoquePurpleG, className: "bp-base bp-VioletGlass ", price: null, color: "Violet transparent" },
+      { src: images.GColor_BCoquePurple , backSrc:images.GColor_SBCoquePurple ,  className: "bp-base bp-Violet", price: null, color: "Violet" },
+      { src: images.GColor_BCoqueRedG , backSrc: images.GColor_SBCoqueRedG,  className: "bp-base bp-RougeGlass", price: null, color: "Rouge transparent" },
+      { src: images.GColor_BCoqueRose , backSrc: images.GColor_SBCoqueRose,className: "bp-base bp-Rose", price: null, color: "Rose" },
+      { src: images.GColor_BCoqueWhite,  backSrc: images.GColor_SBCoqueWhite,className: "bp-base bp-Blanc", price: null, color: "Blanc" },
+      { src: images.GColor_BCoqueYellowG , backSrc:images.GColor_SBCoqueYellowG,  className: "bp-base bp-JauneGlass", price: null, color: "Jaune transparent" },
+      { src: images.GColor_BCoqueYellow , backSrc:images.GColor_SBCoqueYellow,className: "bp-base bp-Jaune", price: null, color: "Jaune" },
+      { src: images.GColor_BCoqueG , backSrc:images.GColor_SBCoqueG, className: "bp-base bp-Glass", price: null, color: "Transparent" },
     ],
     screen: [   
         { src: images.GColor_SScreen0, frontSrc: images.GColor_FScreen0, className: "bp-base ", price: null, color: "" },
@@ -77,16 +75,13 @@ const imagesData = {
         { src: images.GColor_SScreenYellow, frontSrc: images.GColor_FScreenYellow, className: "bp-base ", price: null, color: "" },
     ],
     pads: [
-      { src: images.GColor_SP0 , frontSrc: images.GColor_SP0, className: "bp-base bp-GrisDMG ", price: null, color: "DMG" },
-      { src: images.GColor_SPBlack , frontSrc:images.GColor_SPBlack,  className: "bp-base bp-Black  ", price: 30, color: "Black" },
-      { src: images.GColor_SPBleu  , frontSrc: images.GColor_SPBleu, className: "bp-base bp-Bleu ", price: null, color: "Bleu" },
-      { src: images.GColor_SPBleuG  , frontSrc: images.GColor_SPBleuG, className: "bp-base bp-Bleu ", price: null, color: "Bleu Transparant" },
-      { src: images.GColor_SPG, frontSrc:images.GColor_SPG , className: "bp-base bp-Glass", price: null, color: "Transparent" },
-      { src: images.GColor_SPGreen , frontSrc:images.GColor_SPLemon, className: "bp-base bp-Vert", price: null, color: "Vert" },
-      { src: images.GColor_SPPurple , frontSrc: images.GColor_SPPurple, className: "bp-base bp-Violet", price: null, color: "Violet" },
-      { src: images.GColor_SPRed, frontSrc: images.GColor_SPRed, className: "bp-base bp-Rouge ", price: null, color: "Rouge" },
-      { src: images.GColor_SPRose, frontSrc: images.GColor_SPRose , className: "bp-base bp-Rose", price: null, color: "Rose" },
-      { src: images.GColor_SPYellow , frontSrc: images.GColor_SPYellow, className: "bp-base bp-Jaune ", price: null, color: "Jaune" },
+      { src: images.GColor_SP0 , frontSrc: images.GColor_FP0, className: "bp-base bp-GrisDMG ", price: null, color: "DMG" },
+      { src: images.GColor_SPBleuS  , frontSrc: images.GColor_FPBleuS, className: "bp-base bp-Bleu ", price: null, color: "Bleu" },
+      { src: images.GColor_SPBleuG  , frontSrc: images.GColor_FPBleuG, className: "bp-base bp-Cair ", price: null, color: "Bleu Clair" },
+      { src: images.GColor_SPGreen , frontSrc:images.GColor_FPLemon, className: "bp-base bp-Vert", price: null, color: "Vert" },
+      { src: images.GColor_SPPurple , frontSrc: images.GColor_FPPurple, className: "bp-base bp-Violet", price: null, color: "Violet" },
+      { src: images.GColor_SPRose, frontSrc: images.GColor_FPRose , className: "bp-base bp-Rose", price: null, color: "Rose" },
+      { src: images.GColor_SPYellow , frontSrc: images.GColor_FPYellow, className: "bp-base bp-Jaune ", price: null, color: "Jaune" },
     ],
 
     led :[
@@ -101,17 +96,17 @@ const imagesData = {
         { src: images.GColor_StickerW , frontSrc: null , className: "bp-base ", price: null, color: "" },
     ],
     laniere:[
-        { src: images.GColor_SStrap0 , frontSrc: images.Gcolor_FStrap0 , className: "bp-base ", price: null, color: "" },
-        { src: images.GColor_SStrapBleuC , frontSrc: images.Gcolor_FStrapBleuC  , className: "bp-base ", price: null, color: "" },
-        { src: images.GColor_SStrapBleu , frontSrc: images.Gcolor_FStrapBleu, className: "bp-base ", price: null, color: "" },
-        { src: images.GColor_SStrapLemon, frontSrc: images.Gcolor_FStrapLemon , className: "bp-base ", price: null, color: "" },
-        { src: images.GColor_SStrapOrange , frontSrc: images.Gcolor_FStrapOrange , className: "bp-base ", price: null, color: "" },
-        { src: images.GColor_SStrapPurple, frontSrc: images.Gcolor_FStrapPurple , className: "bp-base ", price: null, color: "" },
-        { src: images.GColor_SStrapRed , frontSrc: images.Gcolor_FStrapRed, className: "bp-base ", price: null, color: "" },
-        { src: images.GColor_SStrapRoseC , frontSrc: images.Gcolor_FStrapRoseC , className: "bp-base ", price: null, color: "" },
-        { src: images.GColor_SStrapRose , frontSrc: images.Gcolor_FStrapRose , className: "bp-base ", price: null, color: "" },
-        { src: images.GColor_SStrapWhite  , frontSrc: images.Gcolor_FStrapWhite  , className: "bp-base ", price: null, color: "" },
-        { src: images.GColor_SStrapYellow  , frontSrc: images.Gcolor_FStrapYellow  , className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SStrap0 , frontSrc: images.GColor_FStrap0 , className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SStrapBleuC , frontSrc: images.GColor_FStrapBleuC  , className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SStrapBleu , frontSrc: images.GColor_FStrapBleu, className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SStrapLemon, frontSrc: images.GColor_FStrapLemon , className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SStrapOrange , frontSrc: images.GColor_FStrapOrange , className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SStrapPurple, frontSrc: images.GColor_FStrapPurple , className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SStrapRed , frontSrc: images.GColor_FStrapRed, className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SStrapRoseC , frontSrc: images.GColor_FStrapRoseC , className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SStrapRose , frontSrc: images.GColor_FStrapRose , className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SStrapWhite  , frontSrc: images.GColor_FStrapWhite  , className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SStrapYellow  , frontSrc: images.GColor_FStrapYellow  , className: "bp-base ", price: null, color: "" },
     ]
    };
 
@@ -120,11 +115,10 @@ const imagesData = {
     const [selectImages, setSelectImages] = useState({
       bp: imagesData.bp[0],
       coque: imagesData.coque[0],
-      baseconsole: imagesData.baseconsole[0],
       coquearriere: imagesData.coquearriere[0],
+      baseconsole: imagesData.baseconsole[0],
       pads: imagesData.pads[0],
       screen: imagesData.screen[0],
-      // backcoque: imagesData.backcoque[0],
       led: imagesData.led[0],
       sticker: imagesData.sticker[0],
       laniere: imagesData.laniere[0],
@@ -140,12 +134,19 @@ const imagesData = {
       })); 
     };
     
-  const [view, setView] = useState('SIDE');
+  const [view, setView] = useState('FRONT');
 
 
   const calculateAllPrice = () => {
     const { bp, coque, baseconsole, pads, coquearriere } = selectImages;
-    return basePrice + (bp.price ?? 0) + (coque.price ?? 0) + (baseconsole.price ?? 0) + (pads.price ??0) + (coquearriere.price ??0) ;
+    return (
+      basePrice +
+      (bp?.price ?? 0) +
+      (coque?.price ?? 0) +
+      (baseconsole?.price ?? 0) +
+      (pads?.price ?? 0) +
+      (coquearriere?.price ?? 0)
+    );
   };
 
   const basePrice = 159;
@@ -278,47 +279,59 @@ const imagesData = {
           </div>
 
           <div className='affichage-view'>
-            <div className={`view ${view}`}>
+            <div className={`view ${view === 'FRONT' ? 'FRONT' : view === 'SIDE' ? 'SIDE' : 'BACK'}`}>
                 <div style={{ position: "relative", width: "300px", height: "300px" }}>
-                    {view === 'SIDE' && (
-            <>
-              <img src={selectImages.coque.src} alt="Coque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={selectImages.bp.src} alt="Button" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={selectImages.pads.src} alt="Pads" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={images.GColor_SShadow} alt="Shadow" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={selectImages.screen.src} alt="Screen" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={selectImages.coquearriere.src} alt="Coquearriere" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={selectImages.led.src} alt="Led" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={selectImages.laniere.src} alt="Laniere" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-            </>
-          )}
-          {view === 'FRONT' && (
-            <>
-              <img src={selectImages.coque.frontSrc} alt="Coque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={selectImages.bp.frontSrc} alt="Button" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={selectImages.pads.frontSrc} alt="Pads" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={images.GColor_FShadow} alt="Shadow" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={selectImages.screen.frontsrc} alt="Screen" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={selectImages.led.frontsrc} alt="Led" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              <img src={selectImages.laniere.frontsrc} alt="Laniere" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-            </>
-          )}
-          {view === 'BACK' && (
-            <>
-            <img src={selectImages.coquearriere.backSrc} alt="Backcoque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-            <img src={images.GColor_FShadow.src} alt="Shadow" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-            <img src={selectImages.sticker.src} alt="Sticker" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%"  }} />
-            <img src={selectImages.laniere.src} alt="Laniere" style={{ position: "relative", top: 0, left: 0, width: "100%", height: "100%" }} />
-            </>
-          )}
-        </div>
+                  {/* <img src={view === 'FRONT' ? selectImages.coque.frontSrc : view === 'SIDE' && selectImages.coque.src  } alt="Coque" className="slider-image" />
+                  <img src={view === 'SIDE' ? selectImages.coquearriere.src: view === 'BACK' && selectImages.coquearriere.backSrc } alt="Coquearriere" className="slider-image" />
+                  <img src={view === 'FRONT' ? selectImages.bp.frontSrc : view === 'SIDE' && selectImages.bp.src  } alt="Boutton" className="slider-image" />
+                  <img src={view === 'FRONT' ? selectImages.pads.frontSrc : view === 'SIDE' && selectImages.pads.src  } alt="Pads" className="slider-image" />
+                  <img src={view === 'FRONT' ? images.GColor_FShadow : view === 'SIDE' ? images.GColor_SShadow : images.GColor_FShadow } alt="Shadow" className="slider-image" />
+                  <img src={view === 'FRONT' ? selectImages.screen.frontSrc : view === 'SIDE' && selectImages.screen.src  } alt="Led" className="slider-image" />
+                  <img src={view === 'FRONT' ? selectImages.led.frontSrc : view === 'SIDE' && selectImages.led.src  } alt="Led" className="slider-image" />
+                  <img src={view === 'FRONT' ? selectImages.laniere.frontSrc : view === 'SIDE' && selectImages.laniere.src } alt="Led" className="slider-image" style={{ position: "absolute", top: 0, left: 0, zIndex: -10, width: "100%", height: "100%", }} />
+                  {view === 'BACK' && (
+                    <img src={selectImages.sticker.src} alt="sticker" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                  )} */}
+                  {view === 'FRONT' && (
+                    <>
+                      <img src={selectImages.coque.frontSrc} alt="Coque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={selectImages.bp.frontSrc} alt="Button" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={selectImages.pads.frontSrc} alt="Pads" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={images.GColor_FShadow} alt="Shadow" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={selectImages.screen.frontSrc} alt="Screen" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={selectImages.led.frontSrc} alt="Led" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={selectImages.laniere.frontSrc} alt="Laniere" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                    </>
+                  )}
+                  {view === 'SIDE' && (
+                    <>
+                      <img src={selectImages.coque.src} alt="Coque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={selectImages.bp.src} alt="Button" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={selectImages.pads.src} alt="Pads" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={images.GColor_SShadow} alt="Shadow" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={selectImages.screen.src} alt="Screen" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={selectImages.coquearriere.backSrc} alt="Coquearriere" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={selectImages.led.src} alt="Led" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                      <img src={selectImages.laniere.src} alt="Laniere" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                    </>
+                  )}
+
+                  {view === 'BACK' && (
+                    <>
+                    <img src={selectImages.coquearriere.src} alt="Backcoque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                    <img src={images.GColor_FShadow} alt="Shadow" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
+                    <img src={selectImages.sticker.src} alt="Sticker" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%"  }} />
+                    </>
+                  )}
+                  </div>
+                </div>
 
         <div className="views-container">
+        <button onClick={() => setView('FRONT')}></button>
           <button onClick={() => setView('SIDE')}></button>
-          <button onClick={() => setView('FRONT')}></button>
           <button onClick={() => setView('BACK')}></button>
         </div>
-            </div>
+            
           </div>
         </section>
 

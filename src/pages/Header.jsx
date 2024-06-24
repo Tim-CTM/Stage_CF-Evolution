@@ -19,8 +19,7 @@ const Header = () => {
           <img className="imglogo" src={logo} alt="logo" />
         </Link>
         <nav className={`menu ${menuOpen ? 'open' : ''}`}>
-          <Link to="/" onClick={toggleMenu}>Accueil</Link>
-          <Link to="/personnalisation" onClick={toggleMenu}>Personnalisation</Link>
+          <Link to="/accueil" onClick={toggleMenu}>Personnalisation</Link>
           <Link to="/panier" className="panier" onClick={toggleMenu}>
             <img className="imgpanier" src={panier} alt="panier" />
           </Link>

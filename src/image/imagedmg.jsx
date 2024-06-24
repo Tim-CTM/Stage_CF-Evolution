@@ -14,7 +14,7 @@ import DMGcoqueImagePurpleG from "../image/Gameboy_DMG/DMG_Purple-glass.png";
 import DMGcoqueImageBleuG from "../image/Gameboy_DMG/DMG_Bleu-glass.png";
 import DMGcoqueImageBlackG from "../image/Gameboy_DMG/DMG_Black-glass.png";
 import DMGcoqueImageCyanG from "../image/Gameboy_DMG/DMG_Cyan-glass.png";
-import DMGcoqueImageOrange from "../image/Gameboy_DMG/DMG_Orange-glass.png";
+import DMGcoqueImageOrangeG from "../image/Gameboy_DMG/DMG_Orange-glass.png";
 
 // Side Back Coque
 import DMG_BCoque0 from  "../image/Gameboy_DMG/DMG_B0.png";
@@ -23,7 +23,7 @@ import DMG_BCoqueBleuG from  "../image/Gameboy_DMG/DMG_B-Bleu-glass.png";
 import DMG_BCoqueCyanG from  "../image/Gameboy_DMG/DMG_B-Cyan-glass.png";
 import DMG_BCoqueGreenG from  "../image/Gameboy_DMG/DMG_B-Green-glass.png";
 import DMG_BCoqueGreen from  "../image/Gameboy_DMG/DMG_B-Green.png";
-import DMG_BCoqueOrange from  "../image/Gameboy_DMG/DMG_B-Orange.png";
+import DMG_BCoqueOrangeG from  "../image/Gameboy_DMG/DMG_B-Orange.png";
 import DMG_BCoquePurpleG from  "../image/Gameboy_DMG/DMG_B-Purple-glass.png";
 import DMG_BCoqueRed from  "../image/Gameboy_DMG/DMG_B-Red.png";
 import DMG_BCoqueWhite from  "../image/Gameboy_DMG/DMG_B-White.png";
@@ -67,7 +67,7 @@ import DMG_FBPBlack from  "../image/Gameboy_DMG/FBP_Black.png";
 import DMG_FBPBleuG from  "../image/Gameboy_DMG/FBP_Bleu-glass.png";
 import DMG_FBPBleu from  "../image/Gameboy_DMG/FBP_Bleu.png";
 import DMG_FBPGreenG from  "../image/Gameboy_DMG/FBP_Green-glass.png";
-import DMG_FBPGreen from  "../image/Gameboy_DMG/FBP_Orange-glass.png";
+import DMG_FBPOrangeG from  "../image/Gameboy_DMG/FBP_Orange-glass.png";
 import DMG_FBPOrange from  "../image/Gameboy_DMG/FBP_Orange.png";
 import DMG_FBPRed from  "../image/Gameboy_DMG/FBP_Red.png";
 import DMG_FBPRose from  "../image/Gameboy_DMG/FBP_Rose.png";
@@ -77,6 +77,8 @@ import DMG_FBPG from  "../image/Gameboy_DMG/FBP_glass.png";
 // Screen / Shadow
 import DMG_FCoqueScreen from  "../image/Gameboy_DMG/DMG_F-Screen.png";
 import DMG_SCoqueScreen from  "../image/Gameboy_DMG/DMG_S-Screen.png";
+import DMG_FCoqueScreenB from  "../image/Gameboy_DMG/DMG_F-ScreenB.png";
+import DMG_SCoqueScreenB from  "../image/Gameboy_DMG/DMG_S-ScreenB.png";
 import DMG_Shadow from  "../image/Gameboy_DMG/DMG_Shadow.png";
 import DMG_FShadow from  "../image/Gameboy_DMG/F-shadow.png";
 
@@ -105,6 +107,8 @@ import DMG_FPG from  "../image/Gameboy_DMG/FP_glass.png";
 
 const images = {
   // Gameboy DMG
+  DMG_FCoqueScreenB ,
+  DMG_SCoqueScreenB ,
   // Side pads
   DMG_SP0,
   DMG_SPBlack,
@@ -138,7 +142,7 @@ const images = {
   DMG_FBPBleuG,
   DMG_FBPBleu,
   DMG_FBPGreenG,
-  DMG_FBPGreen,
+  DMG_FBPOrangeG,
   DMG_FBPOrange,
   DMG_FBPRed ,
   DMG_FBPRose,
@@ -165,7 +169,7 @@ const images = {
   DMG_BCoqueCyanG,
   DMG_BCoqueGreenG,
   DMG_BCoqueGreen,
-  DMG_BCoqueOrange,
+  DMG_BCoqueOrangeG,
   DMG_BCoquePurpleG,
   DMG_BCoqueRed,
   DMG_BCoqueWhite,
@@ -198,7 +202,7 @@ const images = {
   DMGcoqueImageBleuG,
   DMGcoqueImageBlackG,
   DMGcoqueImageCyanG,
-  DMGcoqueImageOrange,
+  DMGcoqueImageOrangeG,
 };
 
 export default images;

@@ -1,0 +1,114 @@
+/* src/components/ImageGrid.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column; /* Empile verticalement les enfants */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black; /* Optionnel pour voir les bordures */
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+
+  .animate .item1 {
+    transition-delay: 0.5s;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animate .item2 {
+    transition-delay: 1s;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animate .item3 {
+    transition-delay: 1.5s;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animate .item4 {
+    transition-delay: 2s;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Media query pour les écrans de téléphone */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      height: auto;
+    }
+  
+    .grid-item {
+      height: 50vh; /* Ajustez la hauteur selon vos besoins */
+    }
+  }
+  
+  /* src/components/AnimatedImage.css */
+  .animated-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Pour centrer verticalement dans la fenêtre */
+  }
+  
+  .animated-image {
+    width: 300px; /* Ajustez la taille de l'image selon vos besoins */
+    animation: moveUpDown 2s infinite;
+  }
+  
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
+  
+  /* src/components/FuturisticButton.css */
+  .futuristic-button {
+    font-size: 13px;
+    font-family: 'Press Start 2P', system-ui;
+    /* background: linear-gradient(45deg, #ff004d, #00e756); */
+    background: grey;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* transition: background 0.3s, transform 0.3s; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: auto; /* Ajustez cette largeur selon vos besoins */
+    margin: 5px auto; /* Centrer le bouton horizontalement et ajouter un espace au-dessus et en dessous */
+    display: block; /* Assurez-vous que le bouton est un bloc pour appliquer le centrage */
+  }
+  
+  .futuristic-button span {
+    display: block;
+  }
+  
+  .futuristic-button:hover {
+    /* background: linear-gradient(45deg, #00e756, #ff004d); */
+    background: rgb(133, 123, 123);
+    transform: scale(1.03);
+  }
+  
