@@ -54,8 +54,8 @@ const imagesData = {
       { src: images.GColor_SBCoqueBlack , backSrc:images.GColor_BCoqueBlack,  className: "bp-base bp-Black", price: null, color: "Bleu" },
       { src: images.GColor_SBCoqueBleuG , backSrc: images.GColor_BCoqueBleuG, className: "bp-base bp-BleuG ", price: null, color: "Bleu transparent" },
       { src: images.GColor_SBCoqueCyanG, backSrc:images.GColor_BCoqueCyanG, className: "bp-base bp-Cyan ", price: null, color: "Cyan transparent" },
-      { src: images.GColor_SBCoqueCyan , backtSrc:images.GColor_BCoqueCyan, className: "bp-base bp-Turquoise", price: null, color: "Turquoise" },
-      { src: images.GColor_SBCoqueGreenG, backtSrc: images.GColor_BCoqueGreenG, className: "bp-base bp-VertG", price: null, color: "Vert transparent" },
+      // { src: images.GColor_SBCoqueCyan , backtSrc:images.GColor_BCoqueCyan, className: "bp-base bp-Turquoise", price: null, color: "Turquoise" }, fonctionne pas 
+      // { src: images.GColor_SBCoqueGreenG, backtSrc: images.GColor_BCoqueGreenG, className: "bp-base bp-VertG", price: null, color: "Vert transparent" },fonctionne pas
       { src: images.GColor_SBCoqueOrangeG, backSrc:images.GColor_BCoqueOrangeG, className: "bp-base bp-Orange", price: null, color: "Orange transparent" },
       { src: images.GColor_SBCoquePurpleG , backSrc: images.GColor_BCoquePurpleG, className: "bp-base bp-VioletGlass ", price: null, color: "Violet transparent" },
       { src: images.GColor_SBCoquePurple , backSrc:images.GColor_BCoquePurple , className: "bp-base bp-Violet", price: null, color: "Violet" },
