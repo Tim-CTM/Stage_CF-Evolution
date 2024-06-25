@@ -102,13 +102,6 @@
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.affichage-view .view.SIDE {
-  transform: rotateY(0deg);
-}
-
-.affichage-view .view.FRONT {
-  transform: rotateY(180deg);
-}
 
 .affichage-view img {
   max-width: 100%;

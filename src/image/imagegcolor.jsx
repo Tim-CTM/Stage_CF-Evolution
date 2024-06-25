@@ -181,12 +181,13 @@ import GColor_StickerW from"../image/Gameboy_Color/GColor_Sticker-White.png";
 import GColor_FP0 from"../image/Gameboy_Color/GColor-FP-0.png";
 import GColor_FPBlackG from"../image/Gameboy_Color/GColor-FP-Black-glass.png";
 import GColor_FPBleuC from"../image/Gameboy_Color/GColor-FP-Bleu-clair.png";
-import GColor_FPBleuS from"../image/Gameboy_Color/GColor-FP-Bleu-sombre.png";
+import GColor_FPBleu from"../image/Gameboy_Color/GColor-FP-Bleu.png";
 import GColor_FPGreenG from"../image/Gameboy_Color/GColor-FP-Green-glass.png";
 import GColor_FPGreen from"../image/Gameboy_Color/GColor-FP-Green.png";
 import GColor_FPLemon from"../image/Gameboy_Color/GColor-FP-Lemon.png";
 import GColor_FPOrange from"../image/Gameboy_Color/GColor-FP-Orange.png";
-import GColor_FPPurpleG from"../image/Gameboy_Color/GColor-FP-Purple-glass.png";
+import GColor_FPPurple from"../image/Gameboy_Color/GColor-FP-Purple.png";
+import GColor_FPRose from"../image/Gameboy_Color/GColor-FP-Rose.png";
 import GColor_FPRoseG from"../image/Gameboy_Color/GColor-FP-Rose-glass.png";
 import GColor_FPWhiteG from"../image/Gameboy_Color/GColor-FP-White-glass.png";
 import GColor_FPWhite from"../image/Gameboy_Color/GColor-FP-White.png";
@@ -194,14 +195,15 @@ import GColor_FPYellow from"../image/Gameboy_Color/GColor-FP-Yellow.png";
 
 // Pads Side
 import GColor_SP0 from"../image/Gameboy_Color/GColor-SP-0.png";
-import GColor_SPBleuG from"../image/Gameboy_Color/GColor-SP-Bleu-glass.png";
-import GColor_SPBleuS from"../image/Gameboy_Color/GColor-SP-Bleu-sombre.png";
+import GColor_SPBlackG from"../image/Gameboy_Color/GColor-SP-Black-glass.png";
+import GColor_SPBleuC from"../image/Gameboy_Color/GColor-SP-Bleu-clair.png";
+import GColor_SPBleu from"../image/Gameboy_Color/GColor-SP-Bleu.png";
 import GColor_SPGreenG from"../image/Gameboy_Color/GColor-SP-Green-glass.png";
 import GColor_SPGreen from"../image/Gameboy_Color/GColor-SP-Green.png";
 import GColor_SPLemon from"../image/Gameboy_Color/GColor-SP-Lemon.png";
 import GColor_SPOrange from"../image/Gameboy_Color/GColor-SP-Orange.png";
-import GColor_SPPurpleG from"../image/Gameboy_Color/GColor-SP-Purple-glass.png";
 import GColor_SPPurple from"../image/Gameboy_Color/GColor-SP-Purple.png";
+import GColor_SPRoseG from"../image/Gameboy_Color/GColor-SP-Rose-glass.png";
 import GColor_SPRose from"../image/Gameboy_Color/GColor-SP-Rose.png";
 import GColor_SPWhiteG from"../image/Gameboy_Color/GColor-SP-White-glass.png";
 import GColor_SPWhite from"../image/Gameboy_Color/GColor-SP-White.png";
@@ -212,14 +214,15 @@ const images = {
 // GameBoy Color
   // Side Pads
   GColor_SP0,
-  GColor_SPBleuG,
-  GColor_SPBleuS,
+  GColor_SPBlackG,
+  GColor_SPBleuC,
+  GColor_SPBleu,
   GColor_SPGreenG ,
   GColor_SPGreen ,
   GColor_SPLemon,
   GColor_SPOrange,
-  GColor_SPPurpleG,
   GColor_SPPurple,
+  GColor_SPRoseG,
   GColor_SPRose,
   GColor_SPWhiteG,
   GColor_SPWhite,
@@ -228,12 +231,13 @@ const images = {
   GColor_FP0,
   GColor_FPBlackG,
   GColor_FPBleuC,
-  GColor_FPBleuS,
+  GColor_FPBleu,
   GColor_FPGreenG,
   GColor_FPGreen,
   GColor_FPLemon,
   GColor_FPOrange ,
-  GColor_FPPurpleG,
+  GColor_FPPurple,
+  GColor_FPRose,
   GColor_FPRoseG,
   GColor_FPWhiteG,
   GColor_FPWhite,

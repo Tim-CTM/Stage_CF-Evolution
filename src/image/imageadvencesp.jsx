@@ -78,7 +78,7 @@ import GA_SP_SShadow from"../image/Gameboy_Advence-SP/GA-SP_SShadow.png";
 
 //Front Button
 import GA_SP_FBP0 from"../image/Gameboy_Advence-SP/GA-SP_FBP-0.png";
-import GA_SP_FBPBlack from"../image/Gameboy_Advence-SP/GA-SP_FBP-Black.png";
+import GA_SP_FBPWhite from"../image/Gameboy_Advence-SP/GA-SP_FBP-White.png";
 import GA_SP_FBPBleu from"../image/Gameboy_Advence-SP/GA-SP_FBP-Bleu.png";
 import GA_SP_FBPGreen from"../image/Gameboy_Advence-SP/GA-SP_FBP-Green.png";
 import GA_SP_FBPLemon from"../image/Gameboy_Advence-SP/GA-SP_FBP-Lemon.png";
@@ -143,13 +143,13 @@ const images = {
 
   // front boutton
   GA_SP_FBP0,
-  GA_SP_FBPBlack,
   GA_SP_FBPBleu,
   GA_SP_FBPGreen,
   GA_SP_FBPLemon,
   GA_SP_FBPOrange,
   GA_SP_FBPRed,
   GA_SP_FBPRose,
+  GA_SP_FBPWhite,
   GA_SP_FBPYellow,
   // Front coque arrière
   GA_SP_FBCoque0,

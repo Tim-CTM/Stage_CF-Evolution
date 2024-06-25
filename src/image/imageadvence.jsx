@@ -54,7 +54,7 @@ import GA_BCoqueCyan from"../image/Gameboy_Advence/GAdvence_BCoque-Cyan.png";
 import GA_BCoqueGreenG from"../image/Gameboy_Advence/GAdvence_BCoque-Green-glass.png";
 import GA_BCoqueOrangeG from"../image/Gameboy_Advence/GAdvence_BCoque-Orange-glass.png";
 import GA_BCoquePurpleG from"../image/Gameboy_Advence/GAdvence_BCoque-Purple-glass.png";
-import GA_BCoqueRed from"../image/Gameboy_Advence/GAdvence_BCoque-Red.png";
+import GA_BCoqueRedG from"../image/Gameboy_Advence/GAdvence_BCoque-Red-glass.png";
 import GA_BCoqueRose from"../image/Gameboy_Advence/GAdvence_BCoque-Rose.png";
 import GA_BCoqueWhite from"../image/Gameboy_Advence/GAdvence_BCoque-White.png";
 import GA_BCoqueG from"../image/Gameboy_Advence/GAdvence_BCoque-glass.png";
@@ -65,15 +65,15 @@ import GA_SBP0 from"../image/Gameboy_Advence/GAdvence_S-BP-0.png";
 import GA_SBPBlackG from"../image/Gameboy_Advence/GAdvence_S-BP-Black-glass.png";
 import GA_SBPBleuG from"../image/Gameboy_Advence/GAdvence_S-BP-Bleu-glass.png";
 import GA_SBPBleu from"../image/Gameboy_Advence/GAdvence_S-BP-Bleu.png";
-import GA_SBPGreengG from"../image/Gameboy_Advence/GAdvence_S-BP-Green-glass.png";
+import GA_SBPGreenG from"../image/Gameboy_Advence/GAdvence_S-BP-Green-glass.png";
 import GA_SBPLemon from"../image/Gameboy_Advence/GAdvence_S-BP-Lemon.png";
 import GA_SBPOrange from"../image/Gameboy_Advence/GAdvence_S-BP-Orange.png";
 import GA_SBPPurple from"../image/Gameboy_Advence/GAdvence_S-BP-Purple.png";
-import GA_SBPRed from"../image/Gameboy_Advence/GAdvence_S-BP-Red.png";
 import GA_SBPRoseG from"../image/Gameboy_Advence/GAdvence_S-BP-Rose-glass.png";
 import GA_SBPRose from"../image/Gameboy_Advence/GAdvence_S-BP-Rose.png";
 import GA_SBPSnes from"../image/Gameboy_Advence/GAdvence_S-BP-Snes.png";
 import GA_SBPWhite from"../image/Gameboy_Advence/GAdvence_S-BP-White.png";
+import GA_SBPRed from"../image/Gameboy_Advence/GAdvence_S-BP-Red.png";
 import GA_SBPYellow from"../image/Gameboy_Advence/GAdvence_S-BP-Yellow.png";
 import GA_SBPG from"../image/Gameboy_Advence/GAdvence_S-BP-glass.png";
 
@@ -103,17 +103,19 @@ import GA_BBPGreenG from"../image/Gameboy_Advence/GAdvence_B-BP-Green-glass.png"
 import GA_BBPLemon from"../image/Gameboy_Advence/GAdvence_B-BP-Lemon.png";
 import GA_BBPOrange from"../image/Gameboy_Advence/GAdvence_B-BP-Orange.png";
 import GA_BBPPurple from"../image/Gameboy_Advence/GAdvence_B-BP-Purple.png";
+import GA_BBPRed from"../image/Gameboy_Advence/GAdvence_B-BP-Red.png";
 import GA_BBPRoseG from"../image/Gameboy_Advence/GAdvence_B-BP-Rose-glass.png";
 import GA_BBPRose from"../image/Gameboy_Advence/GAdvence_B-BP-Rose.png";
 import GA_BBPSnes from"../image/Gameboy_Advence/GAdvence_B-BP-Snes.png";
-import GA_BBPWhiteG from"../image/Gameboy_Advence/GAdvence_B-BP-White-glass.png";
 import GA_BBPYellow from"../image/Gameboy_Advence/GAdvence_B-BP-Yellow.png";
 import GA_BBPG from"../image/Gameboy_Advence/GAdvence_B-BP-glass.png";
 import GA_BBPWhite from"../image/Gameboy_Advence/GAdvence_B-BP-White.png";
 
-// Shadow et Screen
+// Shadow / Screen  /strap shadow
+import GA_FStrapShadow from"../image/Gameboy_Advence/GAdvence_F-STRAP-Shadow.png";
 import GA_SShadow from"../image/Gameboy_Advence/GAdvence_S-Shadow.png";
-import GA_FShadow from"../image/Gameboy_Advence/GAdvence_F-STRAP-Shadow.png";
+import GA_FShadow from"../image/Gameboy_Advence/GAdvence_F-Shadow.png";
+import GA_FSShadow from"../image/Gameboy_Advence/GAdvence_F-STRAP-Shadow.png";
 
 import GA_SScreen0 from"../image/Gameboy_Advence/GAdvence_SScreen-1.png";
 import GA_SScreenBlackS from"../image/Gameboy_Advence/GAdvence_SScreen-Black-SuperNintendo.png";
@@ -160,8 +162,6 @@ import GA_FStrapRose from"../image/Gameboy_Advence/GAdvence_F-STRAP-Rose.png";
 import GA_FStrapWhite from"../image/Gameboy_Advence/GAdvence_F-STRAP-White.png";
 import GA_FStrapYellow from"../image/Gameboy_Advence/GAdvence_F-STRAP-Yellow.png";
 
-// Shadow Only one for all
-import GA_FStrapShadow from"../image/Gameboy_Advence/GAdvence_F-STRAP-Shadow.png";
 
 // Strap Side
 import GA_SStrap0 from"../image/Gameboy_Advence/GAdvence_S-STRAP-0.png";
@@ -271,14 +271,14 @@ const images = {
   GA_BBPGreenG,
   GA_BBPLemon,
   GA_BBPOrange,
+  GA_BBPPurple,
+  GA_BBPRed,
   GA_BBPRoseG,
   GA_BBPRose,
+  GA_BBPSnes,
+  GA_BBPWhite,
   GA_BBPYellow,
   GA_BBPG,
-  GA_BBPPurple,
-  GA_BBPSnes,
-  GA_BBPWhiteG ,
-  GA_BBPWhite,
 // Sticker 
   GA_StickerB,
   GA_StickerW,
@@ -296,9 +296,12 @@ const images = {
   GA_SScreenGrisS,
   GA_SScreenGris,
   GA_SScreenWhite,
+
 // Front and side shadow
   GA_SShadow,
   GA_FShadow,
+  GA_FSShadow,
+
 // Front Bouton
   GA_FBP0,
   GA_FBPBlackG,
@@ -320,7 +323,7 @@ const images = {
   GA_SBPBlackG,
   GA_SBPBleuG,
   GA_SBPBleu,
-  GA_SBPGreengG,
+  GA_SBPGreenG,
   GA_SBPLemon,
   GA_SBPOrange,
   GA_SBPPurple,
@@ -370,7 +373,7 @@ const images = {
   GA_BCoqueGreenG,
   GA_BCoqueOrangeG,
   GA_BCoquePurpleG ,
-  GA_BCoqueRed ,
+  GA_BCoqueRedG ,
   GA_BCoqueRose ,
   GA_BCoqueWhite,
   GA_BCoqueG,
