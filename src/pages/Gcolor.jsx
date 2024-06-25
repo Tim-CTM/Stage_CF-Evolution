@@ -68,7 +68,7 @@ const imagesData = {
         { src: images.GColor_SScreen0, frontSrc: images.GColor_FScreen0, className: "bp-base ", price: null, color: "" },
         { src: images.GColor_SScreenBleu, frontSrc: images.GColor_FScreenBleu, className: "bp-base ", price: null, color: "" },
         { src: images.GColor_SScreenGreen, frontSrc: images.GColor_FScreenGreen, className: "bp-base ", price: null, color: "" },
-        { src: images.GColor_SScreenGris, frontSrc: images.GColor_FScreenGris, className: "bp-base ", price: null, color: "" },
+        { src: images.GColor_SScreenGris, frontSrc: images.GColor_FScreenBlack, className: "bp-base ", price: null, color: "" },
         { src: images.GColor_SScreenOrange, frontSrc: images.GColor_FScreenOrange, className: "bp-base ", price: null, color: "" },
         { src: images.GColor_SScreenRed, frontSrc: images.GColor_FScreenRed, className: "bp-base ", price: null, color: "" },
         { src: images.GColor_SScreenWhite, frontSrc: images.GColor_FScreenWhite, className: "bp-base ", price: null, color: "" },
@@ -272,7 +272,14 @@ const imagesData = {
               )}
               <hr width="250px" align="left" /></div>
            
-
+              <div className="accordion-item">
+          <h3 onClick={() => toggleSection('screen')} className={openSection === 'screen' ? 'active' : ''}>Ecran IPS </h3>
+              {openSection === 'screen' && (
+                <div className="accordion-content">
+                  <ImageL type="screen" images={imagesData.screen} updateImages={updateImages} />
+                </div>
+              )}
+              <hr width="250px" align="left" /></div>
 
             </div>
             </div>

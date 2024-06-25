@@ -11,7 +11,7 @@ const imagesData = {
     { src: images.DMG_BPBlack, frontSrc: images.DMG_FBPBlack, className: "bp-base bp-Black", price: 10, color: "Noir" },
     { src: images.DMG_BPBleuG, frontSrc: images.DMG_FBPBleuG, className: "bp-base bp-BleuG", price: null, color: "Bleu transparent" },
     { src: images.DMG_BPBleu, frontSrc: images.DMG_FBPBleu, className: "bp-base bp-Bleu", price: null, color: "Bleu" },
-    { src: images.DMG_BPGreenG, frontSrc: images.DMG_FBPGreenG, className: "bp-base bp-VerreGlass", price: null, color: "Vert transparent" },
+    { src: images.DMG_BPGreenG, frontSrc: images.DMG_FBPGreenG, className: "bp-base bp-VertGlass", price: null, color: "Vert transparent" },
     { src: images.DMG_BPOrangeG, frontSrc: images.DMG_FBPOrangeG, className: "bp-base bp-OrangeGlass", price: null, color: "Orange transparent"},
     { src: images.DMG_BPOrange, frontSrc: images.DMG_FBPOrange, className: "bp-base bp-Orange", price: null, color: "Orange" },
     { src: images.DMG_BPRed, frontSrc: images.DMG_FBPRed, className: "bp-base bp-Rouge", price: null, color: "Rouge" },

@@ -126,10 +126,11 @@ import GA_SScreenWhite from"../image/Gameboy_Advence/GAdvence_SScreen-White.png"
 
 import GA_FScreen0 from"../image/Gameboy_Advence/GAdvence_FScreen-1.png";
 import GA_FScreenBlack from"../image/Gameboy_Advence/GAdvence_FScreen-DMG.png";
+import GA_FScreenBlackS from"../image/Gameboy_Advence/GAdvence_FScreen-Black-SuperNintendo.png";
 import GA_FScreenGrisS from"../image/Gameboy_Advence/GAdvence_FScreen-Gris-SuperNintendo.png";
 import GA_FScreenGris from"../image/Gameboy_Advence/GAdvence_FScreen-Gris.png";
 import GA_FScreenWhite from"../image/Gameboy_Advence/GAdvence_FScreen-White.png";
-import GA_FScreenBlackS from"../image/Gameboy_Advence/GAdvence_FScreen-Black-SuperNintendo.png";
+
 
 // Sticker
 import GA_StickerB from"../image/Gameboy_Advence/GAdvence_B-Sticker-Black.png";
