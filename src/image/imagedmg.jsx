@@ -44,7 +44,7 @@ import DMG_FCoqueRedG from  "../image/Gameboy_DMG/DMG_F-Red-glass.png";
 import DMG_FCoqueYellow from  "../image/Gameboy_DMG/DMG_F-Yellow.png";
 import DMG_FCoqueWhite from  "../image/Gameboy_DMG/DMG_F-White.png";
 import DMG_FCoqueG from  "../image/Gameboy_DMG/DMG_F-glass.png";
-import DMG_FCoqueCyan from  "../image/Gameboy_DMG/DMG_F-Cyan-glass.png";
+import DMG_FCoqueCyanG from  "../image/Gameboy_DMG/DMG_F-Cyan-glass.png";
 
 // Side Button
 import DMG_BP0 from  "../image/Gameboy_DMG/BP_0.png";
@@ -148,7 +148,7 @@ const images = {
   DMG_FBPRose,
   DMG_FBPWhite,
   DMG_FBPG,
-  DMG_FCoqueCyan,
+  DMG_FCoqueCyanG,
   // Side BP DMG
   DMG_BP0,
   DMG_BPBlackG,

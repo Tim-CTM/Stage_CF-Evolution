@@ -76,6 +76,7 @@ import GA_SP_FScreenW from"../image/Gameboy_Advence-SP/GA-SP_FScreen-White.png";
 import GA_SP_FShadow from"../image/Gameboy_Advence-SP/GA-SP_FShadow.png";
 import GA_SP_SShadow from"../image/Gameboy_Advence-SP/GA-SP_SShadow.png";
 
+
 //Front Button
 import GA_SP_FBP0 from"../image/Gameboy_Advence-SP/GA-SP_FBP-0.png";
 import GA_SP_FBPWhite from"../image/Gameboy_Advence-SP/GA-SP_FBP-White.png";

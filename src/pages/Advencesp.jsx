@@ -7,62 +7,84 @@ import images from '../image/imageadvencesp.jsx';
 
 const imagesData = {
     bp: [
-      { src: images.GA_SP_SBP0, frontSrc: images.GA_SP_FBP0, className: "bp-base bp-GrisDMG", price: null, color: "Gris" },
-      { src: images.GA_SP_SBPBleu, frontSrc: images.GA_SP_FBPBleu , className: "bp-base bp-BlackGlass", price: 40, color: "Bleu" },
-      { src: images.GA_SP_SBPGreen, frontSrc: images.GA_SP_FBPGreen, className: "bp-base bp-Black", price: 10, color: "Vert" },
-      { src: images.GA_SP_SBPLemon, frontSrc: images.GA_SP_FBPLemon, className: "bp-base bp-BleuG", price: null, color: "Citron" },
-      { src: images.GA_SP_SBPOrange, frontSrc: images.GA_SP_FBPOrange, className: "bp-base bp-Bleu", price: null, color: "Orange" },
-      { src: images.GA_SP_SBPRed, frontSrc: images.GA_SP_FBPRed, className: "bp-base bp-VertG", price: null, color: "Rouge" },
-      { src: images.GA_SP_SBPRose, frontSrc: images.GA_SP_FBPRose, className: "bp-base bp-Gris", price: null, color: "Rose" },
-      { src: images.GA_SP_SBPWhite, frontSrc: images.GA_SP_FBPWhite, className: "bp-base ", price: null, color: "Blanc" },
-      { src: images.GA_SP_SBPYellow, frontSrc: images.GA_SP_FBPYellow, className: "bp-base ", price: null, color: "Jaune" },
+      { src: images.GA_SP_SBP0, frontSrc: images.GA_SP_FBP0, className: "bp-base bp-Black", price: null, color: "Blanc" },
+      { src: images.GA_SP_SBPBleu, frontSrc: images.GA_SP_FBPBleu , className: "bp-base bp-Bleu", price: 40, color: "Bleu" },
+      { src: images.GA_SP_SBPGreen, frontSrc: images.GA_SP_FBPGreen, className: "bp-base bp-Vert", price: 10, color: "Vert" },
+      { src: images.GA_SP_SBPLemon, frontSrc: images.GA_SP_FBPLemon, className: "bp-base bp-Lemon", price: null, color: "Citron" },
+      { src: images.GA_SP_SBPOrange, frontSrc: images.GA_SP_FBPOrange, className: "bp-base bp-Orange", price: null, color: "Orange" },
+      { src: images.GA_SP_SBPRed, frontSrc: images.GA_SP_FBPRed, className: "bp-base bp-Rouge", price: null, color: "Rouge" },
+      { src: images.GA_SP_SBPRose, frontSrc: images.GA_SP_FBPRose, className: "bp-base bp-Rose", price: null, color: "Rose" },
+      { src: images.GA_SP_SBPWhite, frontSrc: images.GA_SP_FBPWhite, className: "bp-base bp-Blanc", price: null, color: "Blanc" },
+      { src: images.GA_SP_SBPYellow, frontSrc: images.GA_SP_FBPYellow, className: "bp-base bp-Jaune ", price: null, color: "Jaune" },
     ],
     coque: [
-      { src: images.GA_SP_SCoque0, frontSrc: images.GA_SP_FCoque0, className: "bp-base bp-GrisDMG", price: null, color: "Gris" },
-      { src: images.GA_SP_SCoqueBlackG , frontSrc: images.GA_SP_FCoqueBlackG, className: "bp-base bp-Jaune  ", price: null, color: "Noir transparent" },
-      { src: images.GA_SP_SCoqueBlack , frontSrc: images.GA_SP_FCoqueBlack, className: "bp-base bp-Jaune  ", price: null, color: "Noir" },
+      { src: images.GA_SP_SCoque0, frontSrc: images.GA_SP_FCoque0, className: "bp-base bp-Blanc", price: null, color: "Blanc" },
+      { src: images.GA_SP_SCoqueBlackG , frontSrc: images.GA_SP_FCoqueBlackG, className: "bp-base bp-BlackGlass ", price: null, color: "Noir transparent" },
+      { src: images.GA_SP_SCoqueBlack , frontSrc: images.GA_SP_FCoqueBlack, className: "bp-base bp-Black  ", price: null, color: "Noir" },
       { src: images.GA_SP_SCoqueBleuG , frontSrc: images.GA_SP_FCoqueBleuG, className: "bp-base bp-Bleu ", price: null, color: "Bleu transparent" },
       { src: images.GA_SP_SCoqueCyan , frontSrc: images. GA_SP_FCoqueCyan, className: "bp-base bp-Cyan", price: null, color: "Cyan" },
-      { src: images.GA_SP_SCoqueGreenG , frontSrc: images.GA_SP_FCoqueGreenG, className: "bp-base bp-VertGlass ", price: null, color: "Vert transparent" },
-      { src: images.GA_SP_SCoquePurpleA , frontSrc: images.GA_SP_FCoquePurpleA, className: "bp-base bp-Citron", price: null, color: "Violet atomique" },
-      { src: images.GA_SP_SCoquePurpleG , frontSrc: images.GA_SP_FCoquePurpleG, className: "bp-base bp-Citron", price: null, color: "Violet transparant" },
-      { src: images.GA_SP_SCoquePurple , frontSrc: images.GA_SP_FCoquePurple, className: "bp-base bp-Citron", price: null, color: "Violet" },
-      { src: images.GA_SP_SCoqueRedG , frontSrc: images.GA_SP_FCoqueRedG, className: "bp-base bp-Violet  ", price: null, color: "Rouge transparent" },
+      { src: images.GA_SP_SCoqueGreenG , frontSrc: images.GA_SP_FCoqueGreenG, className: "bp-base bp-VertG ", price: null, color: "Vert transparent" },
+      { src: images.GA_SP_SCoquePurpleA , frontSrc: images.GA_SP_FCoquePurpleA, className: "bp-base bp-VioletA", price: null, color: "Violet atomique" },
+      { src: images.GA_SP_SCoquePurpleG , frontSrc: images.GA_SP_FCoquePurpleG, className: "bp-base bp-VioletGlass", price: null, color: "Violet transparant" },
+      { src: images.GA_SP_SCoquePurple , frontSrc: images.GA_SP_FCoquePurple, className: "bp-base bp-Violet", price: null, color: "Violet" },
+      { src: images.GA_SP_SCoqueRedG , frontSrc: images.GA_SP_FCoqueRedG, className: "bp-base bp-RougeGlass  ", price: null, color: "Rouge transparent" },
       { src: images.GA_SP_SCoqueRose , frontSrc: images.GA_SP_FCoqueRose, className: "bp-base bp-Rose ", price: null, color: "Rose" },
       { src: images.GA_SP_SCoqueYellow , frontSrc: images.GA_SP_FCoqueYellow, className: "bp-base bp-Jaune  ", price: null, color: "Jaune" },
       { src: images.GA_SP_SCoqueG , frontSrc: images.GA_SP_FCoqueG, className: "bp-base bp-Verre  ", price: null, color: "Transparent" },
-    ],
+    ],  
     baseconsole: [
       { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Oui" },
       { src: null, frontSrc: null, className: "bp-base bp-Black ", price: 40, color: "Non" },
     ],
     backcoque: [
-      { src: images.GA_SP_SBCoque0, frontSrc: images.GA_SP_FBCoque0, className: "bp-base bp-GrisDMG", price: null, color: "Gris" },
-      { src: images.GA_SP_SBCoqueBlackG, frontSrc: images.GA_SP_FBCoqueBlackC, className: "bp-base bp-BlackGlass", price: 10, color: "Noir transparent" },
-      { src: images.GA_SP_SBCoqueBleuG, frontSrc: images.GA_SP_FBCoqueBleuC, className: "bp-base bp-Bleu", price: null, color: "Bleu transparent" },
-      { src: images.GA_SP_SBCoqueCyan, frontSrc: images.GA_SP_FBCoqueCyan, className: "bp-base bp-Turquoise", price: null, color: "Turquoise" },
-      { src: images.GA_SP_SBCoqueGreenG, frontSrc: images.GA_SP_FBCoqueGreenG, className: "bp-base bp-VertGlass", price: null, color: "Vert transparent" },
-      { src: images.GA_SP_SBCoquePurpleA, frontSrc: images.GA_SP_FBCoquePurpleG, className: "bp-base bp-Citron", price: null, color: "Violet atomique" },
-      { src: images.GA_SP_SBCoquePurpleG, frontSrc: images.GA_SP_FBCoquePurpleA, className: "bp-base bp-Citron", price: null, color: "Violet transparent" },
-      { src: images.GA_SP_SBCoquePurple, frontSrc: images.GA_SP_FBCoquePurple, className: "bp-base bp-Citron", price: null, color: "Violet" },
-      { src: images.GA_SP_SBCoqueRedG, frontSrc: images.GA_SP_FBCoqueRedG, className: "bp-base bp-Violet", price: null, color: "Rouge transparent" },
-      { src: images.GA_SP_SBCoqueRose, frontSrc: images.GA_SP_FBCoqueRose, className: "bp-base bp-Rose", price: null, color: "Rose" },
-      { src: images.GA_SP_SBCoqueYellow, frontSrc: images.GA_SP_FBCoqueYellow, className: "bp-base bp-Jaune", price: null, color: "Jaune" },
-      { src: images.GA_SP_SBCoqueG, frontSrc: images.GA_SP_FBCoqueG, className: "bp-base bp-Verre", price: null, color: "Transparent" },
+      { src: images.GA_SP_SBCoque0, frontSrc: images.GA_SP_FBCoque0, className: "bp-base bp-Blanc", price: 16.90, color: "Blanc" },
+      { src: images.GA_SP_SBCoqueBlackG, frontSrc: images.GA_SP_FBCoqueBlackC, className: "bp-base bp-BlackGlass", price: 16.90, color: "Noir transparent" },
+      { src: images.GA_SP_SBCoqueBleuG, frontSrc: images.GA_SP_FBCoqueBleuC, className: "bp-base bp-Bleu", price: 16.90, color: "Bleu transparent" },
+      { src: images.GA_SP_SBCoqueCyan, frontSrc: images.GA_SP_FBCoqueCyan, className: "bp-base bp-Cyan", price: 16.90, color: "Cyan" },
+      { src: images.GA_SP_SBCoqueGreenG, frontSrc: images.GA_SP_FBCoqueGreenG, className: "bp-base bp-VertG", price: 16.90, color: "Vert transparent" },
+      { src: images.GA_SP_SBCoquePurpleA, frontSrc: images.GA_SP_FBCoquePurpleG, className: "bp-base bp-VioletGlass", price: 16.90, color: "Violet atomique" },
+      { src: images.GA_SP_SBCoquePurpleG, frontSrc: images.GA_SP_FBCoquePurpleA, className: "bp-base bp-VioletA", price: 16.90, color: "Violet transparent" },
+      { src: images.GA_SP_SBCoquePurple, frontSrc: images.GA_SP_FBCoquePurple, className: "bp-base bp-Violet", price: 16.90, color: "Violet" },
+      { src: images.GA_SP_SBCoqueRedG, frontSrc: images.GA_SP_FBCoqueRedG, className: "bp-base bp-RougeGlass", price: 16.90, color: "Rouge transparent" },
+      { src: images.GA_SP_SBCoqueRose, frontSrc: images.GA_SP_FBCoqueRose, className: "bp-base bp-Rose", price: 16.90, color: "Rose" },
+      { src: images.GA_SP_SBCoqueYellow, frontSrc: images.GA_SP_FBCoqueYellow, className: "bp-base bp-Jaune", price: 16.90, color: "Jaune" },
+      { src: images.GA_SP_SBCoqueG, frontSrc: images.GA_SP_FBCoqueG, className: "bp-base bp-Glass", price: 16.90, color: "Transparent" },
     ],
     screen: [   
-      { src: images.GA_SP_SScreenB, frontSrc: images.GA_SP_FScreenB, className: "bp-base ", price: null, color: "" },
-      { src: images.GA_SP_SScreenW, frontSrc: images.GA_SP_FScreenW, className: "bp-base ", price: null, color: "" },
+      { src: images.GA_SP_SScreenB, frontSrc: images.GA_SP_FScreenB, className: "bp-base bp-Blanc ", price: null, color: "Blanc" },
+      { src: images.GA_SP_SScreenW, frontSrc: images.GA_SP_FScreenW, className: "bp-base bp-Black", price: null, color: "Noir" },
+    ],
+    installation: [   
+      { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
+      { src: null, frontSrc: null, className: "bp-base bp-Black", price: 30, color: "Batterie" },
+    ],
+    usb: [   
+      { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
+      { src: null, frontSrc: null, className: "bp-base bp-Black", price: 20, color: "USB-C" },
+    ],
+    rgb: [   
+      { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
+      { src: null, frontSrc: null, className: "bp-base bp-Black", price: 35, color: "Led RGB" },
+    ],
+    audio: [   
+      { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
+      { src: null, frontSrc: null, className: "bp-base bp-Black", price: 25, color: "Audio AMP" },
+    ],
+    accessoires: [   
+      { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
+      { src: null, frontSrc: null, className: "bp-base bp-Black", price: 8.90, color: "Coque-Silicone" },
+      { src: null, frontSrc: null, className: "bp-base ", price: 5.90, color: "Verre trempé" },
+      { src: null, frontSrc: null, className: "bp-base ", price: 12.50, color: "Sacoche" },
     ],
     pads: [
-      { src: images.GA_SP_SP0, frontSrc: images.GA_SP_FP0, className: "bp-base bp-GrisDMG ", price: null, color: "DMG" },
-      { src: images.GA_SP_SPBleu  , frontSrc: images.GA_SP_FPBleu, className: "bp-base bp-Bleu ", price: null, color: "Bleu" },
-      { src: images.GA_SP_SPOrange , frontSrc: images.GA_SP_FPOrange, className: "bp-base bp-Bleu-Glass ", price: null, color: "Bleu Transparant" },
-      { src: images.GA_SP_SPWhite, frontSrc:images.GA_SP_FPWhite , className: "bp-base bp-Glass", price: null, color: "Transparent" },
-      { src: images.GA_SP_SPGreen , frontSrc:images.GA_SP_FPGreen, className: "bp-base bp-Vert", price: null, color: "Vert" },
-      { src: images.GA_SP_SPPurple , frontSrc: images.GA_SP_FPPurple, className: "bp-base bp-Violet", price: null, color: "Violet" },
-      { src: images.GA_SP_SPRed, frontSrc: images.GA_SP_FPRed, className: "bp-base bp-Rouge ", price: null, color: "Rouge" },
-      { src: images.GA_SP_SPYellow , frontSrc: images.GA_SP_FPYellow, className: "bp-base bp-Jaune ", price: null, color: "Jaune" },
+      { src: images.GA_SP_SP0, frontSrc: images.GA_SP_FP0, className: "bp-base bp-GrisDMG ", price: 2.90, color: "DMG" },
+      { src: images.GA_SP_SPBleu  , frontSrc: images.GA_SP_FPBleu, className: "bp-base bp-Bleu ", price: 2.90, color: "Bleu" },
+      { src: images.GA_SP_SPOrange , frontSrc: images.GA_SP_FPOrange, className: "bp-base bp-Orange ", price: 2.90, color: "Orange" },
+      { src: images.GA_SP_SPWhite, frontSrc:images.GA_SP_FPWhite , className: "bp-base bp-Blanc", price: 2.90, color: "Blanc" },
+      { src: images.GA_SP_SPGreen , frontSrc:images.GA_SP_FPGreen, className: "bp-base bp-Vert", price: 2.90, color: "Vert" },
+      { src: images.GA_SP_SPPurple , frontSrc: images.GA_SP_FPPurple, className: "bp-base bp-Violet", price: 2.90, color: "Violet" },
+      { src: images.GA_SP_SPRed, frontSrc: images.GA_SP_FPRed, className: "bp-base bp-Rouge ", price: 2.90, color: "Rouge" },
+      { src: images.GA_SP_SPYellow , frontSrc: images.GA_SP_FPYellow, className: "bp-base bp-Jaune ", price: 2.90, color: "Jaune" },
     ],
    };
 
@@ -75,6 +97,11 @@ const imagesData = {
       backcoque: imagesData.backcoque[0],
       screen: imagesData.screen[0],
       pads: imagesData.pads[0],
+      installation: imagesData.installation[0],
+      usb: imagesData.usb[0],
+      accessoires: imagesData.accessoires[0],
+      rgb: imagesData.rgb[0],
+      audio: imagesData.audio[0],
     });
   
     const [openSection, setOpenSection] = useState('baseconsole');
@@ -85,6 +112,7 @@ const imagesData = {
         ...prevState,
         [type]: selectImage
       })); 
+      
     };
     
   const [view, setView] = useState('SIDE');
@@ -92,8 +120,8 @@ const imagesData = {
 
 
   const calculateAllPrice = () => {
-    const { bp, coque, baseconsole, pads, backcoque } = selectImages;
-    return basePrice + (bp.price ?? 0) + (coque.price ?? 0) + (baseconsole.price ?? 0) + (pads.price ??0) + (backcoque.price ??0) ;
+    const { bp, coque, baseconsole, pads, backcoque , installation, usb, accessoires , rgb, audio} = selectImages;
+    return basePrice + (bp.price ?? 0) + (coque.price ?? 0) + (baseconsole.price ?? 0) + (pads.price ??0) + (backcoque.price ??0) + (installation.price ?? 0) + (usb.price ?? 0) + (accessoires.price ?? 0) + (rgb.price ?? 0) + (audio.price ?? 0);
   };
 
   const basePrice = 129;
@@ -195,14 +223,66 @@ const imagesData = {
             )}
             <hr width="300px" align="left" />
           </div>
-        </div>
+
+
           <hr width="250px" align="left" />
-          <h3>INSTALLATION BATTERIE</h3>
-          <p>Pose d'une batterie rechargeable - 2300 mAh</p>
+
+          <div className="accordion-item">
+            <h3 onClick={() => toggleSection('installation')} className={openSection === 'installation' ? 'active' : ''}>INSTALLATION BATTERIE</h3>
+            <p>Pose d'une batterie rechargeable - 2300 mAh</p>
+            {openSection === 'installation' && (
+              <div className="accordion-content">
+                <ImageL type="installation" images={imagesData.installation} updateImages={updateImages} />
+              </div>
+            )}
+
+          </div>
+
+
           <hr width="250px" align="left" />
-          <h3>USB-C MOD</h3>
+          <div className="accordion-item">
+            <h3 onClick={() => toggleSection('usb')} className={openSection === 'usb' ? 'active' : ''}>USB-C MOD</h3>
+            <p>Remplacement du port de charge par un port USB-C</p>
+            {openSection === 'usb' && (
+              <div className="accordion-content">
+                <ImageL type="usb" images={imagesData.usb} updateImages={updateImages} />
+              </div>
+            )}
+          </div>
           <hr width="250px" align="left" />
-          <h3>ACCESSOIRES</h3>
+          <div className="accordion-item">
+            <h3 onClick={() => toggleSection('rgb')} className={openSection === 'rgb' ? 'active' : ''}>Led RGB</h3>
+            <p>Pose de LED RGB sur la carte mère.</p>
+            {openSection === 'rgb' && (
+              <div className="accordion-content">
+                <ImageL type="rgb" images={imagesData.rgb} updateImages={updateImages} />
+              </div>
+            )}
+          </div>
+          <hr width="250px" align="left" />
+          <div className="accordion-item">
+            <h3 onClick={() => toggleSection('audio')} className={openSection === 'audio' ? 'active' : ''}>INSTALLATION AUDIO AMP</h3>
+            <p>Amplifie le son à 200%</p>
+            {openSection === 'audio' && (
+              <div className="accordion-content">
+                <ImageL type="audio" images={imagesData.audio} updateImages={updateImages} />
+              </div>
+            )}
+          </div>
+
+
+          <hr width="250px" align="left" />
+          <div className="accordion-item">
+            <h3 onClick={() => toggleSection('accessoires')} className={openSection === 'accessoires' ? 'active' : ''}>Accessoires</h3>
+            <p>Remplacement du port de charge par un port USB-C</p>
+            {openSection === 'accessoires' && (
+              <div className="accordion-content">
+                <ImageL type="accessoires" images={imagesData.accessoires} updateImages={updateImages} />
+              </div>
+            )}
+            </div>
+
+          </div>
           <hr width="250px" align="left" />
           <h5>Prix total des articles : {calculateAllPrice()} €</h5>
           <button className="panier">Ajouter au panier</button>
@@ -216,7 +296,7 @@ const imagesData = {
                 <img src={view === 'SIDE' ? selectImages.pads.src : selectImages.pads.frontSrc} alt="pads" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
                 <img src={view === 'SIDE' ? selectImages.backcoque.src : selectImages.backcoque.frontSrc} alt="Backcoque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
                 <img src={view === 'SIDE' ? selectImages.screen.src : selectImages.screen.frontSrc} alt="Screen" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
-              </div>  
+              </div>
 
               <div className="views-container">
                 <button onClick={() => setView('SIDE')}></button>

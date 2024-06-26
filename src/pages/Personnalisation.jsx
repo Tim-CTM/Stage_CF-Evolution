@@ -11,7 +11,7 @@ const imagesData = {
     { src: images.DMG_BPBlack, frontSrc: images.DMG_FBPBlack, className: "bp-base bp-Black", price: 10, color: "Noir" },
     { src: images.DMG_BPBleuG, frontSrc: images.DMG_FBPBleuG, className: "bp-base bp-BleuG", price: null, color: "Bleu transparent" },
     { src: images.DMG_BPBleu, frontSrc: images.DMG_FBPBleu, className: "bp-base bp-Bleu", price: null, color: "Bleu" },
-    { src: images.DMG_BPGreenG, frontSrc: images.DMG_FBPGreenG, className: "bp-base bp-VertGlass", price: null, color: "Vert transparent" },
+    { src: images.DMG_BPGreenG, frontSrc: images.DMG_FBPGreenG, className: "bp-base bp-VertG", price: null, color: "Vert transparent" },
     { src: images.DMG_BPOrangeG, frontSrc: images.DMG_FBPOrangeG, className: "bp-base bp-OrangeGlass", price: null, color: "Orange transparent"},
     { src: images.DMG_BPOrange, frontSrc: images.DMG_FBPOrange, className: "bp-base bp-Orange", price: null, color: "Orange" },
     { src: images.DMG_BPRed, frontSrc: images.DMG_FBPRed, className: "bp-base bp-Rouge", price: null, color: "Rouge" },
@@ -32,7 +32,7 @@ const imagesData = {
     { src: images.DMGcoqueImageBleuG , frontSrc: images.DMG_FCoqueBleuG, className: "bp-base bp-BleuG ", price: null, color: "Bleu transparent" },
     { src: images.DMGcoqueImageBlackG , frontSrc: images.DMG_FCoqueBlackG, className: "bp-base bp-Black" , price: 15, color: "Noir transparent" },
     { src: images.DMGcoqueImageOrangeG, frontSrc: images.DMG_FCoqueOrangeG , className: "bp-base bp-Orange", price: null, color: "Orange transparent" },
-    { src: images.DMGcoqueImageCyan , frontSrc: images.DMG_FCoqueCyan, className: "bp-base bp-Cyan", price: null, color: "Cyan transparent" },
+    { src: images.DMGcoqueImageCyanG , frontSrc: images.DMG_FCoqueCyanG, className: "bp-base bp-Cyan", price: null, color: "Cyan transparent" },
   ],
   baseconsole: [
     { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Oui" },
@@ -65,8 +65,16 @@ const imagesData = {
     { src: images.DMG_SPYellow , frontSrc: images.DMG_FPYellow, className: "bp-base bp-Jaune ", price: null, color: "Jaune" },
   ],
   screen:[
-    { src: images.DMG_SCoqueScreen , frontSrc: images.DMG_FCoqueScreen, className: "bp-base ", price: null, color: "" },
-    { src: images.DMG_SCoqueScreenB , frontSrc: images.DMG_FCoqueScreenB, className: "bp-base ", price: null, color: "" },
+    { src: images.DMG_SCoqueScreen , frontSrc: images.DMG_FCoqueScreen, className: "bp-base bp-GrisDMG", price: null, color: "Gris" },
+    { src: images.DMG_SCoqueScreenB , frontSrc: images.DMG_FCoqueScreenB, className: "bp-base bp-Black ", price: null, color: "Noir" },
+  ],
+  installation:[
+    { src:  null, frontSrc: null, className: "bp-base bp-Blanc", price: null, color: "Aucun" },
+    { src:  null, frontSrc: null, className: "bp-base bp-Black", price: 40.00, color: "Batterie" },
+  ],
+  accessoires:[
+    { src: null , frontSrc: null, className: "bp-base ", price: null, color: "Aucun" },
+    { src: null , frontSrc: null, className: "bp-base bp-GrisDMG", price: 5.90, color: "Verre trempé" },
   ],
  };
 
@@ -79,6 +87,8 @@ const imagesData = {
     coquearriere: imagesData.coquearriere[0],
     pads: imagesData.pads[0],
     screen: imagesData.screen[0],
+    installation: imagesData.installation[0],
+    accessoires: imagesData.accessoires[0],
   });
 
   const [openSection, setOpenSection] = useState('baseconsole');
@@ -113,8 +123,8 @@ const imagesData = {
 
 
   const calculateAllPrice = () => {
-    const { bp, coque, baseconsole, pads, coquearriere } = selectImages;
-    return basePrice + (bp.price ?? 0) + (coque.price ?? 0) + (baseconsole.price ?? 0) + (pads.price ??0) + (coquearriere.price ??0) ;
+    const { bp, coque, baseconsole, pads, coquearriere, installation, accessoires } = selectImages;
+    return basePrice + (bp.price ?? 0) + (coque.price ?? 0) + (baseconsole.price ?? 0) + (pads.price ??0) + (coquearriere.price ??0) + (installation.price ?? 0) +(accessoires.price ?? 0) ;
   };
 
   const basePrice = 129;
@@ -216,19 +226,33 @@ const imagesData = {
                   <ImageL type="screen" images={imagesData.screen} updateImages={updateImages} />
                 </div>
               )}
-
               <hr width="300px" align="left" />
             </div>
 
+
+            <div className="accordion-item">
+              <h3 onClick={() => toggleSection('installation')} className={openSection === 'installation' ? 'active' : ''}>INSTALLATION BATTERIE</h3>
+              <p>Pose d'une batterie rechargeable - 2300 mAh</p>
+              {openSection === 'installation' && (
+                <div className="accordion-content">
+                  <ImageL type="installation" images={imagesData.installation} updateImages={updateImages} />
+                </div>
+              )}
+              <hr width="300px" align="left" />
             </div>
-            <hr width="250px" align="left" />
-            <h3>INSTALLATION BATTERIE</h3>
-            <p>Pose d'une batterie rechargeable - 2300 mAh</p>
-            <hr width="250px" align="left" />
-            <h3>USB-C MOD</h3>
-            <hr width="250px" align="left" />
-            <h3>ACCESSOIRES</h3>
-            <hr width="250px" align="left" />
+
+            <div className="accordion-item">
+              <h3 onClick={() => toggleSection('accessoires')} className={openSection === 'accessoires' ? 'active' : ''}>ACCESSOIRES</h3>
+
+              {openSection === 'accessoires' && (
+                <div className="accordion-content">
+                  <ImageL type="accessoires" images={imagesData.accessoires} updateImages={updateImages} />
+                </div>
+              )}
+              <hr width="300px" align="left" />
+            </div>
+            </div>
+
             <h5>Prix total des articles : {calculateAllPrice()} €</h5>
             <button className="panier">Ajouter au panier</button>
           </div>
