@@ -7,8 +7,8 @@ import images from '../image/imagegcolor.jsx';
 const imagesData = {
     bp: [
       { src: images.GColor_BP0, frontSrc: images.GColor_FBP0, className: "bp-base bp-GrisDMG", price: null, color: "DMG" },
-      { src: images.GColor_BPBlackG, frontSrc: images.GColor_FBPBlackG , className: "bp-base bp-BlackGlass", price: 40, color: "Noir transparent" },
-      { src: images.GColor_BPBlack, frontSrc: images.GColor_FBPBlack, className: "bp-base bp-Black", price: 10, color: "Noir" },
+      { src: images.GColor_BPBlackG, frontSrc: images.GColor_FBPBlackG , className: "bp-base bp-BlackGlass", price: null, color: "Noir transparent" },
+      { src: images.GColor_BPBlack, frontSrc: images.GColor_FBPBlack, className: "bp-base bp-Black", price: null, color: "Noir" },
       { src: images.GColor_BPBleuG, frontSrc: images.GColor_FBPBleu, className: "bp-base bp-BleuG", price: null, color: "Bleu transparent" },
       { src: images.GColor_BPBleuS, frontSrc: images.GColor_FBPBleuS, className: "bp-base bp-Bleu", price: null, color: "Bleu Sombre" },
       { src: images.GColor_BPGreenG, frontSrc: images.GColor_FBPGreenG, className: "bp-base bp-VertG", price: null, color: "Vert transparent" },
@@ -35,19 +35,19 @@ const imagesData = {
       { src: images.GColor_SCoqueGreenG , frontSrc: images.GColor_FCoqueGreenG,  className: "bp-base bp-VertG ", price: null, color: "Vert transparent" },
       { src: images.GColor_SCoquePurpleG , frontSrc: images.GColor_FCoquePurpleG,  className: "bp-base bp-Violet  ", price: null, color: "Violet transparent" },
       { src: images.GColor_SCoqueRose , frontSrc: images.GColor_FCoqueRose,  className: "bp-base bp-Rose ", price: null, color: "Rose" },
-      { src: images.GColor_SCoqueBlackG , frontSrc: images.GColor_FCoqueBlackG, className: "bp-base bp-BlackGlass" , price: 15, color: "Noir transparent" },
+      { src: images.GColor_SCoqueBlackG , frontSrc: images.GColor_FCoqueBlackG, className: "bp-base bp-BlackGlass" , price: null, color: "Noir transparent" },
       { src: images.GColor_SCoqueOrangeG, frontSrc: images.GColor_FCoqueOrangeG ,  className: "bp-base bp-OrangeGlass", price: null, color: "Orange transparent" },
       { src: images.GColor_SCoqueCyanG , frontSrc: images.GColor_FCoqueCyanG, className: "bp-base bp-Turquoise", price: null, color: "Cyan transparent" },
       { src: images.GColor_SCoqueCyan , frontSrc: images.GColor_FCoqueCyan, className: "bp-base bp-Cyan", price: null, color: "Cyan" },
       { src: images.GColor_SCoquePurple , frontSrc: images.GColor_FCoquePurple, className: "bp-base bp-Violet", price: null, color: "Violet" },
-      { src: images.GColor_SCoqueBlack , frontSrc: images.GColor_FCoqueBlack, className: "bp-base bp-Black" , price: 15, color: "Noir" },
+      { src: images.GColor_SCoqueBlack , frontSrc: images.GColor_FCoqueBlack, className: "bp-base bp-Black" , price: null, color: "Noir" },
     ],
     baseconsole: [
       { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Oui" },
       { src: null, frontSrc: null, className: "bp-base bp-Black ", price: 40, color: "Non" },
     ],
     coquearriere: [
-      { src: images.GColor_BCoque0 , backSrc: images.GColor_SBCoque0, className: "bp-base bp-GrisDMG", price: 11.90, color: "DMG" },
+      { src: images.GColor_BCoque0 , backSrc: images.GColor_SBCoque0, className: "bp-base bp-GrisDMG", price: null, color: "DMG" },
       { src: images.GColor_BCoqueBlackG, backSrc: images.GColor_SBCoqueBlackG,  className: "bp-base bp-BlackGlass", price: 11.90, color: "Noir transparent" },
       { src: images.GColor_BCoqueBlack , backSrc:images.GColor_SBCoqueBlack,  className: "bp-base bp-Black", price: 11.90, color: "Bleu" },
       { src: images.GColor_BCoqueBleuG , backSrc: images.GColor_SBCoqueBleuG, className: "bp-base bp-BleuG ", price: 11.90, color: "Bleu transparent" },
@@ -122,7 +122,6 @@ const imagesData = {
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 50, color: "Led RGB" },
   ],
   accessoires: [   
-    { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 8.90, color: "Coque-Silicone" },
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 5.90, color: "Verre trempé" },
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 12.50, color: "Sacoche" },
@@ -143,24 +142,39 @@ const imagesData = {
       laniere: imagesData.laniere[0],
       usb: imagesData.usb[0],
       rgb: imagesData.rgb[0],
-      accessoires: imagesData.accessoires[0],
+      accessoires: [],
     });
   
     const [openSection, setOpenSection] = useState('baseconsole');
   
+
     const updateImages = (type, selectImage) => {
-  
-      setSelectImages(prevState => ({
-        ...prevState,
-        [type]: selectImage
-      })); 
+      if (type === "accessoires") {
+        setSelectImages(prevState => {
+          const updatedAccessoires = prevState.accessoires.includes(selectImage)
+            ? prevState.accessoires.filter(item => item !== selectImage)
+            : [...prevState.accessoires, selectImage];
+          return {
+            ...prevState,
+            [type]: updatedAccessoires
+          };
+        });
+      } else {
+        setSelectImages(prevState => ({
+          ...prevState,
+          [type]: selectImage
+        }));
+      }
     };
     
   const [view, setView] = useState('FRONT');
 
 
+
   const calculateAllPrice = () => {
-    const { bp, coque, baseconsole, pads, coquearriere, usb , rgb, accessoires } = selectImages;
+    const { bp, coque, baseconsole, pads, coquearriere, usb, rgb, accessoires } = selectImages;
+    const accessoiresTotalPrice = accessoires.reduce((total, item) => total + (item.price ?? 0), 0);
+    
     return (
       basePrice +
       (bp.price ?? 0) +
@@ -170,12 +184,11 @@ const imagesData = {
       (coquearriere.price ?? 0) +
       (rgb.price ?? 0) +
       (usb.price ?? 0) +
-      (accessoires.price ?? 0) 
+      accessoiresTotalPrice
     );
   };
 
   const basePrice = 159;
-
 
   const ImageL = ({ type, images }) => (
     <div className="wrap-btn">
@@ -324,18 +337,18 @@ const imagesData = {
           <h3 onClick={() => toggleSection('accessoires')} className={openSection === 'accessoires' ? 'active' : ''}>Accessoires</h3>
               {openSection === 'accessoires' && (
                 <div className="accordion-content">
-                  <ImageL type="accessoires" images={imagesData.accessoires} updateImages={updateImages} />
+                  <ImageL type="accessoires" images={imagesData.accessoires} />
                 </div>
               )}
               <hr width="250px" align="left" /></div>
               </div>
-            <h5>Prix total des articles : {calculateAllPrice()} €</h5>
-            <button className="panier">Ajouter au panier</button>
+              <h5 className="total-price">Prix total des articles : {calculateAllPrice()} €</h5>
+            <button className="panierbp">Ajouter au panier</button>
           </div>
 
           <div className='affichage-view'>
             <div className={`view ${view === 'FRONT' ? 'FRONT' : view === 'SIDE' ? 'SIDE' : 'BACK'}`}>
-                <div style={{ position: "relative", width: "300px", height: "300px" }}>
+                <div style={{ position: "relative", width: "800px", height: "800px" }}>
                   {view === 'FRONT' && (
                     <>
                       <img src={selectImages.coque.frontSrc} alt="Coque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
@@ -370,20 +383,76 @@ const imagesData = {
                   )}
                   </div>
                 </div>
-                </div>
-        <div className="views-container">
-        <button onClick={() => setView('FRONT')}></button>
-          <button onClick={() => setView('SIDE')}></button>
-          <button onClick={() => setView('BACK')}></button>
-        </div>
-            
+              </div>
+              <div className="views-container">
+              <button className={view === 'FRONT' ? 'active' : '' } onClick={() => setView('FRONT')}></button>
+                <button className={view === 'SIDE' ? 'active' : '' } onClick={() => setView('SIDE')}></button>
+                <button className={view === 'BACK' ? 'active' : '' } onClick={() => setView('BACK')}></button>
+              </div>  
           </div>
         </section>
 
         <section className="section-bleu">
           <h2>Utilisation</h2> 
         </section>
-
+        <section className="container-sidespace">
+          <div>
+            <h3> Régler la luminosité de l’écran</h3>
+            <ul>
+              <li>Chaque console intègre un pavé tactile qui se situe en haut de la console au milieu. </li>
+              <li>Toucher une fois pour augmenter la luminosité. L’écran possède 8 niveaux d’intensité.</li>
+            </ul>
+          </div>
+          <div>
+            <h3> Accéder au menu de l’écran</h3>
+            <p>Il existe deux manières d’accéder au menu de la console : </p>
+            <li>Pour accéder au menu de la console, maintenez le bouton lumière pendant 3 s.</li>
+            <li>En restant appuyé sur START + SELECT pendant 3/4s</li>
+            <p>Le menu intègre 6 catégories : </p>
+            <ul>
+            <li>BRT : Niveau de luminosité entre 01 et 08 </li>
+            <li>DSP : 5 effets de pixel look (Le 1 simule les pixels de l’écran d’origine.)</li>
+            <li>FRM : Simule un flou de mouvement (Off par default)</li>
+            <li>LGC : Permet de changer la couleur du logo GBC</li>
+            <li>RGB : Permet de choisir une couleur précise via le code couleur</li>
+            <li>N : Recentre l’écran si celui ci n’est plus centré</li>
+            <p>Pour passer d’une catégorie à une autre, maintenir le tactile pendant 1 s</p>
+            </ul>
+          </div>
+          <div>
+            <h3> Batterie rechargeable USB</h3>
+            <p>La batterie a une capacité de 1800mAh.Il est important d’utiliser uniquement le câble de charge fourni avec la console. Pour le dock de charge, ne dépassez pas 5 W.</p>
+            <p>Ne pas utiliser de charge rapide. Cela va bloquer la console et la mettre en sécurité. (Un SAV sera nécessaire pour la débloquer.)</p>
+            <p> En termes d’autonomie, la batterie propose une durée de jeu entre 8 h et 10 h. Il est également possible de jouer branché.</p>
+          </div>
+          <div>
+            <h3>LED</h3>
+            <ul>
+              <li>L’allumage des LED se fait en maintenant A+B pendant 3/4s</li>
+              <li>Pour régler la luminosité des LED, maintenir SELECT + A ou B.</li>
+            </ul>
+            <p>Il existe 4 modes de couleurs :</p>
+            <ul>
+              <li>STATIC : LED fixe sur la couleur que vous avez choisis.</li>
+              <li>BREATH : Les LED vont baisser et monter en intensité.</li>
+              <li>RAINBOW : Les LED changeront de couleur de gauche à droite.</li>
+              <li>OFF : Les LED sont éteintes.</li>
+            </ul>
+            <p>Pour choisir la couleur en STATIC, il faudra les configurer  une à une</p>
+            <ul>
+              <li>START + A + B pour sélectionner les LED</li>
+              <li>START + A ou B pour changer la couleur</li>
+              <li>SELECT A ou B pour passer d’une LED à une autre.</li>
+              <li>Maintenir START + A + B pour valider les couleurs</li>
+              <h3>Tactile LED </h3>
+              <p>La LED additionnelle est uniquement disponible sur les éditions limitées.</p>
+              <p>Pour l’allumer, il suffit de toucher la zone tactile en haut à gauche sur le cache noir de la console. Un deuxième appui, éteindra la LED.</p>
+              <p>Il est également possible de faire varier l’intensité. Pour ça, il suffit de maintenir une fois la zone tactile pour monter ou baisser l’intensité.</p>
+              <p>Le placement des LED avec variateur dépendra de l’édition. Le système d’allumage sera lui à la même position.</p>
+      
+            </ul>
+          </div>
+          </section>
         <Footer/>
       </div>
     );

@@ -253,13 +253,13 @@ const imagesData = {
             </div>
             </div>
 
-            <h5>Prix total des articles : {calculateAllPrice()} €</h5>
-            <button className="panier">Ajouter au panier</button>
+            <h5 className="total-price">Prix total des articles : {calculateAllPrice()} €</h5>
+            <button className="panierbp">Ajouter au panier</button>
           </div>
 
           <div className='affichage-view'>
             <div className={`view ${view === 'SIDE' ? 'SIDE' : 'FRONT'}`}>
-              <div style={{ position: "relative", width: "300px", height: "300px" }}>
+              <div style={{ position: "relative", width: "800px", height: "800px" }}>
                 <img src={view === 'SIDE' ? selectImages.coque.src : selectImages.coque.frontSrc} alt="Coque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
                 <img src={view === 'SIDE' ? selectImages.bp.src : selectImages.bp.frontSrc} alt="Button" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
                 <img src={view === 'SIDE' ? selectImages.pads.src : selectImages.pads.frontSrc} alt="pads" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
@@ -268,13 +268,14 @@ const imagesData = {
                 {view === 'SIDE' && (
                   <img src={selectImages.coquearriere.src} alt="coquearriere" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
                 )}
-              </div>
-
-              <div className="views-container">
-                <button onClick={() => setView('SIDE')}></button>
-                <button onClick={() => setView('FRONT')}></button>
+                
               </div>
             </div>
+            
+            <div className="views-container"> 
+                <button className= {view === 'SIDE' ? 'active' : '' } onClick={() => setView('SIDE')}></button>
+                <button className={view === 'FRONT' ? 'active' : '' }  onClick={() => setView('FRONT')}></button>
+              </div>
           </div>
         </section>
 

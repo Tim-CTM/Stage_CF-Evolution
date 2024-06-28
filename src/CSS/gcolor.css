@@ -24,6 +24,9 @@
   transition: opacity 0.3s, visibility 0.3s;
 }
 
+.total-price {
+  font-size: 24px; 
+}
 .bp-container:hover .price-tag {
   opacity: 1;
   visibility: visible;
@@ -59,6 +62,7 @@
 
 .container-perso {
   display: flex;
+  align-content: flex-start;
   flex-wrap: wrap;
   padding: 20px;
   gap: 20px;
@@ -68,7 +72,7 @@
 .option-selection {
   flex: 1;
   min-width: 300px;
-  max-width: 500px;
+  max-width: 800px;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -112,9 +116,35 @@
   line-height: 1.5;
 }
 
+.panierbp{
+  text-decoration: none;
+  padding: 10px;
+  font-family: arial;
+  font-size: 1em;
+  color: #02A6A9;
+  background-color: #ffffff;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border: 4px solid #000000;
+  box-shadow: 3px 3px 12px #000000;
+  -webkit-box-shadow: 3px 3px 12px #000000;
+  -moz-box-shadow: 3px 3px 12px #000000;
+}
+
+.views-container button.active {
+  background-color: #FE8B06;
+}
+
+.views-container button:hover{
+  background-color: #f5aa54;
+}
+
+
 @media (max-width: 1024px) {
   .container-perso {
-    flex-direction: column;
+    flex-direction:  row-reverse;
+
   }
 
   .option-selection, .affichage-view {
@@ -125,7 +155,7 @@
 
 @media (max-width: 768px) {
   .container-perso {
-    flex-direction: column;
+    flex-direction:  row-reverse;
   }
 
   .option-selection, .affichage-view {

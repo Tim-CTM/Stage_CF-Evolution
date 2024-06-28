@@ -8,8 +8,8 @@ import images from '../image/imageadvence.jsx';
 const imagesData = {
   bp: [
     { src: images.GA_SBP0, frontSrc: images.GA_FBP0, backSrc: images.GA_BBP0, className: "bp-base bp-Black", price: null, color: "Noir" },
-    { src: images.GA_SBPBlackG, frontSrc: images.GA_FBPBlackG, backSrc: images.GA_BBPBlackG, className: "bp-base bp-BlackGlass", price: 40, color: "Noir transparent" },
-    { src: images.GA_SBPBleuG, frontSrc: images.GA_FBPBleuG, backSrc: images.GA_BBPBleuG, className: "bp-base bp-BleuG", price: 10, color: "Bleu transparent" },
+    { src: images.GA_SBPBlackG, frontSrc: images.GA_FBPBlackG, backSrc: images.GA_BBPBlackG, className: "bp-base bp-BlackGlass", price: null, color: "Noir transparent" },
+    { src: images.GA_SBPBleuG, frontSrc: images.GA_FBPBleuG, backSrc: images.GA_BBPBleuG, className: "bp-base bp-BleuG", price: null, color: "Bleu transparent" },
     { src: images.GA_SBPBleu, frontSrc: images.GA_FBPBleu, backSrc: images.GA_BBPBleu, className: "bp-base bp-Bleu", price: null, color: "Bleu" },
     { src: images.GA_SBPGreenG, frontSrc: images.GA_FBPGreenG, backSrc: images.GA_BBPGreenG, className: "bp-base bp-VertG", price: null, color: "Vert transparent" },
     { src: images.GA_SBPLemon, frontSrc: images.GA_FBPLemon, backSrc: images.GA_BBPLemon, className: "bp-base bp-Lemon", price: null, color: "Citron" },
@@ -25,8 +25,8 @@ const imagesData = {
   ],
   coque: [
     { src: images.GA_SCoque0, frontSrc: images.GA_FCoque0,  className: "bp-base bp-Black", price: null, color: "Noir" },
-    { src: images.GA_SCoqueBlackG, frontSrc: images.GA_FCoqueBlackG,  className: "bp-base bp-BlackGlass", price: 40, color: "Noir transparent" },
-    { src: images.GA_SCoqueBleuG, frontSrc: images.GA_FCoqueBleuG,  className: "bp-base bp-BleuG", price: 10, color: "Bleu transparent" },
+    { src: images.GA_SCoqueBlackG, frontSrc: images.GA_FCoqueBlackG,  className: "bp-base bp-BlackGlass", price: null, color: "Noir transparent" },
+    { src: images.GA_SCoqueBleuG, frontSrc: images.GA_FCoqueBleuG,  className: "bp-base bp-BleuG", price: null, color: "Bleu transparent" },
     { src: images.GA_SCoqueCyanG, frontSrc: images.GA_FCoqueCyanG,  className: "bp-base bp-Cyan-Glass ", price: null, color: "Cyan transparent" },
     { src: images.GA_SCoqueCyan, frontSrc: images.GA_FCoqueCyan,  className: "bp-base bp-Cyan", price: null, color: "Cyan" },
     { src: images.GA_SCoqueGreenG, frontSrc: images.GA_FCoqueGreenG, className: "bp-base bp-VertG", price: null, color: "Vert transparent" },
@@ -39,8 +39,8 @@ const imagesData = {
     { src: images.GA_SCoqueG, frontSrc: images.GA_FCoqueG,  className: "bp-base bp-Glass", price: null, color: "Transparent" },
   ],
   baseconsole: [
-    { src: null, frontSrc: null, className: "bp-base bp-Blanc", price: null, color: "Blanc" },
-    { src: null, frontSrc: null, className: "bp-base bp-Black ", price: 40, color: "Noir" },
+    { src: null, frontSrc: null, className: "bp-base bp-Blanc", price: null, color: "Oui" },
+    { src: null, frontSrc: null, className: "bp-base bp-Black ", price: 40, color: "Non" },
   ],
   installation: [
     { src: null, frontSrc: null, className: "bp-base ", price: null, color: "Aucun" },
@@ -48,7 +48,7 @@ const imagesData = {
     { src: null, frontSrc: null, className: "bp-base bp-Noir", price: 40, color: "Noir" },
   ],
   backcoque: [
-    { src: images.GA_SBCoque0, backSrc: images.GA_BCoque0, className: "bp-base bp-GrisDMG", price: 12.90, color: "DMG" },
+    { src: images.GA_SBCoque0, backSrc: images.GA_BCoque0, className: "bp-base bp-GrisDMG", price: null, color: "DMG" },
     { src: images.GA_SBCoqueBlackG, backSrc: images.GA_BCoqueBlackG, className: "bp-base bp-BlackGlass", price: 12.90, color: "Noir transparent" },
     { src: images.GA_SBCoqueBleuG, backSrc: images.GA_BCoqueBleuG, className: "bp-base bp-BleuG", price: 12.90, color: "Bleu transparent" },
     { src: images.GA_SBCoqueCyanG, backSrc: images.GA_BCoqueCyanG, className: "bp-base bp-Cyan-Glass", price: 12.90, color: "Cyan transparent" },
@@ -66,13 +66,13 @@ const imagesData = {
     { src: images.GA_SScreen0, frontSrc: images.GA_FScreen0, className: "bp-base bp-Black", price: null, color: "Noir" },
     { src: images.GA_SScreenBlackS, frontSrc: images.GA_FScreenBlackS, className: "bp-base bp-GrisDMG", price: null, color: "Super Nintendo" },
     { src: images.GA_SScreenBlack, frontSrc: images.GA_FScreenBlack, className: "bp-base bp-BlackGlass", price: null, color: "Gameboy" },
-    { src: images.GA_SScreenGrisS, frontSrc: images.GA_FScreenGrisS, className: "bp-base bp-GrisTendo", price: null, color: "Super Nintendo Gris" },
-    { src: images.GA_SScreenGris, frontSrc: images.GA_FScreenGris, className: "bp-base bp-Superfamicom", price: null, color: "Superfamicom" },
+    { src: images.GA_SScreenGris, frontSrc: images.GA_FScreenGrisS, className: "bp-base bp-GrisTendo", price: null, color: "Super Nintendo Gris" },
+    { src: images.GA_SScreenGrisS, frontSrc: images.GA_FScreenGris, className: "bp-base bp-Superfamicom", price: null, color: "Superfamicom" },
     { src: images.GA_SScreenWhite, frontSrc: images.GA_FScreenWhite, className: "bp-base bp-Blanc", price: null, color: "Blanc" },
   ],
   pads: [
     { src: images.GA_SP0, frontSrc: images.GA_FP0, className: "bp-base bp-Black", price: null, color: "Noir" },
-    { src: images.GA_SPBleuS, frontSrc: images.GA_FPBleuS, className: "bp-base bp-BleuS", price: 30, color: "Bleu sombre" },
+    { src: images.GA_SPBleuS, frontSrc: images.GA_FPBleuS, className: "bp-base bp-BleuS", price: null, color: "Bleu sombre" },
     { src: images.GA_SPBleu, frontSrc: images.GA_FPBleu, className: "bp-base bp-Bleu", price: null, color: "Bleu" },
     { src: images.GA_SPGreen, frontSrc: images.GA_FPGreen, className: "bp-base bp-Vert", price: null, color: "Vert" },
     { src: images.GA_SPOrange, frontSrc: images.GA_FPOrange, className: "bp-base bp-Orange", price: null, color: "Orange" },
@@ -87,8 +87,8 @@ const imagesData = {
   ],
   laniere: [
     { src: images.GA_SStrap0, frontSrc: images.GA_FStrap0, backSrc: images.GA_BStrap0, className: "bp-base bp-Black", price: null, color: "Noir" },
-    { src: images.GA_SStrapBleuC, frontSrc: images.GA_FStrapBleuC, backSrc: images.GA_BStrapBleuC, className: "bp-base bp-BleuEclair", price: 40, color: "Bleu clair" },
-    { src: images.GA_SStrapBleu, frontSrc: images.GA_FStrapBleu, backSrc: images.GA_BStrapBleu, className: "bp-base bp-Bleu", price: 10, color: "Bleu" },
+    { src: images.GA_SStrapBleuC, frontSrc: images.GA_FStrapBleuC, backSrc: images.GA_BStrapBleuC, className: "bp-base bp-BleuEclair", price: null, color: "Bleu clair" },
+    { src: images.GA_SStrapBleu, frontSrc: images.GA_FStrapBleu, backSrc: images.GA_BStrapBleu, className: "bp-base bp-Bleu", price: null, color: "Bleu" },
     { src: images.GA_SStrapGreen, frontSrc: images.GA_FStrapGreen, backSrc: images.GA_BStrapGreen, className: "bp-base bp-VertG", price: null, color: "Vert clair" },
     { src: images.GA_SStrapOrange, frontSrc: images.GA_FStrapOrange, backSrc: images.GA_BStrapOrange, className: "bp-base bp-Orange", price: null, color: "Orange" },
     { src: images.GA_SStrapPurple, frontSrc: images.GA_FStrapPurple, backSrc: images.GA_BStrapPurple, className: "bp-base bp-Violet", price: null, color: "Violet" },
@@ -99,19 +99,15 @@ const imagesData = {
     { src: images.GA_SStrapYellow, frontSrc: images.GA_FStrapYellow, backSrc: images.GA_BStrapYellow, className: "bp-base bp-Jaune" , price: null, color: "Jaune" },
   ],
   installation: [   
-    { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 50, color: "RGB" },
   ],
   rgb: [   
-    { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 50, color: "Led RGB" },
   ],
   padtactile: [   
-    { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 25, color: "Pad tactile" },
   ],
   rgbtrigger: [   
-    { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
     { src: null, frontSrc: null, className: "bp-base bp-Rouge", price: 18, color: "Trigger rouge" },
     { src: null, frontSrc: null, className: "bp-base bp-Bleu", price: 18, color: "Trigger bleu" },
     { src: null, frontSrc: null, className: "bp-base bp-Vert", price: 18, color: "Trigger vert" },
@@ -120,17 +116,14 @@ const imagesData = {
     { src: null, frontSrc: null, className: "bp-base bp-Orange", price: 18, color: "Trigger orange" },
   ],    
   audio: [   
-    { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 25, color: "Audio AMP" },
   ],
   accessoires: [   
-    { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 8.90, color: "Coque-Silicone" },
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 5.90, color: "Verre trempé" },
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 12.50, color: "Sacoche" },
   ],
   usb: [   
-    { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
     { src: null, frontSrc: null, className: "bp-base bp-Black", price: 20, color: "USB-C" },
   ],
 };
@@ -147,31 +140,150 @@ const imagesData = {
       sticker: imagesData.sticker[0],
       laniere: imagesData.laniere[0],
       installation: imagesData.installation[0],
-      accessoires: imagesData.accessoires[0],
       rgb: imagesData.rgb[0],
       usb: imagesData.usb[0],
       audio: imagesData.audio[0],
       rgbtrigger: imagesData.rgbtrigger[0],
       padtactile: imagesData.padtactile[0],
+      accessoires: [],
     });
   
+    const ajouterpanier = () => {
+      const { bp , coque , screen , pads , laniere, installation, rgb, audio , rgbtrigger , usb ,padtactile, accessoires , sticker, backcoque, baseconsole} = selectImages;
+      const newItem = {
+        id:Date.now(), 
+        nom: "Personnalisation Gameboy Advence",
+        pricedeBase:159,
+        bp: {color: bp.color}, 
+        coque: {color: coque.color}, 
+        screen:{color: screen.color} , 
+        pads: {color: pads.color}, 
+        laniere: {color: laniere.color},
+        installation:{color: installation.color} , 
+        rgb: {color: rgb.color}, 
+        audio:{color: audio.color} , 
+        rgbtrigger:{color: rgbtrigger.color} , 
+        usb: {color: usb.color},
+        padtactile:{color: padtactile.color} ,
+        accessoires: {color: accessoires.color}, 
+        sticker: {color: sticker.color}, 
+        backcoque: {color: backcoque.color}, 
+        baseconsole: {color: baseconsole.color},
+        bpPrice: bp.price ?? 0,
+        coquePrice: coque.price ?? 0,
+        screenPrice: screen.price ?? 0,
+        padsPrice: pads.price ?? 0,
+        lanierePrice: laniere.price ?? 0,
+        installationPrice: installation.price ?? 0,
+        rgbPrice: rgb.price ?? 0,
+        audioPrice: audio.price ?? 0,
+        rgbtriggerPrice: rgbtrigger.price ?? 0,
+        usbPrice: usb.price ?? 0,
+        padtactilePrice: padtactile.price ?? 0,
+        accessoiresPrice: accessoires.price ?? 0,
+        stickerPrice: sticker.price ?? 0,
+        backcoquePrice: backcoque.price ?? 0,
+        baseconsolePrice: baseconsole.price ?? 0,
+        totalItemPrice: calculateAllPrice()
+    };
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const updatedCart = [...cart, newItem];
+    localStorage.setItem('cart', JSON.stringify(updatedCart));
+    setshowPopup(true);
+    setTimeout( () => {setshowPopup(false);} ,3000 );
+    };
+
     const [openSection, setOpenSection] = useState('baseconsole');
   
-    const updateImages = (type, selectImage) => {
-  
-      setSelectImages(prevState => ({
-        ...prevState,
-        [type]: selectImage
-      })); 
+    const [showPopup ,setshowPopup] = useState(false);
+
+    const formatPrice = (price) => {
+      return price !== null ? Number(price).toFixed(2) : "0.00";
     };
+
+    const updateImages = (type, selectImage) => {
+      if (type === "accessoires") {
+        setSelectImages(prevState => {
+          const updatedAccessoires = prevState.accessoires.includes(selectImage)
+            ? prevState.accessoires.filter(item => item !== selectImage)
+            : [...prevState.accessoires, selectImage];
+          return {
+            ...prevState,
+            [type]: updatedAccessoires
+          };
+        });
+      }
+      else if (type === "backcoque" && selectImages[type] === selectImage ) {
+        setSelectImages(prevState => ({
+          ...prevState,
+          [type]: { src: null, frontSrc : null, backSrc : null, className:"" ,price: null, color:"" }
+        }));
+      }
+      else if (type === "installation" && selectImages[type] === selectImage ) {
+        setSelectImages(prevState => ({
+          ...prevState,
+          [type]: { src: null, frontSrc : null, className:"" ,price: null, color:"" }
+        }));
+      }
+      else if (type === "rgb" && selectImages[type] === selectImage ) {
+        setSelectImages(prevState => ({
+          ...prevState,
+          [type]: { src: null, frontSrc : null, className:"" ,price: null, color:"" }
+        }));
+      }
+      else if (type === "padtactile" && selectImages[type] === selectImage ) {
+        setSelectImages(prevState => ({
+          ...prevState,
+          [type]: { src: null, frontSrc : null, className:"" ,price: null, color:"" }
+        }));
+      }
+      else if (type === "audio" && selectImages[type] === selectImage ) {
+        setSelectImages(prevState => ({
+          ...prevState,
+          [type]: { src: null, frontSrc : null,  className:"" ,price: null, color:"" }
+        }));
+      }
+      else if (type === "rgbtrigger" && selectImages[type] === selectImage ) {
+        setSelectImages(prevState => ({
+          ...prevState,
+          [type]: { src: null, frontSrc : null,  className:"" ,price: null, color:"" }
+        }));
+      }
+      else if (type === "usb" && selectImages[type] === selectImage ) {
+        setSelectImages(prevState => ({
+          ...prevState,
+          [type]: { src: null, frontSrc : null, className:"" ,price: null, color:"" }
+        }));
+      }
+      else {
+        setSelectImages(prevState => ({
+          ...prevState,
+          [type]: selectImage
+        }));
+      }
+    };
+    
     
   const [view, setView] = useState('SIDE');
 
 
   const calculateAllPrice = () => {
     const { bp, coque, baseconsole, pads, backcoque, laniere, installation ,accessoires, rgb, audio, rgbtrigger, padtactile, usb} = selectImages;
-    return basePrice + (bp.price ?? 0) + (coque.price ?? 0) + (baseconsole.price ?? 0) + (pads.price ??0) + (backcoque.price ?? 0) + (laniere.price ?? 0) + (installation.price?? 0) + (accessoires.price ?? 0 )
-    + (rgb.price ?? 0) + (audio.price ?? 0) + (rgbtrigger.price ?? 0) + (padtactile.price ?? 0) + (usb.price ?? 0);
+    const accessoiresTotalPrice = accessoires.reduce((total, item) => total + (item.price ?? 0), 0);
+    return basePrice + 
+    (bp.price ?? 0) + 
+    (coque.price ?? 0) + 
+    (baseconsole.price ?? 0) + 
+    (pads.price ??0) + 
+    (backcoque.price ?? 0) + 
+    (laniere.price ?? 0) + 
+    (installation.price?? 0) +
+    (rgb.price ?? 0) + 
+    (audio.price ?? 0) + 
+    (rgbtrigger.price ?? 0) + 
+    (padtactile.price ?? 0) + 
+    (usb.price ?? 0) +
+    accessoiresTotalPrice;
   };
 
   const basePrice = 159;
@@ -187,7 +299,7 @@ const imagesData = {
           ></button>
           <span className="price-tag">
             <span>{image.color}</span>
-            {image.price !== null && <span> +{image.price}€</span>}
+            {image.price !== null && <span> + {formatPrice(image.price)}€</span>}
           </span>
         </div>
       ))}
@@ -201,6 +313,11 @@ const imagesData = {
     return (
       <div>
         <Header />
+        {showPopup && (
+          <div className='popup'>
+            <p>Votre personnalisation est bien ajoutée au panier</p>
+            </div>
+        )}
         <section className="section-bleu">
           <h1>GameBoy Advence</h1>
         </section>
@@ -291,7 +408,7 @@ const imagesData = {
               <hr width="250px" align="left" /></div>
 
               <div className="accordion-item">
-          <h3 onClick={() => toggleSection('installation')} className={openSection === 'installation' ? 'active' : ''}>RGB pour les 𝓰ᗩ𝕄🆁𐌄Ɍ丂  </h3>
+          <h3 onClick={() => toggleSection('installation')} className={openSection === 'installation' ? 'active' : ''}>RGB </h3>
               {openSection === 'installation' && (
                 <div className="accordion-content"> 
                   <ImageL type="installation" images={imagesData.installation} updateImages={updateImages} />
@@ -351,13 +468,13 @@ const imagesData = {
             <hr width="250px" align="left" />
               </div>
             </div>
-            <h5>Prix total des articles : {calculateAllPrice()} €</h5>
-            <button className="panier">Ajouter au panier</button>
+            <h5 className="total-price">Prix total des articles : {formatPrice(calculateAllPrice())} €</h5>
+            <button className="panierbp" onClick={ajouterpanier} >Ajouter au panier</button>
           </div>
 
           <div className='affichage-view'>
             <div className={`view ${view === 'FRONT' ? 'FRONT' : view === 'SIDE' ? 'SIDE' : 'BACK'}`}>
-                <div style={{ position: "relative", width: "300px", height: "300px" }}>
+                <div style={{ position: "relative", width: "1024px", height: "1024px" }}>
                   {view === 'FRONT' && (
                     <>
                       <img src={selectImages.coque.frontSrc} alt="Coque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
@@ -396,15 +513,69 @@ const imagesData = {
                 </div>
               </div>
               <div className="views-container">
-                <button onClick={() => setView('FRONT')}></button>
-                <button onClick={() => setView('SIDE')}></button>
-                <button onClick={() => setView('BACK')}></button>
+                <button className={view === 'FRONT' ? 'active' : '' } onClick={() => setView('FRONT')}></button>
+                <button className={view === 'SIDE' ? 'active' : '' } onClick={() => setView('SIDE')}></button>
+                <button className={view === 'BACK' ? 'active' : '' } onClick={() => setView('BACK')}></button>
               </div>
           </div>
         </section>
 
         <section className="section-bleu">
           <h2>Utilisation</h2> 
+        </section>
+        <section className="container-sidespace">
+          <div>
+            <h3> Régler la luminosité de l’écran</h3>
+            <ul>
+              <li>Pour régler la luminosité, il faudra maintenir SELECT pendant 3 s puis faire L ou R pour augmenter ou baisser la luminosité.</li>
+              <li>L’écran possède 15 niveaux de luminosité.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3> Accéder au menu de l’écran</h3>
+            <p>Pour accéder au menu de la console, maintenez SÉLECT pendant 3 s.</p>
+            <p>Le menu intègre 4 catégories :</p>
+            <ul>
+              <li>BRT : Niveau de luminosité entre 01 et 15</li>
+              <li>CLR : 4 filtres d’écran différents</li>
+              <li>DSP : Simule les pixels sur l’écran.</li>
+              <li>FRM : Simule un flou de mouvement. (Off par defaut)</li>
+            </ul>
+            <p>Pour passer d’une catégorie à une autre, appuyez sur SÉLECT.</p>
+          </div>
+          <div>
+            <h3>Batterie rechargeable USB-C</h3>
+            <p>La batterie a une capacité de 1800mAh.</p>
+            <p>Il est important d’utiliser uniquement le câble de charge fournis avec la console. Pour le dock de charge, ne dépassez pas 5 W.</p>
+            <p>Ne pas utiliser de charge rapide. Cela va bloquer la console et la mettre en sécurité. En termes d’autonomie, la batterie propose une durée de jeu en moyenne de 10h.</p>
+            <p>Il est également possible de jouer brancher. Le voyant bleu indique la charge, et le voyant vert, la charge est pleine.</p>
+          </div>
+
+          <div>
+            <h3> INSTALLATION DE LED RGB</h3>
+            <ul>
+              <li>L’allumage des LED se fait en maintenant A+B pendant 3/4s</li>
+              <li>Pour régler la luminosité des LED, maintenir SELECT + A ou B.</li>
+            </ul>
+            <p>Il existe 4 modes de couleurs :</p>
+            <ul>
+              <li>STATIC : LED fixe sur la couleur que vous avez choisis.</li>
+              <li>BREATH : Les LED vont baisser et monter en intensité.</li>
+              <li>RAINBOW : Les LED changeront de couleur de gauche à droite.</li>
+              <li>OFF : Les LED sont éteintes.</li>
+            </ul>
+
+            <p>Pour choisir la couleur en STATIC, il faudra configurer les LED une à une:</p>
+            <ul>
+              <li>START + A + B pour sélectionner les LED</li>
+              <li>START + A ou B pour changer la couleur</li>
+              <li>SELECT A ou B pour passer d’une LED à une autre.</li>
+              <li>Maintenir START + A ou B pour valider les couleurs</li>
+            </ul>
+            
+
+          </div>
         </section>
         <Footer/>
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../CSS/advence.css';
+import '../CSS/advencesp.css';
 import Header from './Header';
 import Footer from './Footer';
 import images from '../image/imageadvencesp.jsx';
@@ -8,8 +8,8 @@ import images from '../image/imageadvencesp.jsx';
 const imagesData = {
     bp: [
       { src: images.GA_SP_SBP0, frontSrc: images.GA_SP_FBP0, className: "bp-base bp-Black", price: null, color: "Blanc" },
-      { src: images.GA_SP_SBPBleu, frontSrc: images.GA_SP_FBPBleu , className: "bp-base bp-Bleu", price: 40, color: "Bleu" },
-      { src: images.GA_SP_SBPGreen, frontSrc: images.GA_SP_FBPGreen, className: "bp-base bp-Vert", price: 10, color: "Vert" },
+      { src: images.GA_SP_SBPBleu, frontSrc: images.GA_SP_FBPBleu , className: "bp-base bp-Bleu", price: null, color: "Bleu" },
+      { src: images.GA_SP_SBPGreen, frontSrc: images.GA_SP_FBPGreen, className: "bp-base bp-Vert", price: null, color: "Vert" },
       { src: images.GA_SP_SBPLemon, frontSrc: images.GA_SP_FBPLemon, className: "bp-base bp-Lemon", price: null, color: "Citron" },
       { src: images.GA_SP_SBPOrange, frontSrc: images.GA_SP_FBPOrange, className: "bp-base bp-Orange", price: null, color: "Orange" },
       { src: images.GA_SP_SBPRed, frontSrc: images.GA_SP_FBPRed, className: "bp-base bp-Rouge", price: null, color: "Rouge" },
@@ -37,7 +37,7 @@ const imagesData = {
       { src: null, frontSrc: null, className: "bp-base bp-Black ", price: 40, color: "Non" },
     ],
     backcoque: [
-      { src: images.GA_SP_SBCoque0, frontSrc: images.GA_SP_FBCoque0, className: "bp-base bp-Blanc", price: 16.90, color: "Blanc" },
+      { src: images.GA_SP_SBCoque0, frontSrc: images.GA_SP_FBCoque0, className: "bp-base bp-Blanc", price: null, color: "Blanc" },
       { src: images.GA_SP_SBCoqueBlackG, frontSrc: images.GA_SP_FBCoqueBlackC, className: "bp-base bp-BlackGlass", price: 16.90, color: "Noir transparent" },
       { src: images.GA_SP_SBCoqueBleuG, frontSrc: images.GA_SP_FBCoqueBleuC, className: "bp-base bp-Bleu", price: 16.90, color: "Bleu transparent" },
       { src: images.GA_SP_SBCoqueCyan, frontSrc: images.GA_SP_FBCoqueCyan, className: "bp-base bp-Cyan", price: 16.90, color: "Cyan" },
@@ -70,14 +70,13 @@ const imagesData = {
       { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
       { src: null, frontSrc: null, className: "bp-base bp-Black", price: 25, color: "Audio AMP" },
     ],
-    accessoires: [   
-      { src: null, frontSrc: null, className: "bp-base bp-Blanc ", price: null, color: "Aucun" },
+    accessoires: [
       { src: null, frontSrc: null, className: "bp-base bp-Black", price: 8.90, color: "Coque-Silicone" },
       { src: null, frontSrc: null, className: "bp-base ", price: 5.90, color: "Verre trempé" },
       { src: null, frontSrc: null, className: "bp-base ", price: 12.50, color: "Sacoche" },
     ],
     pads: [
-      { src: images.GA_SP_SP0, frontSrc: images.GA_SP_FP0, className: "bp-base bp-GrisDMG ", price: 2.90, color: "DMG" },
+      { src: images.GA_SP_SP0, frontSrc: images.GA_SP_FP0, className: "bp-base bp-GrisDMG ", price: null, color: "DMG" },
       { src: images.GA_SP_SPBleu  , frontSrc: images.GA_SP_FPBleu, className: "bp-base bp-Bleu ", price: 2.90, color: "Bleu" },
       { src: images.GA_SP_SPOrange , frontSrc: images.GA_SP_FPOrange, className: "bp-base bp-Orange ", price: 2.90, color: "Orange" },
       { src: images.GA_SP_SPWhite, frontSrc:images.GA_SP_FPWhite , className: "bp-base bp-Blanc", price: 2.90, color: "Blanc" },
@@ -99,20 +98,30 @@ const imagesData = {
       pads: imagesData.pads[0],
       installation: imagesData.installation[0],
       usb: imagesData.usb[0],
-      accessoires: imagesData.accessoires[0],
       rgb: imagesData.rgb[0],
       audio: imagesData.audio[0],
+      accessoires: [],
     });
   
     const [openSection, setOpenSection] = useState('baseconsole');
   
     const updateImages = (type, selectImage) => {
-  
-      setSelectImages(prevState => ({
-        ...prevState,
-        [type]: selectImage
-      })); 
-      
+      if (type === "accessoires") {
+        setSelectImages(prevState => {
+          const updatedAccessoires = prevState.accessoires.includes(selectImage)
+            ? prevState.accessoires.filter(item => item !== selectImage)
+            : [...prevState.accessoires, selectImage];
+          return {
+            ...prevState,
+            [type]: updatedAccessoires
+          };
+        });
+      } else {
+        setSelectImages(prevState => ({
+          ...prevState,
+          [type]: selectImage
+        }));
+      }
     };
     
   const [view, setView] = useState('SIDE');
@@ -121,7 +130,20 @@ const imagesData = {
 
   const calculateAllPrice = () => {
     const { bp, coque, baseconsole, pads, backcoque , installation, usb, accessoires , rgb, audio} = selectImages;
-    return basePrice + (bp.price ?? 0) + (coque.price ?? 0) + (baseconsole.price ?? 0) + (pads.price ??0) + (backcoque.price ??0) + (installation.price ?? 0) + (usb.price ?? 0) + (accessoires.price ?? 0) + (rgb.price ?? 0) + (audio.price ?? 0);
+    const accessoiresTotalPrice = accessoires.reduce((total, item) => total + (item.price ?? 0), 0);
+    return (
+    basePrice + 
+    (bp.price ?? 0) + 
+    (coque.price ?? 0) + 
+    (baseconsole.price ?? 0) + 
+    (pads.price ??0) + 
+    (backcoque.price ??0) + 
+    (installation.price ?? 0) + 
+    (usb.price ?? 0) + 
+    (rgb.price ?? 0) + 
+    (audio.price ?? 0) +
+    accessoiresTotalPrice
+    );
   };
 
   const basePrice = 129;
@@ -146,6 +168,7 @@ const imagesData = {
 
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section);
+
   };
 
   return (
@@ -284,13 +307,13 @@ const imagesData = {
 
           </div>
           <hr width="250px" align="left" />
-          <h5>Prix total des articles : {calculateAllPrice()} €</h5>
-          <button className="panier">Ajouter au panier</button>
+          <h5 className="total-price">Prix total des articles : {calculateAllPrice()} €</h5>
+          <button class="panierbp">Ajouter au panier</button>
         </div>
 
           <div className='affichage-view'>
             <div className={`view ${view === 'SIDE' ? 'SIDE' : 'FRONT'}`}>
-              <div style={{ position: "relative", width: "300px", height: "300px" }}>
+              <div style={{ position: "relative", width: "800px", height: "800px" }}>
                 <img src={view === 'SIDE' ? selectImages.coque.src : selectImages.coque.frontSrc} alt="Coque" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
                 <img src={view === 'SIDE' ? selectImages.bp.src : selectImages.bp.frontSrc} alt="Button" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
                 <img src={view === 'SIDE' ? selectImages.pads.src : selectImages.pads.frontSrc} alt="pads" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
@@ -298,16 +321,59 @@ const imagesData = {
                 <img src={view === 'SIDE' ? selectImages.screen.src : selectImages.screen.frontSrc} alt="Screen" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />
               </div>
 
-              <div className="views-container">
-                <button onClick={() => setView('SIDE')}></button>
-                <button onClick={() => setView('FRONT')}></button>
-              </div>
             </div>
+            
+            <div className="views-container"> 
+                <button className= {view === 'SIDE' ? 'active' : '' } onClick={() => setView('SIDE')}></button>
+                <button className={view === 'FRONT' ? 'active' : '' }  onClick={() => setView('FRONT')}></button>
+              </div>
           </div>
         </section>
 
         <section className="section-bleu">
           <h2>Utilisation</h2> 
+        </section>
+        <section className="container-sidespace">
+          <div>
+            <h3> Régler la luminosité de l’écran</h3>
+            <ul>
+              <li>Pour régler la luminosité, il faudra appuyer sur le bouton lumière, comme sur une Gameboy Advance SP original.</li>
+              <li>L’écran possède 8 niveaux de luminosité.</li>
+            </ul>
+          </div>
+          <div>
+            <h3> Accéder au menu de l’écran</h3>
+            <p>Pour accéder au menu de la console, maintenez le bouton lumière pendant 3 s.</p>
+            <p>Le menu intègre 4 catégories :</p>
+            <ul>
+              <li>BRT : Niveau de luminosité entre 01 et 15</li>
+              <li>CLR : 4 filtres d’écran différents</li>
+              <li>DSP : Simule les pixels sur l’écran.</li>
+              <li>FRM : Simule un flou de mouvement. (Off par defaut)</li>
+            </ul>
+            <p>Pour passer d’une catégorie à une autre, appuyez sur le bouton lumière</p>
+          </div>
+          <div>
+            <h3> Batterie upgrade + USB-C</h3>
+            <p>L’upgrade de la batterie a une capacité de 950mAh. Elle propose une durée de jeu entre 8 h et 10 h. Il est également possible de jouer branché.</p>
+            <p>Le changement du port de charge permet d’installer un USB-C qui facilitera la recharge, le câble est fourni avec la console</p>
+            <p> Pour le dock de charge, ne pas dépasser 5 W et ne pas utiliser de charge rapide. Cela va bloquer la console et la mettre en sécurité.</p>
+          </div>
+          <div>
+            <h3> INSTALLATION DE LED RGB</h3>
+            <ul>
+              <li>L’allumage des LED se fait en maintenant A+B pendant 2s</li>
+              <li>Pour régler la luminosité des LED, maintenir SELECT + A ou B.</li>
+            </ul>
+            <p>Il existe 4 modes de couleurs :</p>
+            <ul>
+              <li>STATIC : LED fixe sur la couleur que vous avez choisis.</li>
+              <li>BREATH : Les LED vont baisser et monter en intensité.</li>
+              <li>RAINBOW : Les LED changeront de couleur de gauche à droite.</li>
+              <li>OFF : Les LED sont éteintes.</li>
+            </ul>
+            <p>Maintenir START + A ou B pour valider les couleurs</p>
+          </div>
         </section>
 
         <Footer/>

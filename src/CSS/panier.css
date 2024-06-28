@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .recap {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .recap h4{
+    display: flex;
+    color: black;
+    justify-content: flex-end;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .cart-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .cart-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .cart-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .cart-table img {
+    max-width: 50px;
+    height: auto;
+  }
+  
+  .cart-table .price {
+    float: right;
+    margin-left: 10px;
+  }
+  
+  .cart-table td > div {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .remove-btn:hover {
+    background-color: #ff1a1a;
+  }
+  
+  .formulaire {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  .formulaire h2{
+    font-size: 24px;
+    font-family: 'Press Start 2P', system-ui;
+    margin-bottom: 20px;
+  }
+  .formulaire p{
+    font-size: 16px;
+    margin-top: 1px;
+
+  }
+  
+  .formulaire label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .formulaire input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .formulaire button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .formulaire button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 1024px) {
+    .section1{
+        flex-direction: column;
+    }
+    .recap, .formulaire {
+      padding: 15px;
+    }
+  
+    .cart-table th, .cart-table td {
+      padding: 8px;
+    }
+  
+    .remove-btn {
+      padding: 5px 8px;
+    }
+  
+    .formulaire input[type="text"] {
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+  
+    .formulaire button {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section1{
+        flex-direction: column;
+    }
+    .recap, .formulaire {
+      padding: 10px;
+    }
+
+    .cart-table th, .cart-table td {
+      padding: 6px;
+    }
+  
+    .remove-btn {
+      padding: 4px 6px;
+    }
+  
+    .formulaire input[type="text"] {
+      padding: 6px;
+      margin-bottom: 10px;
+    }
+  
+    .formulaire button {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .cart-table, .formulaire {
+      width: 100%;
+    }
+  
+    .cart-table th, .cart-table td {
+      display: block;
+      width: 100%;
+    }
+  
+    .cart-table th {
+      text-align: center;
+    }
+  
+    .cart-table td {
+      text-align: center;
+      position: relative;
+      padding-left: 50%;
+      box-sizing: border-box;
+    }
+  
+    .cart-table td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: 45%;
+      padding-right: 10px;
+      box-sizing: border-box;
+      text-align: left;
+      font-weight: bold;
+    }
+  }
+  
